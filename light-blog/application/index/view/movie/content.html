@@ -1,0 +1,28 @@
+{extend name="public/base" /}
+
+{block name="content"}
+    <div class="con-right con-article-img">
+        <div style="font-size:25px;padding:35px 0 10px 0;color:#636363">
+            {$con.title}
+        </div>
+        <div style="font-size:15px;padding:05px 0 10px 0;color:#636363">
+            {$con.time}
+        </div>
+        <div style="padding-bottom:15px;">
+            {$con.content}
+        </div>
+
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style">
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt" target="_blank"><img src="http://v3.jiathis.com/code_mini/images/btn/v1/jiathis1.gif" border="0" /></a>
+            <a class="jiathis_counter_style_margin:3px 0 0 2px"></a>
+        </div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+
+        <div style="padding-bottom:55px;border-bottom:1px solid #ededed">
+
+        </div>
+    </div>
+{/block}
+

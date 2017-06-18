@@ -1,0 +1,18 @@
+{extend name="public/base" /}
+
+{block name="content"}
+    <div class="con-right con-article-img">
+        {volist name="list" id="vo"}
+            <div style="font-size:15px;padding:35px 0 10px 0;color:#636363">
+                {if condition="$vo.link neq ''"}
+                    <p><a href="{$vo.link}" target="_blank">
+                        <strong>{$vo.name}</strong></a></p>
+                    {else /} <p><strong>{$vo.name}</strong></p>
+                {/if}
+            </div>
+            <div style="padding-bottom:25px;border-bottom:1px solid #ededed">
+                {$vo.content}
+            </div>
+        {/volist}
+    </div>
+{/block}

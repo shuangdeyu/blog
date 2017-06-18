@@ -1,0 +1,3525 @@
+[ 2017-06-18T21:51:46+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.112007s][吞吐率：8.93req/s] [内存消耗：2,101.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:52:27+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.102006s][吞吐率：9.80req/s] [内存消耗：2,104.27kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:02+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.097006s][吞吐率：10.31req/s] [内存消耗：2,104.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:03+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:03+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:03+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:03+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:03+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:04+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.086004s][吞吐率：11.63req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:04+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:04+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:04+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:05+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:05+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.095006s][吞吐率：10.53req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:05+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:06+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.100006s][吞吐率：10.00req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:06+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:06+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.092006s][吞吐率：10.87req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:06+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:06+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:07+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:07+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:07+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:07+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:08+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:08+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:08+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:08+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,934.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:09+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.098005s][吞吐率：10.20req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/card.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:10+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:10+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.085004s][吞吐率：11.76req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:10+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.084004s][吞吐率：11.90req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:11+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:11+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:54:11+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.40kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:55:13+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:55:14+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:55:15+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:55:18+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.091006s][吞吐率：10.99req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:01+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.108006s][吞吐率：9.26req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:02+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:02+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.092006s][吞吐率：10.87req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:02+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:02+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：1,934.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:09+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.098005s][吞吐率：10.20req/s] [内存消耗：1,934.34kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:35+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.118007s][吞吐率：8.47req/s] [内存消耗：2,104.42kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:36+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.099006s][吞吐率：10.10req/s] [内存消耗：1,934.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:46+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.138008s][吞吐率：7.25req/s] [内存消耗：2,104.42kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:47+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：1,934.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:47+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090006s][吞吐率：11.11req/s] [内存消耗：1,934.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:47+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,934.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:56:47+08:00 ] ::1 ::1 GET /light-blog/index/card.html
+[ log ] localhost/light-blog/index/card.html [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：1,934.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'card',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->card[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\card.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:57:18+08:00 ] ::1 ::1 GET /light-blog/index/weibo.html
+[ log ] localhost/light-blog/index/weibo.html [运行时间：0.177010s][吞吐率：5.65req/s] [内存消耗：2,928.52kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'weibo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/card.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->weibo[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\weibo.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_weibo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_weibo` ORDER BY id desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:57:26+08:00 ] ::1 ::1 GET /light-blog/movie/index.html
+[ log ] localhost/light-blog/movie/index.html [运行时间：0.169010s][吞吐率：5.92req/s] [内存消耗：3,126.87kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/weibo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Movie->index[ D:\wamp\www\light-blog\application\index\controller\Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\movie\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` ORDER BY id desc [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:57:45+08:00 ] ::1 ::1 GET /light-blog/index/weibo.html
+[ log ] localhost/light-blog/index/weibo.html [运行时间：0.128008s][吞吐率：7.81req/s] [内存消耗：2,755.88kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'weibo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/movie/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->weibo[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\weibo.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_weibo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_weibo` ORDER BY id desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:57:46+08:00 ] ::1 ::1 GET /light-blog/photo/shan.html
+[ log ] localhost/light-blog/photo/shan.html [运行时间：0.147008s][吞吐率：6.80req/s] [内存消耗：2,931.37kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'photo',
+    2 => 'shan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/index/weibo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Photo->shan[ D:\wamp\www\light-blog\application\index\controller\Photo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\photo\shan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`p`.`content`,`i`.`pic_url` FROM `tp_photo` `p` INNER JOIN `tp_images` `i` ON `p`.`id`=i.target_id and i.target = 0 WHERE  `p`.`type` = 0 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:57:56+08:00 ] ::1 ::1 GET /light-blog/photo/net.html
+[ log ] localhost/light-blog/photo/net.html [运行时间：0.180011s][吞吐率：5.56req/s] [内存消耗：2,114.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'photo',
+    2 => 'net',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/photo/shan.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Photo->net[ D:\wamp\www\light-blog\application\index\controller\Photo.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\photo\net.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:57:59+08:00 ] ::1 ::1 GET /light-blog/photo/shan.html
+[ log ] localhost/light-blog/photo/shan.html [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：2,759.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'photo',
+    2 => 'shan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/photo/net.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Photo->shan[ D:\wamp\www\light-blog\application\index\controller\Photo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\photo\shan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`p`.`content`,`i`.`pic_url` FROM `tp_photo` `p` INNER JOIN `tp_images` `i` ON `p`.`id`=i.target_id and i.target = 0 WHERE  `p`.`type` = 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:58:00+08:00 ] ::1 ::1 GET /light-blog/photo/ren.html
+[ log ] localhost/light-blog/photo/ren.html [运行时间：0.261015s][吞吐率：3.83req/s] [内存消耗：2,948.40kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'photo',
+    2 => 'ren',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/photo/shan.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Photo->ren[ D:\wamp\www\light-blog\application\index\controller\Photo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\photo\ren.html [ array (
+  0 => 'con',
+  1 => 'img',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.078004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target_id` = 4  AND `target` = 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:58:04+08:00 ] ::1 ::1 GET /light-blog/photo/xian.html
+[ log ] localhost/light-blog/photo/xian.html [运行时间：0.173010s][吞吐率：5.78req/s] [内存消耗：2,940.13kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'photo',
+    2 => 'xian',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/photo/ren.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Photo->xian[ D:\wamp\www\light-blog\application\index\controller\Photo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\photo\xian.html [ array (
+  0 => 'con',
+  1 => 'img',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target_id` = 5  AND `target` = 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:58:07+08:00 ] ::1 ::1 GET /light-blog/photo/view.html
+[ log ] localhost/light-blog/photo/view.html [运行时间：0.224013s][吞吐率：4.46req/s] [内存消耗：2,933.44kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'photo',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/photo/xian.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Photo->view[ D:\wamp\www\light-blog\application\index\controller\Photo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\photo\view.html [ array (
+  0 => 'img',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:58:30+08:00 ] ::1 ::1 GET /light-blog/index/index.html
+[ log ] localhost/light-blog/index/index.html [运行时间：0.096006s][吞吐率：10.42req/s] [内存消耗：1,934.36kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://localhost/light-blog/photo/view.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\light-blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:26+08:00 ] ::1 ::1 GET /light-blog/admin
+[ log ] localhost/light-blog/admin [运行时间：0.162009s][吞吐率：6.17req/s] [内存消耗：2,210.43kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:33+08:00 ] 127.0.0.1 127.0.0.1 POST /light-blog/admin/login.html
+[ log ] localhost/light-blog/admin/login.html [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：2,780.22kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://localhost/light-blog/admin',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'content-length' => '25',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'password' => 'admin',
+)
+[ info ] [ RUN ] app\index\controller\Admin->login[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `user` = 'admin'  AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:40+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/login.html
+[ log ] localhost/light-blog/admin/login.html [运行时间：0.227013s][吞吐率：4.41req/s] [内存消耗：2,023.53kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->login[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: user[D:\wamp\www\light-blog\application\index\controller\Admin.php:43]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:44+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/login
+[ log ] localhost/light-blog/admin/login [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：2,023.55kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->login[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: user[D:\wamp\www\light-blog\application\index\controller\Admin.php:43]
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:50+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/
+[ log ] localhost/light-blog/admin/ [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：2,041.54kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:53+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/
+[ log ] localhost/light-blog/admin/ [运行时间：0.082003s][吞吐率：12.19req/s] [内存消耗：2,041.54kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T21:59:53+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/
+[ log ] localhost/light-blog/admin/ [运行时间：0.080002s][吞吐率：12.50req/s] [内存消耗：2,041.54kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:00:00+08:00 ] 127.0.0.1 127.0.0.1 POST /light-blog/admin/login.html
+[ log ] localhost/light-blog/admin/login.html [运行时间：0.124002s][吞吐率：8.06req/s] [内存消耗：2,780.68kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'content-length' => '26',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Admin->login[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `user` = 'admin'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:28+08:00 ] 127.0.0.1 127.0.0.1 POST /light-blog/admin/login.html
+[ log ] localhost/light-blog/admin/login.html [运行时间：0.212012s][吞吐率：4.72req/s] [内存消耗：3,018.61kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'content-length' => '25',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'password' => 'admin',
+)
+[ info ] [ RUN ] app\index\controller\Admin->login[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\wamp\www\light-blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `user` = 'admin'  AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1 [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:31+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/main.html
+[ log ] localhost/light-blog/admin/main.html [运行时间：0.230013s][吞吐率：4.35req/s] [内存消耗：2,215.52kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/login.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->main[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\main.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:32+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.115006s][吞吐率：8.70req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:35+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/show_weibo.html
+[ log ] localhost/light-blog/admin/show_weibo.html [运行时间：0.374021s][吞吐率：2.67req/s] [内存消耗：3,172.64kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'show_weibo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/main.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->show_weibo[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\show_weibo.html [ array (
+  0 => 'weibo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_weibo` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_weibo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_weibo` ORDER BY id desc LIMIT 0,3 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:36+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:40+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/show_weibo.html?page=2
+[ log ] localhost/light-blog/admin/show_weibo.html?page=2 [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：2,989.63kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'show_weibo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/show_weibo.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Admin->show_weibo[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\show_weibo.html [ array (
+  0 => 'weibo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_weibo` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_weibo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_weibo` ORDER BY id desc LIMIT 3,3 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:40+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.090006s][吞吐率：11.11req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:43+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/show_weibo.html?page=1
+[ log ] localhost/light-blog/admin/show_weibo.html?page=1 [运行时间：0.149009s][吞吐率：6.71req/s] [内存消耗：2,984.59kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'show_weibo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/show_weibo.html?page=2',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Admin->show_weibo[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\show_weibo.html [ array (
+  0 => 'weibo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_weibo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_weibo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_weibo` ORDER BY id desc LIMIT 0,3 [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:02:43+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:09+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_show.html
+[ log ] localhost/light-blog/admin/photo_show.html [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：3,052.08kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/show_weibo.html?page=1',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_show.html [ array (
+  0 => 'photo',
+  1 => 'type',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 0 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:10+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.094006s][吞吐率：10.64req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:11+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/images_show.html
+[ log ] localhost/light-blog/admin/images_show.html [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：3,045.45kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'images_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->images_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\images_show.html [ array (
+  0 => 'img',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:12+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.094006s][吞吐率：10.64req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:15+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/images_add.html
+[ log ] localhost/light-blog/admin/images_add.html [运行时间：0.175010s][吞吐率：5.71req/s] [内存消耗：2,215.07kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'images_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/images_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->images_add[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\images_add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:29+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/public/static/hui/img/loading.gif
+[ log ] localhost/light-blog/public/static/hui/img/loading.gif [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,584.22kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'static',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://localhost/light-blog/admin/images_add.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'hui' => 'img',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:31+08:00 ] 127.0.0.1 127.0.0.1 POST /light-blog/admin/images_save.html
+[ log ] localhost/light-blog/admin/images_save.html [运行时间：0.241014s][吞吐率：4.15req/s] [内存消耗：2,852.34kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'images_save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/images_add.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'content-type' => 'multipart/form-data; boundary=---------------------------7e13df1e10c9a',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'content-length' => '1545408',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->images_save[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `tp_images` (`pic_url` , `target_id` , `target`) VALUES ('__IMG__/photo/594688334d394.jpg' , 0 , 1) [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:31+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/images_show.html
+[ log ] localhost/light-blog/admin/images_show.html [运行时间：0.129008s][吞吐率：7.75req/s] [内存消耗：2,860.16kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'images_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->images_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\images_show.html [ array (
+  0 => 'img',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target` = 1 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:34+08:00 ] 127.0.0.1 127.0.0.1 POST /light-blog/admin/images_del.html
+[ log ] localhost/light-blog/admin/images_del.html [运行时间：0.184010s][吞吐率：5.43req/s] [内存消耗：2,778.35kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'images_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/images_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'content-length' => '15',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'delImg' => 
+  array (
+    0 => '47',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Admin->images_del[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.021001s ]
+[ sql ] [ SQL ] DELETE FROM `tp_images`    WHERE  `id` = 47 [ RunTime:0.011001s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:34+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/images_show.html
+[ log ] localhost/light-blog/admin/images_show.html [运行时间：0.145009s][吞吐率：6.90req/s] [内存消耗：2,859.41kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'images_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/images_del.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->images_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\images_show.html [ array (
+  0 => 'img',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:03:35+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,015.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:14+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_show.html
+[ log ] localhost/light-blog/admin/photo_show.html [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：2,858.70kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/images_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_show.html [ array (
+  0 => 'photo',
+  1 => 'type',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:14+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：2,015.16kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:16+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_show?type=1
+[ log ] localhost/light-blog/admin/photo_show?type=1 [运行时间：0.119006s][吞吐率：8.40req/s] [内存消耗：2,868.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_show.html [ array (
+  0 => 'photo',
+  1 => 'type',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:16+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,015.16kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:18+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_show?type=2
+[ log ] localhost/light-blog/admin/photo_show?type=2 [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：2,862.35kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show?type=1',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_show.html [ array (
+  0 => 'photo',
+  1 => 'type',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 2 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:18+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：2,015.18kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:04:20+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_info?id=5
+[ log ] localhost/light-blog/admin/photo_info?id=5 [运行时间：0.156009s][吞吐率：6.41req/s] [内存消耗：2,965.45kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show?type=2',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_info[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_info.html [ array (
+  0 => 'photo',
+  1 => 'img',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target_id` = 5  AND `target` = 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:05:41+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_show?type=2
+[ log ] localhost/light-blog/admin/photo_show?type=2 [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：3,054.58kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show?type=1',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_show.html [ array (
+  0 => 'photo',
+  1 => 'type',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `type` = 2 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/photo_info?id=5
+[ log ] localhost/light-blog/admin/photo_info?id=5 [运行时间：0.161009s][吞吐率：6.21req/s] [内存消耗：2,793.51kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'photo_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show?type=2',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ RUN ] app\index\controller\Admin->photo_info[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\photo_info.html [ array (
+  0 => 'photo',
+  1 => 'img',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_photo` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_photo` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_images` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_images` WHERE  `target_id` = 5  AND `target` = 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:05:51+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/movie_show.html
+[ log ] localhost/light-blog/admin/movie_show.html [运行时间：0.148008s][吞吐率：6.76req/s] [内存消耗：3,552.52kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'movie_show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/photo_show?type=2',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->movie_show[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\movie_show.html [ array (
+  0 => 'movie',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_movie` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` ORDER BY id desc LIMIT 0,20 [ RunTime:0.002001s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:05:56+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/movie_info?id=8
+[ log ] localhost/light-blog/admin/movie_info?id=8 [运行时间：0.188011s][吞吐率：5.32req/s] [内存消耗：2,969.21kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'movie_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/movie_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'id' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Admin->movie_info[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\movie_info.html [ array (
+  0 => 'movie',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-18T22:05:56+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/favicon.ico
+[ log ] localhost/light-blog/admin/favicon.ico [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：2,015.16kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-18T22:06:05+08:00 ] 127.0.0.1 127.0.0.1 GET /light-blog/admin/movie_info?id=3
+[ log ] localhost/light-blog/admin/movie_info?id=3 [运行时间：0.140008s][吞吐率：7.14req/s] [内存消耗：2,814.60kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\light-blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'movie_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*',
+  'referer' => 'http://localhost/light-blog/admin/movie_show.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15c5e8198e515e-026b93dc2344bd-414a0229-100200-15c5e8198e826d; CNZZDATA1261352376=177289733-1496234122-%7C1496241227; PHPSESSID=8p2rlrtdkmlr475i3sufhh4v42',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Admin->movie_info[ D:\wamp\www\light-blog\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\light-blog/application/index\view\admin\movie_info.html [ array (
+  0 => 'movie',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=lightblog;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------

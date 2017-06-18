@@ -1,0 +1,46 @@
+{extend name="public/base" /}
+
+{block name="sidebar"}
+    <div class="con-left">
+        <div class="head">
+            <a href="{:url('index/index')}"><img src="__IMG__/head.jpg" title="蒋小凡"></a>
+        </div>
+        <div class="name"><a href="{:url('index/card')}"><strong>JIANG XIAOFAN</strong></a></div>
+        <div class="about">
+            <ul>
+                <li>
+                    <span><a href="javascript:" >作品集</a></span>
+                    <ul class="zuopin-type" style="display:block">
+                        <li><a href="{:url('photo/shan')}">摄影</a></li>
+                        <li><a href="{:url('photo/net')}">网站</a></li>
+                    </ul>
+                </li>
+                <li><a href="{:url('index/weibo')}">微博</a></li>
+                <li><a href="{:url('movie/index')}">电影</a></li>
+                <li><a href="{:url('index/card')}">关于我</a></li>
+            </ul>
+        </div>
+    </div>
+{/block}
+
+{block name="content"}
+    <div class="con-right">
+        <div class="con-nav">
+            <a href="{:url('photo/shan')}"><span class="active">山</span></a>
+            <a href="{:url('photo/ren')}"><span>人</span></a>
+            <a href="{:url('photo/xian')}"><span>仙</span></a>
+            <a href="{:url('photo/view')}"><span>赏</span></a>
+        </div>
+
+        {volist name="$data" id="da"}
+            <div style="padding-bottom:10px;"><img src="{$da.pic_url}"></div>
+            <div>
+                {$da.content}
+            </div>
+            <p style="margin-top:55px;"></p>
+        {/volist}
+
+    </div>
+{/block}
+
+

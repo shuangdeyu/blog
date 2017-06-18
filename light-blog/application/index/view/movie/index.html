@@ -1,0 +1,27 @@
+{extend name="public/base" /}
+
+{block name="style-bootstrap-css"}
+    {load href="__CSS__/bootstrap.min.css" /}
+{/block}
+
+{block name="content"}
+    <div class="con-right">
+        <div class="movie-card row">
+            {volist name="list" id="vo"}
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{$vo.cover}" alt="...">
+                        <div class="caption">
+                            <h3><a href="{:url('movie/content','mid='.$vo.id)}">{$vo.title}</a></h3>
+                        </div>
+                    </div>
+                </div>
+            {/volist}
+        </div>
+    </div>
+{/block}
+
+{block name="style-bootstrap-cjs"}
+    {load href="__JS__/bootstrap.min.js" /}
+{/block}
+
