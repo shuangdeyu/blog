@@ -1,5 +1,5 @@
 # light-personal-blog
-简洁的轻博客型个人网站
+简洁的轻博客型个人网站 V1.0
 
 ### 示例地址
 http://www.shuangdeyu.com/jyj/
