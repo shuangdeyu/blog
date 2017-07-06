@@ -1,0 +1,5 @@
+[ 2017-06-23T05:58:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000367s ]
+
+---------------------------------------------------------------

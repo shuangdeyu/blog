@@ -145,7 +145,7 @@ class Admin extends Controller
     }
 
     /*---------------------------------------------------------------*
-     *--------------------------影评相关-----------------------------*
+     *--------------------------文章相关-----------------------------*
      *---------------------------------------------------------------*/
     const moviePhotoAddr1 = './public/static/images/movie/'; //文件夹的地址形式
     const moviePhotoAddr2 = '__IMG__/movie/'; //写入数据库的地址形式
@@ -153,7 +153,7 @@ class Admin extends Controller
      * 显示影评列表
      */
     public function movie_show(){
-        $movie = Db::name('movie')->order('id desc')->paginate(20);
+        $movie = Db::name('movie')->order('id desc')->paginate(15);
 
         $this->assign('movie',$movie);
         return $this->fetch();
@@ -188,7 +188,8 @@ class Admin extends Controller
         //当前时间，年月日
         $time = date('Y-m-d');
 
-        //图片名称
+        /*上传到本地*/
+        /*//图片名称
         $filename = uniqid();
         //获取图片扩展名
         $exname = strrchr($_FILES['Photo']['name'], '.');
@@ -204,24 +205,28 @@ class Admin extends Controller
             $dir1 = self::moviePhotoAddr1 . $filename . $exname;
             //图片总路径-写入数据库
             $dir2 = self::moviePhotoAddr2 . $filename . $exname;
+        }*/
+
+        /*上传到七牛*/
+        $Upload = new Upload();
+        $pic_url = $Upload->one(request()->file('Photo'));
+
+        if($pic_url) {
+            //先添加进数据库
+            $Movie = Db::name('movie');
+            $data  = array();
+            $data['title']   = $title;
+            $data['content'] = $content;
+            $data['time']    = $time;
+            $data['cover']   = $pic_url;
+            $add = $Movie->insert($data);
         }
-
-        //先添加进数据库
-        $Movie = Db::name('movie');
-
-        $data = array();
-        $data['title'] = $title;
-        $data['content'] = $content;
-        $data['time'] = $time;
-        $data['cover'] = $dir2;
-
-        $add = $Movie->insert($data);
 
         //判断是否添加成功，再将图片传入文件夹
-        if(is_numeric($add) && $exname){
+        /*if(is_numeric($add) && $exname){
             //将缓存中的图片移到正确位置
             $up = move_uploaded_file($_FILES['Photo']['tmp_name'], $dir1);
-        }
+        }*/
 
         echo "<script>parent.window.location.reload();</script>";
     }
@@ -238,9 +243,16 @@ class Admin extends Controller
         $data = Db::name('movie')->where($where)->field('cover')->find();
 
         if($data['cover']) {
-            $dir = substr(strrchr($data['cover'], '/'), 1);
+            /*删除本地图片*/
+            /*$dir = substr(strrchr($data['cover'], '/'), 1);
             $dir = self::moviePhotoAddr1 . $dir;
-            unlink($dir);
+			if(is_file($dir)){
+				unlink($dir);
+			}*/
+
+            /*删除七牛图片*/
+            $Upload = new Upload();
+            $delete = $Upload->delete($data['cover']);
         }
 
         $del = Db::name('movie')->where($where)->delete();
@@ -274,12 +286,16 @@ class Admin extends Controller
         //判断是否有更新封面图片
         if($_FILES['Photo']['error'] == 0){
             //先删除原来的图片
-            $deldir = substr(strrchr($cover, '/'), 1);
+            /*$deldir = substr(strrchr($cover, '/'), 1);
             $deldir = self::moviePhotoAddr1.$deldir;
-            unlink($deldir);
+			if(is_file($deldir)){
+				unlink($deldir);
+			}*/
+            $Upload = new Upload();
+            $delete = $Upload->delete($cover);
 
             //图片名称
-            $filename = uniqid();
+            /*$filename = uniqid();
             //获取图片扩展名
             $exname = strrchr($_FILES['Photo']['name'], '.');
 
@@ -291,24 +307,28 @@ class Admin extends Controller
             //图片总路径-上传文件
             $dir1 = self::moviePhotoAddr1.$filename.$exname;
             //图片总路径-写入数据库
-            $dir2 = self::moviePhotoAddr2.$filename.$exname;
+            $dir2 = self::moviePhotoAddr2.$filename.$exname;*/
 
-            //先更新数据库
-            $Movie = Db::name('movie');
+            /*上传到七牛*/
+            $Upload = new Upload();
+            $pic_url = $Upload->one(request()->file('Photo'));
 
-            $data = array();
-            $data['title'] = $title;
-            $data['content'] = $content;
-            $data['time'] = $time;
-            $data['cover'] = $dir2;
-
-            $up = $Movie->where('id='.$movie_id)->update($data);
+            if($pic_url) {
+                //先更新数据库
+                $Movie = Db::name('movie');
+                $data = array();
+                $data['title']   = $title;
+                $data['content'] = $content;
+                $data['time']    = $time;
+                $data['cover']   = $pic_url;
+                $up = $Movie->where('id=' . $movie_id)->update($data);
+            }
 
             //判断是否更新成功，再将图片传入文件夹
-            if(is_numeric($up)){
+            /*if(is_numeric($up)){
                 //将缓存中的图片移到正确位置
                 move_uploaded_file($_FILES['Photo']['tmp_name'], $dir1);
-            }
+            }*/
         }else{
             //没有更新封面图片
             $Movie = Db::name('movie');
@@ -379,7 +399,7 @@ class Admin extends Controller
 
         //dump($_FILES['Photo']);
         if($type == 0){
-            $file = request()->file('Photo');
+            /*$file = request()->file('Photo');
             $info = $file->rule('uniqid')->move(self::syPhotoAddr1);
             if ($info) {
                 // 获取图片名称
@@ -388,16 +408,21 @@ class Admin extends Controller
                 // 上传失败获取错误信息
                 echo $file->getError();
                 return;
+            }*/
+            /*上传到七牛*/
+            $Upload = new Upload();
+            $addr = $Upload->one(request()->file('Photo'));
+
+            if($addr) {
+                $data_photo['content'] = $content;
+                $data_photo['type'] = $type;
+                $photo_id = Db::name('photo')->insertGetId($data_photo);
+
+                $data_img['pic_url'] = $addr;
+                $data_img['target_id'] = $photo_id;
+                $data_img['target'] = 0;
+                Db::name('images')->insertGetId($data_img);
             }
-
-            $data_photo['content'] = $content;
-            $data_photo['type'] = $type;
-            $photo_id = Db::name('photo')->insertGetId($data_photo);
-
-            $data_img['pic_url'] = $addr;
-            $data_img['target_id'] = $photo_id;
-            $data_img['target'] = 0;
-            Db::name('images')->insertGetId($data_img);
         }else{
             $data_photo['content'] = $content;
             $data_photo['type'] = $type;
@@ -405,19 +430,24 @@ class Admin extends Controller
 
             $files = request()->file('Photo');
             foreach($files as $file){
-                $info = $file->rule('uniqid')->move(self::syPhotoAddr1);
+                /*$info = $file->rule('uniqid')->move(self::syPhotoAddr1);
                 if($info){
                     // 获取图片名称
                     $addr = self::syPhotoAddr2 . $info->getFilename();
                 }else{
                     echo $file->getError();
                     return;
-                }
+                }*/
+                /*上传到七牛*/
+                $Upload = new Upload();
+                $addr = $Upload->one($file);
 
-                $data_img['pic_url'] = $addr;
-                $data_img['target_id'] = $photo_id;
-                $data_img['target'] = 0;
-                Db::name('images')->insertGetId($data_img);
+                if($addr) {
+                    $data_img['pic_url']   = $addr;
+                    $data_img['target_id'] = $photo_id;
+                    $data_img['target']    = 0;
+                    Db::name('images')->insertGetId($data_img);
+                }
             }
         }
         echo "<script>parent.window.location.reload();</script>";
@@ -433,9 +463,11 @@ class Admin extends Controller
 
         $img = Db::name('images')->where('target_id',$pid)->where('target',0)->select();
         foreach($img as $value){
-            $deldir = substr(strrchr($value['pic_url'], '/'), 1);
+            /*$deldir = substr(strrchr($value['pic_url'], '/'), 1);
             $deldir = self::syPhotoAddr1.$deldir;
-            unlink($deldir);
+            unlink($deldir);*/
+            $Upload = new Upload();
+            $Upload->delete($value['pic_url']);
         }
         Db::name('images')->where('target_id',$pid)->where('target',0)->delete();
 
@@ -481,16 +513,18 @@ class Admin extends Controller
             //先删除原来的图片
             $img = Db::name('images')->where('target_id',$id)->where('target',0)->select();
             foreach($img as $value){
-                $deldir = substr(strrchr($value['pic_url'], '/'), 1);
+                /*$deldir = substr(strrchr($value['pic_url'], '/'), 1);
                 $deldir = self::syPhotoAddr1.$deldir;
-                unlink($deldir);
+                unlink($deldir);*/
+                $Upload = new Upload();
+                $Upload->delete($value['pic_url']);
             }
             Db::name('images')->where('target_id',$id)->where('target',0)->delete();
 
             //添加更新图片
             if($type == 0){
                 $file = request()->file('Photo');
-                $info = $file->rule('uniqid')->move(self::syPhotoAddr1);
+                /*$info = $file->rule('uniqid')->move(self::syPhotoAddr1);
                 if ($info) {
                     // 获取图片名称
                     $addr = self::syPhotoAddr2 . $info->getFilename();
@@ -498,28 +532,36 @@ class Admin extends Controller
                     // 上传失败获取错误信息
                     echo $file->getError();
                     return;
-                }
+                }*/
+                $Upload = new Upload();
+                $addr = $Upload->one($file);
 
-                $data_img['pic_url'] = $addr;
-                $data_img['target_id'] = $id;
-                $data_img['target'] = 0;
-                Db::name('images')->insertGetId($data_img);
+                if($addr) {
+                    $data_img['pic_url']   = $addr;
+                    $data_img['target_id'] = $id;
+                    $data_img['target']    = 0;
+                    Db::name('images')->insertGetId($data_img);
+                }
             }else{
                 $files = request()->file('Photo');
                 foreach($files as $file){
-                    $info = $file->rule('uniqid')->move(self::syPhotoAddr1);
+                    /*$info = $file->rule('uniqid')->move(self::syPhotoAddr1);
                     if($info){
                         // 获取图片名称
                         $addr = self::syPhotoAddr2 . $info->getFilename();
                     }else{
                         echo $file->getError();
                         return;
-                    }
+                    }*/
+                    $Upload = new Upload();
+                    $addr = $Upload->one($file);
 
-                    $data_img['pic_url'] = $addr;
-                    $data_img['target_id'] = $id;
-                    $data_img['target'] = 0;
-                    Db::name('images')->insertGetId($data_img);
+                    if($addr) {
+                        $data_img['pic_url']   = $addr;
+                        $data_img['target_id'] = $id;
+                        $data_img['target']    = 0;
+                        Db::name('images')->insertGetId($data_img);
+                    }
                 }
             }
         }
@@ -555,19 +597,23 @@ class Admin extends Controller
     public function images_save(){
         $files = request()->file('Photo');
         foreach($files as $file){
-            $info = $file->rule('uniqid')->move(self::xcPhotoAddr1);
+            /*$info = $file->rule('uniqid')->move(self::xcPhotoAddr1);
             if($info){
                 // 获取图片名称
                 $addr = self::xcPhotoAddr2 . $info->getFilename();
             }else{
                 echo $file->getError();
                 return;
-            }
+            }*/
+            $Upload = new Upload();
+            $addr = $Upload->one($file);
 
-            $data_img['pic_url'] = $addr;
-            $data_img['target_id'] = 0;
-            $data_img['target'] = 1;
-            Db::name('images')->insertGetId($data_img);
+            if($addr) {
+                $data_img['pic_url']   = $addr;
+                $data_img['target_id'] = 0;
+                $data_img['target']    = 1;
+                Db::name('images')->insertGetId($data_img);
+            }
         }
         echo "<script>parent.window.location.reload();</script>";
     }
@@ -577,13 +623,15 @@ class Admin extends Controller
      */
     public function images_del(){
         $imgId = input('post.delImg/a');
+        dump($imgId);
         foreach($imgId as $value){
             $img = Db::name('images')->where('id',$value)->find();
-            dump($img);
 
-            $deldir = substr(strrchr($img['pic_url'], '/'), 1);
+            /*$deldir = substr(strrchr($img['pic_url'], '/'), 1);
             $deldir = self::xcPhotoAddr1.$deldir;
-            unlink($deldir);
+            unlink($deldir);*/
+            $Upload = new Upload();
+            $Upload->delete($img['pic_url']);
 
             Db::name('images')->where('id',$value)->delete();
         }

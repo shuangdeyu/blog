@@ -1,0 +1,373 @@
+[ 2017-05-13T09:31:13+08:00 ] 172.19.111.44 42.236.99.86 GET /jyj/index.html
+[ log ] www.shuangdeyu.com/jyj/index.html [运行时间：0.002861s][吞吐率：349.53req/s] [内存消耗：441.13kb] [文件加载：47]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'accept-encoding' => 'deflate, gzip',
+  'referer' => 'http://www.shuangdeyu.com/jyj/index.html',
+  'cookie' => '',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:31:57+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/
+[ log ] www.shuangdeyu.com/jyj/ [运行时间：0.002816s][吞吐率：355.12req/s] [内存消耗：437.26kb] [文件加载：47]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://shuangdeyu.oschina.io/2017/05/13/%E5%8F%B2%E4%B8%8A%E6%9C%80%E7%97%9E%E4%BA%9A%E7%91%9F%E7%8E%8B/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494144344',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:32:02+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/movie/index.html
+[ log ] www.shuangdeyu.com/jyj/movie/index.html [运行时间：0.005124s][吞吐率：195.17req/s] [内存消耗：805.95kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Movie->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/movie/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` ORDER BY id desc [ RunTime:0.000422s ]
+
+---------------------------------------------------------------
+[ 2017-05-13T18:42:06+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/
+[ log ] www.shuangdeyu.com/jyj/ [运行时间：0.003023s][吞吐率：330.81req/s] [内存消耗：437.05kb] [文件加载：47]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:42:08+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/movie/index.html
+[ log ] www.shuangdeyu.com/jyj/movie/index.html [运行时间：0.004991s][吞吐率：200.37req/s] [内存消耗：828.66kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Movie->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/movie/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` ORDER BY id desc [ RunTime:0.000432s ]
+
+---------------------------------------------------------------
+[ 2017-05-13T18:42:18+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/movie/content.html?mid=9
+[ log ] www.shuangdeyu.com/jyj/movie/content.html?mid=9 [运行时间：0.005592s][吞吐率：178.82req/s] [内存消耗：636.59kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/movie/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '9',
+)
+[ info ] [ RUN ] app\index\controller\Movie->content[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/movie/content.html [ array (
+  0 => 'con',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000338s ]
+
+---------------------------------------------------------------
+[ 2017-05-13T18:42:52+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/movie/content.html?mid=9
+[ log ] www.shuangdeyu.com/jyj/movie/content.html?mid=9 [运行时间：0.005149s][吞吐率：194.22req/s] [内存消耗：635.71kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/movie/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517; jiathis_rdc=%7B%22http%3A//www.shuangdeyu.com/jyj/movie/content.html%3Fmid%3D9%22%3A%220%7C1494672543659%22%7D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '9',
+)
+[ info ] [ RUN ] app\index\controller\Movie->content[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/movie/content.html [ array (
+  0 => 'con',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000206s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000306s ]
+
+---------------------------------------------------------------
+[ 2017-05-13T18:42:58+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/movie/content.html?mid=8
+[ log ] www.shuangdeyu.com/jyj/movie/content.html?mid=8 [运行时间：0.004588s][吞吐率：217.97req/s] [内存消耗：623.86kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/movie/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517; jiathis_rdc=%7B%22http%3A//www.shuangdeyu.com/jyj/movie/content.html%3Fmid%3D9%22%3A%220%7C1494672543659%22%7D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Movie->content[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/movie/content.html [ array (
+  0 => 'con',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000195s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2017-05-13T18:43:05+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/movie/content.html?mid=9
+[ log ] www.shuangdeyu.com/jyj/movie/content.html?mid=9 [运行时间：0.004635s][吞吐率：215.75req/s] [内存消耗：635.55kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'movie',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/movie/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517; jiathis_rdc=%7B%22http%3A//www.shuangdeyu.com/jyj/movie/content.html%3Fmid%3D9%22%3A0%7C1494672543659%2C%22http%3A//www.shuangdeyu.com/jyj/movie/content.html%3Fmid%3D8%22%3A%220%7C1494672583928%22%7D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'mid' => '9',
+)
+[ info ] [ RUN ] app\index\controller\Movie->content[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Movie.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/movie/content.html [ array (
+  0 => 'con',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_movie` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_movie` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000166s ]
+
+---------------------------------------------------------------
+[ 2017-05-13T18:43:11+08:00 ] 172.19.111.44 183.159.55.158 GET /jyj/index/index.html
+[ log ] www.shuangdeyu.com/jyj/index/index.html [运行时间：0.002928s][吞吐率：341.56req/s] [内存消耗：442.52kb] [文件加载：47]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://www.shuangdeyu.com/jyj/movie/content.html?mid=9',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'CNZZDATA1259231503=1237109357-1486356267-%7C1486356267; Hm_lvt_82011febce1b15bc2326b4c2be7056ae=1486360912; UM_distinctid=15be163bb01108-002d723c308329-414a0229-100200-15be163bb0311; CNZZDATA1261352376=782840940-1494134279-%7C1494671517; jiathis_rdc=%7B%22http%3A//www.shuangdeyu.com/jyj/movie/content.html%3Fmid%3D8%22%3A0%7C1494672583928%2C%22http%3A//www.shuangdeyu.com/jyj/movie/content.html%3Fmid%3D9%22%3A%220%7C1494672590044%22%7D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

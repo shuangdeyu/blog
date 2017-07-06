@@ -14,8 +14,10 @@
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/application/');
 // 定义静态资源目录 或 URL
-define('STATIC_PATH', '/light-blog/public/static/');
+define('STATIC_PATH', '/jyj/public/static/');
 //绑定默认模块,去开启auto_bind_module
 define('BIND_MODULE','index');
+//七牛自动加载文件
+require __DIR__ . '/vendor/qiniusdk/autoload.php';
 // 加载框架引导文件
 require __DIR__ . '/thinkphp/start.php';

@@ -1,0 +1,91 @@
+[ 2017-05-17T03:36:07+08:00 ] 172.19.111.44 37.9.113.48 GET /jyj/style1-zuopin-shan.html
+[ log ] www.shuangdeyu.com/jyj/style1-zuopin-shan.html [运行时间：0.003563s][吞吐率：280.67req/s] [内存消耗：391.23kb] [文件加载：41]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'style1-zuopin-shan',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)',
+  'from' => 'support@search.yandex.ru',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-17T13:42:35+08:00 ] 172.19.111.44 180.153.236.67 GET /jyj/style1-me.html
+[ log ] www.shuangdeyu.com/jyj/style1-me.html [运行时间：0.003659s][吞吐率：273.30req/s] [内存消耗：391.73kb] [文件加载：41]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'style1-me',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'accept-encoding' => 'deflate, gzip',
+  'referer' => 'http://www.shuangdeyu.com/jyj/style1-me.html',
+  'cookie' => '',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-17T13:42:36+08:00 ] 172.19.111.44 180.153.236.101 GET /jyj/index/index.html
+[ log ] www.shuangdeyu.com/jyj/index/index.html [运行时间：0.002784s][吞吐率：359.19req/s] [内存消耗：441.21kb] [文件加载：47]
+[ info ] [ LANG ] /data/wwwroot/www.shuangdeyu.com/jyj/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.shuangdeyu.com',
+  'accept-encoding' => 'deflate, gzip',
+  'referer' => 'http://www.shuangdeyu.com/jyj/index/index.html',
+  'cookie' => '',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/www.shuangdeyu.com/jyj/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/www.shuangdeyu.com/jyj/application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

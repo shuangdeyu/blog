@@ -1,0 +1,5 @@
+[ 2017-06-24T19:27:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:dbname=mycard;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_weibo` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_weibo` ORDER BY id desc [ RunTime:0.000137s ]
+
+---------------------------------------------------------------
