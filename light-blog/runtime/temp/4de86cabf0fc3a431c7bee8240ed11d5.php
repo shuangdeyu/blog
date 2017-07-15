@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"D:\wamp\www\jyj/application/index\view\movie\index.html";i:1494064102;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1499046331;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"D:\wamp\www\jyj/application/index\view\movie\index.html";i:1500112150;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1500100076;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,13 +10,31 @@
     <meta name="keywords" content="个人主页 蒋小凡" />
     <title>Jiang XiaoFan</title>
 
-    
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
     
-    <link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />-->
+    <style type="text/css">
+        .thumbnail{
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            margin-bottom: 25px;
+            width: 85%;
+        }
+        .thumbnail .caption{
+            text-align: center;
+            font-size: 1.1em;
+            color: #8b8b8b;
+            padding: 15px 0;
+        }
+    </style>
 
 
     <link rel="stylesheet" type="text/css" href="__CSS__/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="__CSS__/newstyle.css" />
 
     <script type="text/javascript">
         //判断客户端是PC还是移动端
@@ -60,16 +78,19 @@
     <div class="con-right">
         <div class="movie-card row">
             <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                <div class="col-md-4">
+                <div class="col-md-4 col-movie">
                     <div class="thumbnail">
-                        <img src="<?php echo $vo['cover']; ?>" alt="...">
-                        <div class="caption">
-                            <h3><a href="<?php echo url('movie/content','mid='.$vo['id']); ?>"><?php echo $vo['title']; ?></a></h3>
-                        </div>
+                        <a href="<?php echo url('movie/content','mid='.$vo['id']); ?>">
+                            <img class="lazy" data-original="<?php echo $vo['cover']; ?>" alt="...">
+                            <div class="caption">
+                                <span><?php echo $vo['title']; ?></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             <?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
+        <?php echo $list->render(); ?>
     </div>
 
 
@@ -78,6 +99,7 @@
 
 <script type="text/javascript" src="__JS__/jquery-2.0.0.min.js"></script>
 
+<script type="text/javascript" src="__JS__/lazy-load.js"></script><!-- 懒加载 -->
 <script>
     $(document).ready(function(){
         $("span a").click(function(){
@@ -85,6 +107,12 @@
             $(this).parent().prevAll("ul").slideUp("slow");
             $(this).parent().next().nextAll("ul").slideUp("slow");
             return false;
+        });
+    });
+
+    $(function() {
+        $("img.lazy").lazyload({
+            effect : "fadeIn"
         });
     });
 </script>

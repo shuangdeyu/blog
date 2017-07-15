@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:60:"D:\wamp\www\jyj/application/index\view\admin\show_weibo.html";i:1499046798;s:56:"D:\wamp\www\jyj/application/index\view\public\admin.html";i:1499046364;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:60:"D:\wamp\www\jyj/application/index\view\admin\show_weibo.html";i:1499046798;s:56:"D:\wamp\www\jyj/application/index\view\public\admin.html";i:1500083696;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="Bookmark" href="favicon.ico" >
-    <link rel="Shortcut Icon" href="favicon.ico" />
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
     
         <link rel="stylesheet" type="text/css" href="__HUI__/h-ui/css/H-ui.min.css" />

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"D:\wamp\www\jyj/application/index\view\photo\net.html";i:1495724314;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1495723985;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"D:\wamp\www\jyj/application/index\view\photo\net.html";i:1500111488;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1500100076;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,11 +10,14 @@
     <meta name="keywords" content="个人主页 蒋小凡" />
     <title>Jiang XiaoFan</title>
 
-    
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
     
 
     <link rel="stylesheet" type="text/css" href="__CSS__/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="__CSS__/newstyle.css" />
 
     <script type="text/javascript">
         //判断客户端是PC还是移动端
@@ -46,7 +49,7 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo url('index/weibo'); ?>">微博</a></li>
-                <li><a href="<?php echo url('movie/index'); ?>">电影</a></li>
+                <li><a href="<?php echo url('movie/index'); ?>">文章</a></li>
                 <li><a href="<?php echo url('index/card'); ?>">关于我</a></li>
             </ul>
         </div>
@@ -62,6 +65,15 @@
                 <div class="abs" id="blog">
                     <h2>个人博客</h2>
                     <p>装逼又好用的hexo静态博客</p>
+                </div>
+            </a>
+        </div>
+        <div class="net" id="net2">
+            <a href="https://github.com/shuangdeyu/chatfree" target="_blank">
+                <img src="__IMG__/net/chatfree.png">
+                <div class="abs" id="chat">
+                    <h2>简易即时聊天室</h2>
+                    <p>基于workman的简易即时聊天室</p>
                 </div>
             </a>
         </div>
@@ -84,12 +96,16 @@
         });
 
         $("#net1").mouseenter(function(){
-            //$("#yu").css("display","block");
             $("#blog").fadeIn(300);
         });
         $("#net1").mouseleave(function(){
-            //$("#yu").css("display","none");
             $("#blog").fadeOut(300);
+        });
+        $("#net2").mouseenter(function(){
+            $("#chat").fadeIn(300);
+        });
+        $("#net2").mouseleave(function(){
+            $("#chat").fadeOut(300);
         });
     </script>
 

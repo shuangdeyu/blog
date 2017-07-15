@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"D:\wamp\www\jyj/application/index\view\index\index.html";i:1497796285;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1499046331;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"D:\wamp\www\jyj/application/index\view\index\index.html";i:1500085473;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1500100076;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,11 +10,14 @@
     <meta name="keywords" content="个人主页 蒋小凡" />
     <title>Jiang XiaoFan</title>
 
-    
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
     
 
     <link rel="stylesheet" type="text/css" href="__CSS__/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="__CSS__/newstyle.css" />
 
     <script type="text/javascript">
         //判断客户端是PC还是移动端
@@ -63,7 +66,7 @@
         </div>
 
         <div class="foot">
-            ©JIANG XIAOFAN 2016
+            ©JIANG XIAOFAN 2016 浙ICP备16012498号
           
         </div>
     </div>

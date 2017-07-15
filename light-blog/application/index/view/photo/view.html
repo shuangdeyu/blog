@@ -35,7 +35,7 @@
         {volist name="$img" id="vo"}
             <div class="small_pic">
                 <a href="#{$vo.id}">
-                    <img src="{$vo.pic_url}" />
+                    <img class="lazy" data-original="{$vo.pic_url}" />
                 </a>
             </div>
         {/volist}
@@ -51,6 +51,7 @@
 
 {block name="js-code"}
     {load href="__JS__/content_zoom.js" /}<!-- 点击显示大图 -->
+    {load href="__JS__/lazy-load.js" /}<!-- 懒加载 -->
     <script>
         $(document).ready(function(){
             $("span a").click(function(){
@@ -63,6 +64,12 @@
 
         $(document).ready(function() {
             $('div.small_pic a').fancyZoom({scaleImg: true, closeOnClick: true});
+        });
+
+        $(function() {
+            $("img.lazy").lazyload({
+                effect : "fadeIn"
+            });
         });
     </script>
 {/block}

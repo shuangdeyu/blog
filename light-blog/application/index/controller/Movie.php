@@ -18,7 +18,7 @@ use think\Session;
 class Movie extends Controller
 {
     public function index(){
-        $data = Db::name('movie')->order('id desc')->select();
+        $data = Db::name('movie')->order('id desc')->paginate(5);
 
         $this->assign('list', $data);
         return $this->fetch();

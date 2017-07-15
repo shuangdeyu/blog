@@ -34,6 +34,15 @@
                 </div>
             </a>
         </div>
+        <div class="net" id="net2">
+            <a href="https://github.com/shuangdeyu/chatfree" target="_blank">
+                <img src="__IMG__/net/chatfree.png">
+                <div class="abs" id="chat">
+                    <h2>简易即时聊天室</h2>
+                    <p>基于workman的简易即时聊天室</p>
+                </div>
+            </a>
+        </div>
     </div>
 {/block}
 
@@ -49,12 +58,16 @@
         });
 
         $("#net1").mouseenter(function(){
-            //$("#yu").css("display","block");
             $("#blog").fadeIn(300);
         });
         $("#net1").mouseleave(function(){
-            //$("#yu").css("display","none");
             $("#blog").fadeOut(300);
+        });
+        $("#net2").mouseenter(function(){
+            $("#chat").fadeIn(300);
+        });
+        $("#net2").mouseleave(function(){
+            $("#chat").fadeOut(300);
         });
     </script>
 {/block}

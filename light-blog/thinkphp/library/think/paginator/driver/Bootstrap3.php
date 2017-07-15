@@ -16,9 +16,6 @@ use think\Paginator;
 class Bootstrap3 extends Paginator
 {
 
-    public $rollPage=5;//分页栏每页显示的页数
-    
-    public $showPage=12;//总页数超过多少条时显示的首页末页
     /**
      * 上一页按钮
      * @param string $text
@@ -53,41 +50,7 @@ class Bootstrap3 extends Paginator
 
         return $this->getPageLinkWrapper($url, $text);
     }
-    
-    /**
-     * 首页按钮
-     * @param string $text
-     * @return string
-     */
-    protected function getFirstButton($text = '首页')
-    {
-        if($this->lastPage > $this->showPage){
-            if ($this->currentPage==1) {
-                return $this->getDisabledTextWrapper($text);
-            }
-            $url = $this->url(1);
-    
-            return $this->getPageLinkWrapper($url, $text);
-        }
-    }
-    
-    /**
-     * 末页按钮
-     * @param string $text
-     * @return string
-     */
-    protected function getLastButton($text = '末页')
-    {
-        if($this->lastPage > $this->showPage){
-            if ($this->currentPage==$this->lastPage) {
-                return $this->getDisabledTextWrapper($text);
-            }
-            $url = $this->url($this->lastPage);
-        
-            return $this->getPageLinkWrapper($url, $text);
-        }
-    }
-    
+
     /**
      * 页码按钮
      * @return string
@@ -103,18 +66,23 @@ class Bootstrap3 extends Paginator
             'last'   => null
         ];
 
-        $rollPage = $this->rollPage;//分页栏每页显示的页数
-        $nowPage = floor($rollPage/2);//计算分页临时变量
-        
-        if($this->lastPage <= $rollPage){
+        $side   = 3;
+        $window = $side * 2;
+
+        if ($this->lastPage < $window + 6) {
             $block['first'] = $this->getUrlRange(1, $this->lastPage);
-        }else if($this->currentPage <= $nowPage){
-            $block['first'] = $this->getUrlRange(1, $rollPage);
-        }else if($this->currentPage >= ($this->lastPage - $nowPage)){
-            $block['first'] = $this->getUrlRange($this->lastPage - $rollPage+1, $this->lastPage);
-        }else{
-            $block['first'] = $this->getUrlRange($this->currentPage - $nowPage, $this->currentPage + $nowPage);
+        } elseif ($this->currentPage <= $window) {
+            $block['first'] = $this->getUrlRange(1, $window + 2);
+            $block['last']  = $this->getUrlRange($this->lastPage - 1, $this->lastPage);
+        } elseif ($this->currentPage > ($this->lastPage - $window)) {
+            $block['first'] = $this->getUrlRange(1, 2);
+            $block['last']  = $this->getUrlRange($this->lastPage - ($window + 2), $this->lastPage);
+        } else {
+            $block['first']  = $this->getUrlRange(1, 2);
+            $block['slider'] = $this->getUrlRange($this->currentPage - $side, $this->currentPage + $side);
+            $block['last']   = $this->getUrlRange($this->lastPage - 1, $this->lastPage);
         }
+
         $html = '';
 
         if (is_array($block['first'])) {
@@ -143,18 +111,16 @@ class Bootstrap3 extends Paginator
         if ($this->hasPages()) {
             if ($this->simple) {
                 return sprintf(
-                    '<div class="dataTables_paginate paging_simple_numbers"><ul class="pager">%s %s</ul></div>',
+                    '<ul class="pager">%s %s</ul>',
                     $this->getPreviousButton(),
                     $this->getNextButton()
                 );
             } else {
                 return sprintf(
-                    '<div class="dataTables_paginate paging_simple_numbers"><ul class="pagination">%s %s %s %s %s</ul></div>',
-                    $this->getFirstButton(),
+                    '<ul class="pagination">%s %s %s</ul>',
                     $this->getPreviousButton(),
                     $this->getLinks(),
-                    $this->getNextButton(),
-                    $this->getLastButton()
+                    $this->getNextButton()
                 );
             }
         }

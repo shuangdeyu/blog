@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"D:\wamp\www\jyj/application/index\view\photo\view.html";i:1499046410;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1499046331;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"D:\wamp\www\jyj/application/index\view\photo\view.html";i:1500101561;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1500100076;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,11 +10,14 @@
     <meta name="keywords" content="个人主页 蒋小凡" />
     <title>Jiang XiaoFan</title>
 
-    
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
     
 
     <link rel="stylesheet" type="text/css" href="__CSS__/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="__CSS__/newstyle.css" />
 
     <script type="text/javascript">
         //判断客户端是PC还是移动端
@@ -66,7 +69,7 @@
         <?php if(is_array($img) || $img instanceof \think\Collection || $img instanceof \think\Paginator): $i = 0; $__LIST__ = $img;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
             <div class="small_pic">
                 <a href="#<?php echo $vo['id']; ?>">
-                    <img src="<?php echo $vo['pic_url']; ?>" />
+                    <img class="lazy" data-original="<?php echo $vo['pic_url']; ?>" />
                 </a>
             </div>
         <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -86,6 +89,7 @@
 <script type="text/javascript" src="__JS__/jquery-2.0.0.min.js"></script>
 
     <script type="text/javascript" src="__JS__/content_zoom.js"></script><!-- 点击显示大图 -->
+    <script type="text/javascript" src="__JS__/lazy-load.js"></script><!-- 懒加载 -->
     <script>
         $(document).ready(function(){
             $("span a").click(function(){
@@ -98,6 +102,12 @@
 
         $(document).ready(function() {
             $('div.small_pic a').fancyZoom({scaleImg: true, closeOnClick: true});
+        });
+
+        $(function() {
+            $("img.lazy").lazyload({
+                effect : "fadeIn"
+            });
         });
     </script>
 

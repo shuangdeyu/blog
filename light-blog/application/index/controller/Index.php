@@ -27,7 +27,7 @@ class Index extends Controller
 
     //微博页
     public function weibo(){
-        $data = Db::name('weibo')->order('id desc')->select();
+        $data = Db::name('weibo')->order('id desc')->paginate(15);
 
         $this->assign('list', $data);
         return $this->fetch();

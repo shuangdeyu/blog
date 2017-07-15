@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"D:\wamp\www\jyj/application/index\view\index\card.html";i:1496238403;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1495723985;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"D:\wamp\www\jyj/application/index\view\index\card.html";i:1499046462;s:55:"D:\wamp\www\jyj/application/index\view\public\base.html";i:1500100076;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,11 +10,14 @@
     <meta name="keywords" content="个人主页 蒋小凡" />
     <title>Jiang XiaoFan</title>
 
-    
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
     
 
     <link rel="stylesheet" type="text/css" href="__CSS__/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="__CSS__/newstyle.css" />
 
     <script type="text/javascript">
         //判断客户端是PC还是移动端
@@ -46,7 +49,7 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo url('index/weibo'); ?>">微博</a></li>
-                <li><a href="<?php echo url('movie/index'); ?>">电影</a></li>
+                <li><a href="<?php echo url('movie/index'); ?>">文章</a></li>
                 <li><a href="<?php echo url('index/card'); ?>">关于我</a></li>
             </ul>
         </div>
@@ -78,6 +81,7 @@
                 <li>weixin：749212498</li>
                 <li>email：<a href="mailto:tianxianyuyu@sina.cn" target="_blank">tianxianyuyu@sina.cn</a></li>
                 <li>個人博客：<a href="http://shuangdeyu.oschina.io/" target="_blank">XiaoFan's Blog</a></li>
+				<li>GitHub：<a href="https://github.com/shuangdeyu" target="_blank">shuangdeyu</a></li>
             </ul>
         </div>
     </div>

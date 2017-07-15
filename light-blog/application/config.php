@@ -235,5 +235,6 @@ return [
         'type'      => 'bootstrap3',
         'var_page'  => 'page',
         'list_rows' => 15,
+        'newstyle' => true,
     ],
 ];
