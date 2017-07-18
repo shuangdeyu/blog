@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-07-06 09:46:06
+-- Generation Time: 2017-07-18 04:35:07
 -- 服务器版本： 5.6.17
--- PHP Version: 5.5.12
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `tp_admin` (
 --
 
 INSERT INTO `tp_admin` (`id`, `user`, `password`) VALUES
-(1, 'xiaofan', 'd7624cf8d52f63739700a60f213b32e0');
+(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `tp_images` (
   `target_id` int(11) DEFAULT '0',
   `target` tinyint(3) DEFAULT '0' COMMENT '0摄影,1相册',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=75 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=74 ;
 
 --
 -- 转存表中的数据 `tp_images`
@@ -76,8 +76,7 @@ INSERT INTO `tp_images` (`id`, `pic_url`, `target_id`, `target`) VALUES
 (70, 'http://on7plg7jx.bkt.clouddn.com/blogff752201707061520387663.jpg', 0, 1),
 (71, 'http://on7plg7jx.bkt.clouddn.com/blog709ee201707061520399219.jpg', 0, 1),
 (72, 'http://on7plg7jx.bkt.clouddn.com/bloge35ed201707061520393119.jpg', 0, 1),
-(73, 'http://on7plg7jx.bkt.clouddn.com/blog1fffc201707061520417979.jpg', 0, 1),
-(74, 'http://on7plg7jx.bkt.clouddn.com/blog2ea9920170706152043679.jpg', 0, 1);
+(73, 'http://on7plg7jx.bkt.clouddn.com/blog1fffc201707061520417979.jpg', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -92,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `tp_movie` (
   `content` text NOT NULL,
   `time` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- 转存表中的数据 `tp_movie`
@@ -123,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `tp_photo` (
   `content` text NOT NULL,
   `type` tinyint(3) DEFAULT '0' COMMENT '0山,1人,2仙',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- 转存表中的数据 `tp_photo`
