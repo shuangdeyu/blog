@@ -2,7 +2,7 @@
 简洁的轻博客型个人网站 V3.0
 
 ### 示例地址
-http://www.shuangdeyu.com/jyj/
+http://xf.shuangdeyu.com/
 
 
 网站采用thinkphp5开发，前端使用框架H-ui，适合初学者学习thinkphp5使用
