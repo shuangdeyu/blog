@@ -1,0 +1,68 @@
+﻿{extend name="public/base" /}
+
+{block name="style-bootstrap-css"}
+    <!--{load href="__CSS__/bootstrap.min.css" /}-->
+    <style type="text/css">
+        .thumbnail{
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            margin-bottom: 25px;
+            width: 85%;
+        }
+        .thumbnail .caption{
+            text-align: center;
+            font-size: 1.1em;
+            color: #8b8b8b;
+            padding: 15px 0;
+        }
+	.thumbnail:hover{
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+{/block}
+
+{block name="content"}
+    <div class="con-right">
+        <div class="movie-card row">
+            {volist name="list" id="vo"}
+                <div class="col-md-4 col-movie">
+                    <div class="thumbnail">
+                        <a href="{:url('movie/content','mid='.$vo.id)}">
+                            <img class="lazy" data-original="{$vo.cover}" alt="...">
+                            <div class="caption">
+                                <span>{$vo.title}</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {/volist}
+        </div>
+        {$list->render()}
+    </div>
+{/block}
+
+{block name="style-bootstrap-cjs"}
+    <!--{load href="__JS__/bootstrap.min.js" /}-->
+{/block}
+
+{block name="js-code"}
+{load href="__JS__/lazy-load.js" /}<!-- 懒加载 -->
+<script>
+    $(document).ready(function(){
+        $("span a").click(function(){
+            $(this).parent().next().slideToggle();
+            $(this).parent().prevAll("ul").slideUp("slow");
+            $(this).parent().next().nextAll("ul").slideUp("slow");
+            return false;
+        });
+    });
+
+    $(function() {
+        $("img.lazy").lazyload({
+            effect : "fadeIn"
+        });
+    });
+</script>
+{/block}
+

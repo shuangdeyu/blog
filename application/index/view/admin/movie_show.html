@@ -1,0 +1,153 @@
+﻿{extend name="public/admin" /}
+
+{block name="menu"}
+<aside class="Hui-aside">
+
+    <div class="menu_dropdown bk_2">
+        <dl id="menu-weibo">
+            <dt><i class="Hui-iconfont">&#xe616;</i> 微博<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd >
+                <ul>
+                    <li ><a href="{:url('index/admin/show_weibo')}" title="微博">微博</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl id="menu-mivie">
+            <dt><i class="Hui-iconfont">&#xe613;</i> 文章<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd style="display: block">
+                <ul>
+                    <li class="current"><a href="{:url('index/admin/movie_show')}" title="影评">文章</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl id="menu-photo">
+            <dt><i class="Hui-iconfont">&#xe620;</i> 摄影<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd>
+                <ul>
+                    <li><a href="{:url('index/admin/photo_show')}" title="图文">图文</a></li>
+                    <li><a href="{:url('index/admin/images_show')}" title="相册">相册</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+{/block}
+
+{block name="content"}
+<section class="Hui-article-box">
+    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+        <span class="c-gray en">&gt;</span>
+        影评管理
+        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+    </nav>
+    <div class="Hui-article">
+        <article class="cl pd-20">
+            <div class="cl pd-5 bg-1 bk-gray mt-20">
+				<span class="l">
+				<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+				<a class="btn btn-primary radius" data-title="添加影评" onclick="movie_add('添加影评','movie_add.html?m=0','10001')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加影评</a>
+                <a class="btn btn-primary radius" data-title="添加markdown" onclick="movie_add('添加markdown','movie_add.html?m=1','10001')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加markdown</a>
+				</span>
+                <span class="r">共有数据：<strong></strong> 条</span>
+            </div>
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                    <tr class="text-c">
+                        <th width="40"><input name="" type="checkbox" value=""></th>
+                        <th width="60">id</th>
+                        <th width="120">标题</th>
+                        <th>内容</th>
+                        <th width="100">时间</th>
+                        <th width="100">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {volist name="$movie" id="vo"}
+                        <tr class="text-c va-m">
+                            <td><input name="" type="checkbox" value=""></td>
+                            <td>{$vo.id}</td>
+                            <td class="text-c">
+                                <a onClick="movie_show('{$vo.title}','movie_info?id={$vo.id}',900,700)" href="javascript:void(0);">{$vo.title}</a>
+                            </td>
+                            <td class="text-l">
+                                <div class="article-list-abstract">{$vo.content}</div>
+                            </td>
+                            <td>
+                                {$vo.time}
+                            </td>
+                            <td class="td-manage">
+                                <a style="text-decoration:none" class="ml-5" onClick="movie_edit('编辑影评','movie_edit.html?id={$vo.id}&is_m={$vo.is_markdown}','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+                                <a style="text-decoration:none" class="ml-5" onClick="movie_del(this,'10001','movie_del','{$vo.id}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                            </td>
+                        </tr>
+                    {/volist}
+                    </tbody>
+                </table>
+                {$movie->render()}
+            </div>
+        </article>
+    </div>
+</section>
+{/block}
+
+{block name="js_code"}
+<script type="text/javascript">
+    /*添加*/
+    function movie_add(title,url,id,w,h){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+
+    /*编辑*/
+    function movie_edit(title,url,id,w,h){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+
+    /*详细*/
+    function movie_show(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+
+    /*删除*/
+    function movie_del(obj,id,url,mid){
+        layer.confirm('确认要删除吗？',function(index){
+            $.ajax({
+                type: 'POST',
+                url: url,
+                dataType: 'json',
+                data: {mid:mid},
+                success: function(data){
+                    $(obj).parents("tr").remove();
+                    layer.msg('已删除!',{icon:1,time:1000});
+                },
+                error:function(data) {
+                    console.log(data.msg);
+                },
+            });
+        });
+    }
+</script>
+{/block}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+{extend name="public/base" /}
+
+{block name="sidebar"}
+    <div class="con-left">
+        <div class="head">
+            <a href="{:url('index/index')}"><img src="__IMG__/head.jpg" title="蒋小凡"></a>
+        </div>
+        <div class="name"><a href="{:url('index/card')}"><strong>JIANG XIAOFAN</strong></a></div>
+        <div class="about">
+            <ul>
+                <li>
+                    <span><a href="javascript:" >作品集</a></span>
+                    <ul class="zuopin-type" style="display:block">
+                        <li><a href="{:url('photo/shan')}">摄影</a></li>
+                        <li><a href="{:url('photo/net')}">网站</a></li>
+                    </ul>
+                </li>
+                <li><a href="{:url('index/weibo')}">微博</a></li>
+                <li><a href="{:url('movie/index')}">文章</a></li>
+                <li><a href="{:url('index/card')}">关于我</a></li>
+            </ul>
+        </div>
+    </div>
+{/block}
+
+{block name="content"}
+    <div class="con-right">
+        <div class="con-nav">
+            <a href="{:url('photo/shan')}"><span>山</span></a>
+            <a href="{:url('photo/ren')}"><span>人</span></a>
+            <a href="{:url('photo/xian')}"><span>仙</span></a>
+            <a href="{:url('photo/view')}"><span class="active">赏</span></a>
+        </div>
+
+        {volist name="$img" id="vo"}
+            <div class="small_pic">
+                <a href="#{$vo.id}">
+                    <img class="lazy" data-original="{$vo.pic_url}" />
+                </a>
+            </div>
+        {/volist}
+
+    </div>
+
+    <!-- 要放大显示的div -->
+    {volist name="$img" id="vo"}
+        <div id="{$vo.id}" style="display:none;"><img src="{$vo.pic_url}" /></div>
+    {/volist}
+
+{/block}
+
+{block name="js-code"}
+    {load href="__JS__/content_zoom.js" /}<!-- 点击显示大图 -->
+    {load href="__JS__/lazy-load.js" /}<!-- 懒加载 -->
+    <script>
+        $(document).ready(function(){
+            $("span a").click(function(){
+                $(this).parent().next().slideToggle();
+                $(this).parent().prevAll("ul").slideUp("slow");
+                $(this).parent().next().nextAll("ul").slideUp("slow");
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('div.small_pic a').fancyZoom({scaleImg: true, closeOnClick: true});
+        });
+
+        $(function() {
+            $("img.lazy").lazyload({
+                effect : "fadeIn"
+            });
+        });
+    </script>
+{/block}
+

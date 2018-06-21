@@ -1,0 +1,68 @@
+﻿{extend name="public/base" /}
+
+<!-- 内容 -->
+{block name="content"}
+    <div class="con-right">
+        <div style="margin-bottom:10px;"><img src="__IMG__/index.jpg"></div>
+
+        <div style="margin-bottom: 15px;">
+            <div id="aplayer1" class="aplayer"></div>
+        </div>
+
+        <div>
+            <p>想起那天夕陽下的奔跑，那是我逝去的青春</p>
+            <p>我是小凡，凡即簡，一個極簡愛好者</p>
+        </div>
+
+        <div class="foot">
+            ©JIANG XIAOFAN 2016 浙ICP备16012498号
+        </div>
+    </div>
+{/block}
+
+{block name="js-code"}
+<script src="__STATIC__/APlayer/APlayer.min.js"></script>
+<script>
+	$(document).ready(function(){
+        $("span a").click(function(){
+            $(this).parent().next().slideToggle();
+            $(this).parent().prevAll("ul").slideUp("slow");
+            $(this).parent().next().nextAll("ul").slideUp("slow");
+            return false;
+        });
+    });
+	
+    var ap = new APlayer({
+        element: document.getElementById('aplayer1'),
+        narrow: false,
+        autoplay: false,
+        showlrc: false,
+        mutex: true,
+        theme: '#ad7a86',
+        mode: 'random',
+        music: [
+            {
+                title: 'ブルーバード', // 青鸟
+                author: 'いきものがかり',
+                //url: '__STATIC__/music/qingniao.mp3',
+				url: 'http://on7plg7jx.bkt.clouddn.com/qingniao.mp3',
+                pic: '__STATIC__/music/qingniao.jpg'
+            },
+            {
+                title: '红莲の弓矢', // 进击的巨人
+                author: 'Sound Horizon',
+                //url: '__STATIC__/music/jinji.mp3',
+				url: 'http://on7plg7jx.bkt.clouddn.com/jinji.mp3',
+                pic: '__STATIC__/music/jinji.jpg'
+            },
+            {
+                title: 'Butter-Fly', // 数码宝贝
+                author: '和田光司',
+                //url: '__STATIC__/music/Butter-Fly.mp3',
+				url: 'http://on7plg7jx.bkt.clouddn.com/Butter-Fly.mp3',
+                pic: '__STATIC__/music/shuma.jpg'
+            }
+        ]
+    });
+</script>
+{/block}
