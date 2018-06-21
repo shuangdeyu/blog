@@ -3,3 +3,5 @@
 runtime/
 application/index/config.php
 application/database.php
+public/static/images
+public/static/kindeditor/attached/image
