@@ -4,4 +4,5 @@ runtime/
 application/index/config.php
 application/database.php
 public/static/images
+public/static/music
 public/static/kindeditor/attached/image
