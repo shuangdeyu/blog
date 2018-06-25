@@ -25,6 +25,15 @@
 
 {block name="content"}
     <div class="con-right">
+        <div class="net" id="net5">
+            <a href="https://github.com/shuangdeyu/blog-go" target="_blank">
+                <img src="__IMG__/net/blog-go.png">
+                <div class="abs" id="blog-go">
+                    <h2>轻博客个人站-go</h2>
+                    <p>使用go，gin框架实现的个人网站</p>
+                </div>
+            </a>
+        </div>
 		<div class="net" id="net4">
             <a href="http://tool.shuangdeyu.com/" target="_blank">
                 <img src="__IMG__/net/tool.png">
@@ -99,6 +108,12 @@
         });
         $("#net4").mouseleave(function(){
             $("#tool").fadeOut(300);
+        });
+        $("#net5").mouseenter(function(){
+            $("#blog-go").fadeIn(300);
+        });
+        $("#net5").mouseleave(function(){
+            $("#blog-go").fadeOut(300);
         });
     </script>
 {/block}
