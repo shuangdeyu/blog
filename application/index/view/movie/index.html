@@ -29,7 +29,11 @@
                 <div class="col-md-4 col-movie">
                     <div class="thumbnail">
                         <a href="{:url('movie/content','mid='.$vo.id)}">
-                            <img class="lazy" data-original="{$vo.cover}" alt="...">
+                            {if ($vo.cover)}
+                                <img class="lazy" data-original="{$vo.cover}" alt="...">
+                            {else /}
+                                <img class="lazy" data-original="http://qiniucdn.shuangdeyu.com/default_article.jpg" alt="...">
+                            {/if}
                             <div class="caption">
                                 <span>{$vo.title}</span>
                             </div>

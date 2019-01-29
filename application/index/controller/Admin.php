@@ -291,7 +291,7 @@ class Admin extends Controller
         $time = date('Y-m-d');
 
         //判断是否有更新封面图片
-        if(isset($_FILES['Photo'])){
+        if(isset($_FILES['Photo']) && $_FILES['Photo']['name'] != ''){
             //先删除原来的图片
             /*$deldir = substr(strrchr($cover, '/'), 1);
             $deldir = self::moviePhotoAddr1.$deldir;
