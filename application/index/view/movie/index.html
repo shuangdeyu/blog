@@ -123,11 +123,9 @@
         $('#goSearch').bind('keyup', function (event) {
             if (event.keyCode == "13") {
                 var se = $('#goSearch').val();
-                if ("{$_SERVER['QUERY_STRING']}" != "") {
-                    window.location.href = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}?{$_SERVER['QUERY_STRING']}&search=" + se;
-                } else {
-                    window.location.href = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}?search=" + se;
-                }
+                var str = "{:url('movie/index','search=se_val')}";
+                str =  str.replace("se_val", se);
+                window.location.href = str;
             }
         });
     });
