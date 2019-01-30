@@ -3,7 +3,8 @@
 {block name="style-bootstrap-css"}
     <!--{load href="__CSS__/bootstrap.min.css" /}-->
     <style type="text/css">
-        .thumbnail{
+        /*样式1*/
+        /*.thumbnail{
             border: 1px solid #d9d9d9;
             border-radius: 5px;
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
@@ -16,14 +17,71 @@
             color: #8b8b8b;
             padding: 15px 0;
         }
-	.thumbnail:hover{
+	    .thumbnail:hover{
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }*/
+
+        /*样式2*/
+        .col-movie { clear: both; }
+        .thumbnail {
+            min-height: 120px;
+            max-height: 150px;
+            padding: 5px;
+            border: 0;
+            display: flex;
+            margin-bottom: 10px;
+            box-shadow: none !important;
         }
+        .thumbnail img { float: left; width: 200px !important; height: 100%; }
+        .thumbnail .caption { float: left; height: 100%; width: calc(100% - 210px); padding-left: 10px; }
+        .thumbnail .caption span { display: block; }
+        .thumbnail .caption .title {
+            height: 30px;
+            font: 14px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+            color: #475164;
+            font-weight: 600;
+        }
+        .thumbnail .caption .content {
+            max-height: calc(100% - 30px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #5e616d;
+            font-size: 12px;
+        }
+        .thumbnail:hover{
+            /*border-left: 2px solid #00adb5;*/
+            border-radius: 0 !important;
+            background-color: #f1f0ed;
+        }
+
+        /*搜索框*/
+        .movie-search { padding: 5px;width: 900px;position: fixed;top: 0; }
+        .movie-search input {
+            width: calc(100% - 27px);
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            color: #000;
+            font-family: 'Opan Sans',sans-serif;
+            font-size: 1em;
+            height: 35px;
+            padding: 0 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        .movie-search input:focus {
+            outline: none;
+            border-color: #9ecaed;
+            box-shadow: 0 0 10px #9ecaed;
+        }
+        .movie-card { margin-top: 35px; }
     </style>
 {/block}
 
 {block name="content"}
     <div class="con-right">
+        <div class="movie-search">
+            <input id="goSearch" value="{$search_str}" placeholder="搜索" />
+        </div>
         <div class="movie-card row">
             {volist name="list" id="vo"}
                 <div class="col-md-4 col-movie">
@@ -35,7 +93,8 @@
                                 <img class="lazy" data-original="http://qiniucdn.shuangdeyu.com/default_article.jpg" alt="...">
                             {/if}
                             <div class="caption">
-                                <span>{$vo.title}</span>
+                                <span class="title">{$vo.title}</span>
+                                <span class="content"><xmp>{$vo.content}</xmp></span>
                             </div>
                         </a>
                     </div>
@@ -59,6 +118,17 @@
             $(this).parent().prevAll("ul").slideUp("slow");
             $(this).parent().next().nextAll("ul").slideUp("slow");
             return false;
+        });
+
+        $('#goSearch').bind('keyup', function (event) {
+            if (event.keyCode == "13") {
+                var se = $('#goSearch').val();
+                if ("{$_SERVER['QUERY_STRING']}" != "") {
+                    window.location.href = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}?{$_SERVER['QUERY_STRING']}&search=" + se;
+                } else {
+                    window.location.href = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}?search=" + se;
+                }
+            }
         });
     });
 

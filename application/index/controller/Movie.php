@@ -18,9 +18,16 @@ use think\Session;
 class Movie extends Controller
 {
     public function index(){
-        $data = Db::name('movie')->order('id desc')->paginate(5);
+        $search = trim(input('get.search', ''));
+        $data = Db::name('movie')
+            ->where('title', 'like', '%' . $search . '%')
+            ->order('id desc')
+            ->paginate(10, false, [
+                'query' => ['search'=>$search],
+            ]);
 
         $this->assign('list', $data);
+        $this->assign('search_str', $search);
         return $this->fetch();
     }
 
