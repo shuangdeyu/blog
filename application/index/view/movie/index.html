@@ -37,7 +37,8 @@
         .thumbnail .caption span { display: block; }
         .thumbnail .caption .title {
             height: 30px;
-            font: 14px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+            font-size: 16px;
+            font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
             color: #475164;
             font-weight: 600;
         }
@@ -45,9 +46,10 @@
             max-height: calc(100% - 30px);
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
-            color: #5e616d;
-            font-size: 12px;
+            /*white-space: nowrap;*/
+            color: #828591;
+            font-size: 13px;
+            line-height: 25px;
         }
         .thumbnail:hover{
             /*border-left: 2px solid #00adb5;*/
@@ -94,7 +96,7 @@
                             {/if}
                             <div class="caption">
                                 <span class="title">{$vo.title}</span>
-                                <span class="content"><xmp>{$vo.content}</xmp></span>
+                                <span class="content"><?php echo strip_tags($vo['content']); ?></span>
                             </div>
                         </a>
                     </div>
