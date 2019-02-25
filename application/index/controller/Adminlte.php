@@ -27,23 +27,36 @@ class Adminlte extends Controller
     /**
      * 登录首页
      */
-    public function index(){
+    public function index()
+    {
         return $this->fetch();
     }
 
     /**
      * 主页
      */
-    public function main(){
+    public function main()
+    {
         /*$user_name = Session::get('user');
         $this->assign('user',$user_name);*/
+        // 获取微博数量
+        $w_num = Db::name('weibo')->count("*");
+        // 获取文章数量
+        $a_num = Db::name('movie')->count("*");
+        // 获取相册数量
+        $i_num = Db::name('images')->count("*");
+
+        $this->assign('w_num', $w_num);
+        $this->assign('a_num', $a_num);
+        $this->assign('i_num', $i_num);
         return $this->fetch();
     }
 
     /**
      * 登录验证
      */
-    public function login(){
+    public function login()
+    {
         $user = $_POST['user'];
         $password = md5($_POST['password']);
 
@@ -53,12 +66,35 @@ class Adminlte extends Controller
         $where['password'] = $password;
         $con = $Admin->where($where)->find();
 
-        if($con){
-            Session::set('user',$user);
-            Session::set('userId',$con['id']);
-            $this->success('登陆成功',url('index/adminlte/main'));
-        }else{
+        if ($con) {
+            Session::set('user', $user);
+            Session::set('userId', $con['id']);
+            $this->success('登陆成功', url('index/adminlte/main'));
+        } else {
             echo "<script>alert('用户名或密码错误');history.go(-1);</script>";
         }
+    }
+
+    /**
+     * 退出登录
+     */
+    public function loginout()
+    {
+        Session::clear();
+        $this->redirect(url('index/adminlte/index'));
+    }
+
+    /*---------------------------------------------------------------*
+     *--------------------------微博相关-----------------------------*
+     *---------------------------------------------------------------*/
+    /**
+     * 显示微博
+     */
+    public function weibo_show()
+    {
+        $weibo = Db::name('weibo')->order('id desc')->paginate(15);
+
+        $this->assign('weibo', $weibo);
+        return $this->fetch();
     }
 }
