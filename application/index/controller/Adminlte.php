@@ -14,6 +14,11 @@ use think\Db;
 use think\Request;
 use think\Session;
 
+/**
+ * 本来是基于Adminlte框架的后台，先改成基于Gentelella
+ * @package app\index\controller
+ */
+
 class Adminlte extends Controller
 {
     public function __construct(Request $request = null)
@@ -96,5 +101,14 @@ class Adminlte extends Controller
 
         $this->assign('weibo', $weibo);
         return $this->fetch();
+    }
+
+    /**
+     * 删除微博
+     */
+    public function weibo_del(){
+        $wid = input('post.wid');
+        Db::name('weibo')->where('id',$wid)->delete();
+        return true;
     }
 }

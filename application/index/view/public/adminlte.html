@@ -1,249 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>xiaofan-admin</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Bookmark" href="__IMG__/favicon.ico" >
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico" />
 
-    <link rel="stylesheet" href="__STATIC__/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__STATIC__/AdminLTE/bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="__STATIC__/AdminLTE/bower_components/Ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="__STATIC__/AdminLTE/dist/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="__STATIC__/AdminLTE/dist/css/skins/_all-skins.min.css">
+    <title>xiaofan admin</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/Gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="__STATIC__/Gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="__STATIC__/Gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="__STATIC__/Gentelella/build/css/custom.min.css" rel="stylesheet">
 
     {block name="css"}{/block}
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
 
-    <header class="main-header">
-        <!-- Logo -->
-        <a href="{:url('index/adminlte/main')}" class="logo">
-            <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>A</b>LT</span>
-            <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Admin</b>LTE</span>
-        </a>
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top">
-            <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="{:url('index/adminlte/main')}" class="site_title"><i class="fa fa-paw"></i> <span>后台管理</span></a>
+                </div>
 
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                    <!-- Messages: style can be found in dropdown.less-->
-                    <li class="dropdown messages-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">你有4条新评论</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <ul class="menu">
-                                    <li><!-- start message -->
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="__STATIC__/AdminLTE/dist/img/avatar04.png" class="img-circle"
-                                                     alt="User Image">
-                                            </div>
-                                            <h4>
-                                                Support Team
-                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                    <!-- end message -->
+                <div class="clearfix"></div>
+
+                <!-- menu profile quick info -->
+                <div class="profile clearfix">
+                    <div class="profile_pic">
+                        <img src="__IMG__/head.jpg" alt="..." class="img-circle profile_img">
+                    </div>
+                    <div class="profile_info">
+                        <span>Welcome</span>
+                        <h2>Xiao Fan</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /menu profile quick info -->
+
+                <br />
+
+                <!-- sidebar menu -->
+                {block name="sidebar"}
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>操作导航</h3>
+                        <ul class="nav side-menu">
+                            <li><a><i class="fa fa-coffee"></i> 微博 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
                                 </ul>
                             </li>
-                            <li class="footer"><a href="#">See All Messages</a></li>
-                        </ul>
-                    </li>
-                    <!-- User Account: style can be found in dropdown.less -->
-                    <li class="dropdown user user-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="__STATIC__/AdminLTE/dist/img/avatar5.png" class="user-image" alt="User Image">
-                            <span class="hidden-xs">xiao fan</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- User image -->
-                            <li class="user-header">
-                                <img src="__STATIC__/AdminLTE/dist/img/avatar5.png" class="img-circle" alt="User Image">
-                                <p>
-                                    我是管理员
-                                    <small>http://xf.shuangdeyu.com/</small>
-                                </p>
+                            <li><a><i class="fa fa-pencil-square"></i> 文章 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="{:url('index/adminlte/movie_show')}">文章</a></li>
+                                </ul>
                             </li>
-                            <!-- Menu Footer-->
-                            <li class="user-footer">
-                                <div class="pull-left">
-                                    <a href="http://xf.shuangdeyu.com/" target="_blank"
-                                       class="btn btn-default btn-flat">主页</a>
-                                </div>
-                                <div class="pull-right">
-                                    <a href="{:url('/adminlte/loginout')}" class="btn btn-default btn-flat">退出</a>
-                                </div>
+                            <li><a><i class="fa fa-camera"></i> 摄影 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="{:url('index/admin/photo_show')}">图文</a></li>
+                                    <li><a href="{:url('index/admin/images_show')}">相册</a></li>
+                                </ul>
                             </li>
                         </ul>
-                    </li>
-                    <!-- Control Sidebar Toggle Button -->
-                    <li>
-                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- =============================================== -->
-
-    {block name="sidebar"}
-    <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-            <!-- Sidebar user panel -->
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="__STATIC__/AdminLTE/dist/img/avatar5.png" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-                    <p>xiao fan</p>
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-                </div>
-            </div>
-            <!-- search form -->
-            <form action="#" method="get" class="sidebar-form">
-                <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search...">
-                    <span class="input-group-btn">
-                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-                    </span>
-                </div>
-            </form>
-            <!-- /.search form -->
-            <!-- sidebar menu: : style can be found in sidebar.less -->
-            <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">操作导航</li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-coffee"></i> <span>微博</span>
-                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="{:url('index/adminlte/weibo_show')}"><i class="fa fa-circle-o"></i>微博</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-pencil-square"></i> <span>文章</span>
-                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="{:url('index/adminlte/movie_show')}"><i class="fa fa-circle-o"></i>文章</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-camera"></i> <span>摄影</span>
-                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="{:url('index/admin/photo_show')}"><i class="fa fa-circle-o"></i>图文</a></li>
-                        <li><a href="{:url('index/admin/images_show')}"><i class="fa fa-circle-o"></i>相册</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </aside>
-    {/block}
-
-    <!-- =============================================== -->
-
-    {block name="content"}
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                主页
-                <small>统计</small>
-            </h1>
-        </section>
-
-        <!-- Main content -->
-        <section class="content">
-            <div class="row">
-                <div class="col-lg-3 col-xs-6">
-                    <div class="small-box bg-aqua">
-                        <div class="inner">
-                            <h3>{$w_num}</h3>
-                            <p>微博</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-coffee"></i>
-                        </div>
-                        <a href="{:url('index/weibo')}" target="_blank" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xs-6">
-                    <div class="small-box bg-green">
-                        <div class="inner">
-                            <h3>{$a_num}</h3>
-                            <p>文章</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-card"></i>
-                        </div>
-                        <a href="{:url('movie/index')}" target="_blank" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xs-6">
-                    <div class="small-box bg-yellow">
-                        <div class="inner">
-                            <h3>{$i_num}</h3>
-                            <p>相册</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-camera"></i>
-                        </div>
-                        <a href="{:url('photo/shan')}" target="_blank" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
+                {/block}
+                <!-- /sidebar menu -->
             </div>
-        </section>
-        <!-- /.content -->
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav>
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    {block name="header"}
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="__IMG__/head.jpg" alt="">Xiao Fan
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="{:url('index/index')}" target="_blank"> 主页</a></li>
+                                <li><a href="{:url('/adminlte/loginout')}"><i class="fa fa-sign-out pull-right"></i> 退出</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="presentation" class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge bg-green">6</span>
+                            </a>
+                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="__IMG__/head1.jpg" alt="Profile Image" /></span>
+                                        <span>
+                                            <span>John Smith</span>
+                                            <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="__IMG__/head1.jpg" alt="Profile Image" /></span>
+                                        <span>
+                                            <span>John Smith</span>
+                                            <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="text-center">
+                                        <a>
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    {/block}
+                </nav>
+            </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        {block name="content"}
+        <div class="right_col" role="main">
+            <div class="">
+                <div class="row top_tiles">
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-comments-o"></i></div>
+                            <div class="count">{$w_num}</div>
+                            <h3>微博</h3>
+                            <p>共发表{$w_num}条微博</p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-book"></i></div>
+                            <div class="count">{$a_num}</div>
+                            <h3>文章</h3>
+                            <p>共发表{$a_num}篇文章</p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-picture-o"></i></div>
+                            <div class="count">{$i_num}</div>
+                            <h3>相册</h3>
+                            <p>相册共有{$i_num}张图片</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {/block}
+        <!-- /page content -->
+
+        <!-- footer content -->
+        {block name="footer"}
+        <footer>
+            <div class="pull-right">
+                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        {/block}
+        <!-- /footer content -->
     </div>
-    {/block}
-
-    {block name="footer"}
-    {/block}
 </div>
-<!-- ./wrapper -->
 
-<script src="__STATIC__/AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="__STATIC__/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="__STATIC__/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<script src="__STATIC__/AdminLTE/bower_components/fastclick/lib/fastclick.js"></script>
-<script src="__STATIC__/AdminLTE/dist/js/adminlte.min.js"></script>
-<script src="__STATIC__/AdminLTE/dist/js/demo.js"></script>
+<!-- jQuery -->
+<script src="__STATIC__/Gentelella/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="__STATIC__/Gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="__STATIC__/Gentelella/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="__STATIC__/Gentelella/vendors/nprogress/nprogress.js"></script>
+<!-- Custom Theme Scripts -->
+<script src="__STATIC__/Gentelella/build/js/custom.min.js"></script>
+
 {block name="js"}{/block}
-{block name="js-code"}{/block}
+{block name="js_code"}{/block}
 </body>
 </html>
