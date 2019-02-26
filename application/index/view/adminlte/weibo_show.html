@@ -18,12 +18,14 @@
                 <div class="x_content">
 
                     <div style="margin-bottom: 5px;">
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> 批量删除 </a>
+                        <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
+                            <i class="fa fa-trash-o"></i> 批量删除
+                        </a>
                         <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加新记录 </a>
                     </div>
 
                     <div class="table-responsive">
-                        <table class="table table-striped jambo_table bulk_action">
+                        <table class="table table-striped jambo_table bulk_action table-bordered">
                             <thead>
                             <tr class="headings">
                                 <th>
@@ -34,6 +36,9 @@
                                 <th class="column-title">内容 </th>
                                 <th class="column-title" style="width: 130px;">链接 </th>
                                 <th class="column-title" style="width: 130px;">操作 </th>
+                                <th class="bulk-actions" colspan="7">
+                                    <a class="antoo" style="color:#fff; font-weight:500;">批量操作 ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                                </th>
                             </tr>
                             </thead>
 
@@ -49,7 +54,10 @@
                                 <td >{$vo.link}</td>
                                 <td >
                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
-                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除 </a>
+                                    <a onclick="set_id(this, '{$vo.id}')" href="#" class="btn btn-danger btn-xs"
+                                       data-toggle="modal" data-target=".modal-weibo-del">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
                                 </td>
                             </tr>
                             {/volist}
@@ -60,6 +68,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- modal -->
+        <div class="modal fade bs-example-modal-sm modal-weibo-del" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2">操作</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>确认删除此条记录？</b></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" onclick="delete_row()">确认</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <span id="WeiBoId" type="hidden"></span>
+        <span id="WeiBoObj" type="hidden"></span>
+        <!-- /modal -->
 
     </div>
 </div>
@@ -93,7 +127,7 @@
             data: {wid: id},
             success: function(data){
                 $(obj).parents("tr").remove();
-                $(".close").click();
+                ShowNotice("提示", "删除成功", "success", 1000, false);
             },
             error:function(data) {
                 console.log(data.msg);

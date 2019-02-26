@@ -17,9 +17,12 @@
     <link href="__STATIC__/Gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="__STATIC__/Gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
-
     <!-- Custom Theme Style -->
     <link href="__STATIC__/Gentelella/build/css/custom.min.css" rel="stylesheet">
+    <!-- PNotify -->
+    <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
 
     {block name="css"}{/block}
 </head>
@@ -207,6 +210,27 @@
 <script src="__STATIC__/Gentelella/vendors/nprogress/nprogress.js"></script>
 <!-- Custom Theme Scripts -->
 <script src="__STATIC__/Gentelella/build/js/custom.min.js"></script>
+<!-- PNotify -->
+<script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.js"></script>
+<script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.buttons.js"></script>
+<script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+<script>
+    // 消息展示
+    // title：标题；text：提示内容；type：提示类型（颜色不一样）'success'，'warning'，'Error'，'Note'，'Primary'，'Dark'
+    // delay：自动关闭延时，单位ms;is_mouse_reset:true:鼠标悬浮时时间重置
+    function ShowNotice(title, text, type, delay, is_mouse_reset) {
+        new PNotify({
+            title: title,
+            text: text,
+            type: type,
+            delay: delay,
+            hide: true, //是否自动关闭
+            mouse_reset: is_mouse_reset,   //鼠标悬浮的时候，时间重置
+            styling: "bootstrap3"
+        });
+    }
+</script>
 
 {block name="js"}{/block}
 {block name="js_code"}{/block}
