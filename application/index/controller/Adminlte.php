@@ -34,6 +34,10 @@ class Adminlte extends Controller
      */
     public function index()
     {
+        $user_id = Session::get('userId');
+        if ($user_id != "") {
+            $this->redirect('main');
+        }
         return $this->fetch();
     }
 
