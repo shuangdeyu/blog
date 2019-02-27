@@ -111,4 +111,59 @@ class Adminlte extends Controller
         Db::name('weibo')->where('id',$wid)->delete();
         return true;
     }
+
+    /**
+     * 添加微博界面
+     */
+    public function weibo_add(){
+        return $this->fetch();
+    }
+
+    /**
+     * 保存添加
+     */
+    public function weibo_save(){
+        $name = input('post.name');
+        $link = input('post.link');
+        $content = input('post.content');
+
+        $data['name'] = $name;
+        $data['link'] = $link;
+        $data['content'] = $content;
+        Db::name('weibo')->insert($data);
+
+        //返回到父页面
+        $url = url('index/adminlte/weibo_show');
+        echo "<script>window.location.href='$url';</script>";
+    }
+
+    /**
+     * 微博编辑界面
+     */
+    public function weibo_info(){
+        $id = input('get.id');
+
+        $weibo = Db::name('weibo')->where('id',$id)->find();
+
+        $this->assign('weibo',$weibo);
+        return $this->fetch();
+    }
+
+    /**
+     * 编辑微博
+     */
+    public function weibo_edit(){
+        $id = input('post.id');
+        $name = input('post.name');
+        $link = input('post.link');
+        $content = input('post.content');
+
+        $data['name'] = $name;
+        $data['link'] = $link;
+        $data['content'] = $content;
+        Db::name('weibo')->where('id',$id)->update($data);
+
+        //返回到父页面
+        echo '<script>history.go(-2);</script>';
+    }
 }

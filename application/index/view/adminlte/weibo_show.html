@@ -4,6 +4,35 @@
 <link href="__STATIC__/Gentelella/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 {/block}
 
+{block name="sidebar"}
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+        <h3>操作导航</h3>
+        <ul class="nav side-menu">
+            <li class="active">
+                <a><i class="fa fa-coffee"></i> 微博 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu" style="display: block;">
+                    <li class="active current-page"><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
+                </ul>
+            </li>
+            <li>
+                <a><i class="fa fa-pencil-square"></i> 文章 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{:url('index/adminlte/movie_show')}">文章</a></li>
+                </ul>
+            </li>
+            <li>
+                <a><i class="fa fa-camera"></i> 摄影 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{:url('index/admin/photo_show')}">图文</a></li>
+                    <li><a href="{:url('index/admin/images_show')}">相册</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+{/block}
+
 {block name="content"}
 <div class="right_col" role="main">
     <div class="">
@@ -21,7 +50,7 @@
                         <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
                             <i class="fa fa-trash-o"></i> 批量删除
                         </a>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加新记录 </a>
+                        <a href="{:url('index/adminlte/weibo_add')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加新记录 </a>
                     </div>
 
                     <div class="table-responsive">
@@ -53,7 +82,7 @@
                                 <td >{$vo.content}</td>
                                 <td >{$vo.link}</td>
                                 <td >
-                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
+                                    <a href="{:url('index/adminlte/weibo_info?id='.$vo.id)}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
                                     <a onclick="set_id(this, '{$vo.id}')" href="#" class="btn btn-danger btn-xs"
                                        data-toggle="modal" data-target=".modal-weibo-del">
                                         <i class="fa fa-trash-o"></i> 删除
