@@ -2,6 +2,19 @@
 
 {block name="css"}
 <link href="__STATIC__/Gentelella/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+<style>
+    .article-list-abstract {
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 650px;
+    }
+
+    /*table {*/
+        /*table-layout: fixed;*/
+        /*word-break: break-all;*/
+    /*}*/
+</style>
 {/block}
 
 {block name="sidebar"}
@@ -9,16 +22,16 @@
     <div class="menu_section">
         <h3>操作导航</h3>
         <ul class="nav side-menu">
-            <li class="active">
+            <li>
                 <a><i class="fa fa-coffee"></i> 微博 <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu" style="display: block;">
-                    <li class="active current-page"><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
+                <ul class="nav child_menu">
+                    <li><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="active">
                 <a><i class="fa fa-pencil-square"></i> 文章 <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="{:url('index/adminlte/movie_show')}">文章</a></li>
+                <ul class="nav child_menu" style="display: block;">
+                    <li class="active current-page"><a href="{:url('index/adminlte/movie_show')}">文章</a></li>
                 </ul>
             </li>
             <li>
@@ -40,7 +53,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>微博管理</h2>
+                    <h2>文章管理</h2>
                     <div class="clearfix"></div>
                 </div>
 
@@ -50,20 +63,21 @@
                         <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
                             <i class="fa fa-trash-o"></i> 批量删除
                         </a>
-                        <a href="{:url('index/adminlte/weibo_add')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加微博 </a>
+                        <a href="{:url('index/adminlte/movie_add?m=0')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加文章 </a>
+                        <a href="{:url('index/adminlte/movie_add?m=1')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加markdown文章 </a>
                     </div>
 
                     <div class="table-responsive">
                         <table class="table table-striped jambo_table bulk_action table-bordered">
                             <thead>
                             <tr class="headings">
-                                <th>
+                                <th style="width: 40px">
                                     <input type="checkbox" id="check-all" class="flat">
                                 </th>
-                                <th class="column-title" style="width: 20px;">id </th>
-                                <th class="column-title" style="width: 150px;">标题 </th>
-                                <th class="column-title">内容 </th>
-                                <th class="column-title" style="width: 130px;">链接 </th>
+                                <th class="column-title" style="width: 50px;">id </th>
+                                <th class="column-title" >标题 </th>
+                                <th class="column-title" style="width: 65%;">内容 </th>
+                                <th class="column-title" style="width: 130px;">时间 </th>
                                 <th class="column-title" style="width: 130px;">操作 </th>
                                 <th class="bulk-actions" colspan="7">
                                     <a class="antoo" style="color:#fff; font-weight:500;">批量操作 ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -72,17 +86,17 @@
                             </thead>
 
                             <tbody>
-                            {volist name="$weibo" id="vo"}
+                            {volist name="$movie" id="vo"}
                             <tr class="even pointer">
                                 <td class="a-center ">
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
                                 <td >{$vo.id}</td>
-                                <td >{$vo.name}</td>
-                                <td >{$vo.content}</td>
-                                <td >{$vo.link}</td>
+                                <td >{$vo.title}</td>
+                                <td ><div class="article-list-abstract">{$vo.content}</div></td>
+                                <td >{$vo.time}</td>
                                 <td >
-                                    <a href="{:url('index/adminlte/weibo_info?id='.$vo.id)}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
+                                    <a href="{:url('index/adminlte/?id='.$vo.id)}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
                                     <a onclick="set_id(this, '{$vo.id}')" href="#" class="btn btn-danger btn-xs"
                                        data-toggle="modal" data-target=".modal-weibo-del">
                                         <i class="fa fa-trash-o"></i> 删除
@@ -93,7 +107,7 @@
                             </tbody>
                         </table>
                     </div>
-                    {$weibo->render()}
+                    {$movie->render()}
                 </div>
             </div>
         </div>
