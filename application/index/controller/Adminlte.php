@@ -252,13 +252,6 @@ class Adminlte extends Controller
         $data = Db::name('movie')->where($where)->field('cover')->find();
 
         if($data['cover']) {
-            /*删除本地图片*/
-            /*$dir = substr(strrchr($data['cover'], '/'), 1);
-            $dir = self::moviePhotoAddr1 . $dir;
-			if(is_file($dir)){
-				unlink($dir);
-			}*/
-
             /*删除七牛图片*/
             $Upload = new Upload();
             $delete = $Upload->delete($data['cover']);
@@ -296,29 +289,8 @@ class Adminlte extends Controller
 
         //判断是否有更新封面图片
         if(isset($_FILES['Photo']) && $_FILES['Photo']['name'] != ''){
-            //先删除原来的图片
-            /*$deldir = substr(strrchr($cover, '/'), 1);
-            $deldir = self::moviePhotoAddr1.$deldir;
-			if(is_file($deldir)){
-				unlink($deldir);
-			}*/
             $Upload = new Upload();
             $delete = $Upload->delete($cover);
-
-            //图片名称
-            /*$filename = uniqid();
-            //获取图片扩展名
-            $exname = strrchr($_FILES['Photo']['name'], '.');
-
-            //检查图片文件夹是否存在
-            if(!is_dir(self::moviePhotoAddr1)){
-                mkdir(self::moviePhotoAddr1, 0777);
-            }
-
-            //图片总路径-上传文件
-            $dir1 = self::moviePhotoAddr1.$filename.$exname;
-            //图片总路径-写入数据库
-            $dir2 = self::moviePhotoAddr2.$filename.$exname;*/
 
             /*上传到七牛*/
             $Upload = new Upload();
@@ -334,12 +306,6 @@ class Adminlte extends Controller
                 $data['cover']   = $pic_url;
                 $up = $Movie->where('id=' . $movie_id)->update($data);
             }
-
-            //判断是否更新成功，再将图片传入文件夹
-            /*if(is_numeric($up)){
-                //将缓存中的图片移到正确位置
-                move_uploaded_file($_FILES['Photo']['tmp_name'], $dir1);
-            }*/
         }else{
             //没有更新封面图片
             $Movie = Db::name('movie');
@@ -353,6 +319,6 @@ class Adminlte extends Controller
         }
 
         //返回父页面
-        echo "<script>parent.window.location.reload();</script>";
+        echo "<script>history.go(-2);</script>";
     }
 }

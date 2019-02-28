@@ -2,6 +2,7 @@
 
 {block name="css"}
 <link href="__STATIC__/Gentelella/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="__STATIC__/editor.md/css/editormd.preview.css">
 <style>
     .article-list-abstract {
         height: 80px;
@@ -92,13 +93,18 @@
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
                                 <td >{$vo.id}</td>
-                                <td >{$vo.title}</td>
+                                <td >
+                                    <a href="#" onclick="set_info('{$vo.title}','{$vo.time}','{$vo.cover}','{:urlencode($vo.content)}','{$vo.is_markdown}')"
+                                       data-toggle="modal" data-target=".modal-movie-info">{$vo.title}</a>
+                                </td>
                                 <td ><div class="article-list-abstract">{$vo.content}</div></td>
                                 <td >{$vo.time}</td>
                                 <td >
-                                    <a href="{:url('index/adminlte/?id='.$vo.id)}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
+                                    <a href="{:url('index/adminlte/movie_edit?id='.$vo.id.'&is_m='.$vo.is_markdown)}" class="btn btn-info btn-xs">
+                                        <i class="fa fa-pencil"></i> 编辑
+                                    </a>
                                     <a onclick="set_id(this, '{$vo.id}')" href="#" class="btn btn-danger btn-xs"
-                                       data-toggle="modal" data-target=".modal-weibo-del">
+                                       data-toggle="modal" data-target=".modal-movie-del">
                                         <i class="fa fa-trash-o"></i> 删除
                                     </a>
                                 </td>
@@ -112,8 +118,8 @@
             </div>
         </div>
 
-        <!-- modal -->
-        <div class="modal fade bs-example-modal-sm modal-weibo-del" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- modal 删除文章 -->
+        <div class="modal fade modal-movie-del" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
 
@@ -121,7 +127,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel2">操作</h4>
+                        <h4 class="modal-title">操作</h4>
                     </div>
                     <div class="modal-body">
                         <p><b>确认删除此条记录？</b></p>
@@ -138,12 +144,49 @@
         <span id="WeiBoObj" type="hidden"></span>
         <!-- /modal -->
 
+        <!-- modal 文章详情 -->
+        <div class="modal fade modal-movie-info" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" >预览</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="font-size:15px;padding:0 0 10px 0;color:#636363">
+                            <h3 id="M-title"></h3>
+                            <p id="M-time">e</p>
+                        </div>
+                        <div style="font-size:15px;padding:0px 0 10px 0;color:#636363">
+                            <img id="M-cover" src="" width="100%"/>
+                        </div>
+                        <div style="padding-bottom:25px;border-bottom:1px solid #ededed" id="M-content">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /modal -->
+
     </div>
 </div>
 {/block}
 
 {block name="js"}
 <script src="__STATIC__/Gentelella/vendors/iCheck/icheck.min.js"></script>
+<script src="__STATIC__/editor.md/editormd.js"></script>
+<script src="__STATIC__/editor.md/lib/marked.min.js"></script>
+<script src="__STATIC__/editor.md/lib/prettify.min.js"></script>
+<script src="__STATIC__/editor.md/lib/raphael.min.js"></script>
+<script src="__STATIC__/editor.md/lib/underscore.min.js"></script>
+<script src="__STATIC__/editor.md/lib/sequence-diagram.min.js"></script>
+<script src="__STATIC__/editor.md/lib/flowchart.min.js"></script>
+<script src="__STATIC__/editor.md/lib/jquery.flowchart.min.js"></script>
 {/block}
 {block name="js_code"}
 <script>
@@ -165,9 +208,9 @@
         $(".close").click();
         $.ajax({
             type: 'POST',
-            url: "{:url('index/adminlte/weibo_del')}",
+            url: "{:url('index/adminlte/movie_del')}",
             dataType: 'json',
-            data: {wid: id},
+            data: {mid: id},
             success: function(data){
                 $(obj).parents("tr").remove();
                 ShowNotice("提示", "删除成功", "success", 1000, false);
@@ -176,6 +219,32 @@
                 console.log(data.msg);
             }
         });
+    }
+
+    // 设置文章信息
+    function set_info(title, time, cover, content, is_m) {
+        $("#M-title").text(title);
+        $("#M-time").text(time);
+        $("#M-cover").attr("src",cover);
+        if (is_m == 1) {
+            $("#M-content").html("<div id='schemeDetail'>\n" +
+                "                <textarea style='display:none;'>"+URLDecode(content)+"</textarea>\n" +
+                "            </div>");
+
+            /* markdown解析 */
+            var testEditormdView;
+            testEditormdView = editormd.markdownToHTML("schemeDetail", {
+                htmlDecode      : "style,script,iframe",
+                tocm            : true,
+                emoji           : true,
+                taskList        : true,
+                tex             : true,  // 默认不解析
+                flowChart       : true,  // 默认不解析
+                sequenceDiagram : true   // 默认不解析
+            });
+        } else {
+            $("#M-content").html(URLDecode(content));
+        }
     }
 </script>
 {/block}
