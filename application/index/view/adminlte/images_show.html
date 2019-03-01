@@ -1,0 +1,112 @@
+{extend name="public/adminlte" /}
+
+{block name="css"}
+<link href="__STATIC__/Gentelella/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+<link href="__HUI__/h-ui.admin/css/H-ui.admin.css" rel="stylesheet">
+<link href="__HUI__/lib/lightbox2/2.8.1/css/lightbox.css" rel="stylesheet">
+
+<style>
+    .portfolio-area li {
+        list-style: none;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        width: 162px;
+        height: 162px;
+        margin-top: 20px;
+    }
+</style>
+{/block}
+
+{block name="sidebar"}
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+        <h3>操作导航</h3>
+        <ul class="nav side-menu">
+            <li>
+                <a><i class="fa fa-coffee"></i> 微博 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
+                </ul>
+            </li>
+            <li>
+                <a><i class="fa fa-pencil-square"></i> 文章 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{:url('index/adminlte/movie_show')}">文章</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a><i class="fa fa-camera"></i> 摄影 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu" style="display: block;">
+                    <li ><a href="{:url('index/adminlte/photo_show')}">图文</a></li>
+                    <li class="active current-page"><a href="{:url('index/adminlte/images_show')}">相册</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+{/block}
+
+{block name="content"}
+<div class="right_col" role="main">
+    <div class="">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>相册管理</h2>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+
+                    <div style="margin-bottom: 15px;">
+                        <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
+                            <i class="fa fa-trash-o"></i> 批量删除
+                        </a>
+                        <a href="{:url('index/adminlte/images_add')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加相片 </a>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="portfolio-content">
+                            <form id="delForm" method="post" action="{:url('index/adminlte/images_del')}">
+                                <ul class="cl portfolio-area">
+                                    {volist name="$img" id="vo"}
+                                    <li class="item">
+                                        <div class="portfoliobox" style="width: 162px;height: 162px;">
+                                            <input class="checkbox" name="delImg[]" type="checkbox" value="{$vo.id}" style="margin-top: -5px">
+                                            <div class="picbox">
+                                                <a href="{$vo.pic_url}" data-lightbox="gallery">
+                                                    <img src="{$vo.pic_url}" style="max-width: 140px;max-height: 140px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {/volist}
+                                </ul>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{/block}
+
+{block name="js"}
+<script src="__STATIC__/Gentelella/vendors/iCheck/icheck.min.js"></script>
+<script src="__HUI__/lib/lightbox2/2.8.1/js/lightbox.min.js"></script>
+{/block}
+{block name="js_code"}
+<script>
+    /*删除*/
+    function datadel(){
+        $("#delForm").submit();
+    }
+</script>
+{/block}

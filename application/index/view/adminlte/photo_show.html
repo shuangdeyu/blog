@@ -9,10 +9,10 @@
     <div class="menu_section">
         <h3>操作导航</h3>
         <ul class="nav side-menu">
-            <li class="active">
+            <li>
                 <a><i class="fa fa-coffee"></i> 微博 <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu" style="display: block;">
-                    <li class="active current-page"><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
+                <ul class="nav child_menu">
+                    <li><a href="{:url('index/adminlte/weibo_show')}">微博</a></li>
                 </ul>
             </li>
             <li>
@@ -21,10 +21,10 @@
                     <li><a href="{:url('index/adminlte/movie_show')}">文章</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="active">
                 <a><i class="fa fa-camera"></i> 摄影 <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="{:url('index/adminlte/photo_show')}">图文</a></li>
+                <ul class="nav child_menu" style="display: block;">
+                    <li class="active current-page"><a href="{:url('index/adminlte/photo_show')}">图文</a></li>
                     <li><a href="{:url('index/adminlte/images_show')}">相册</a></li>
                 </ul>
             </li>
@@ -40,7 +40,14 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>微博管理</h2>
+                    <div class="pull-left">
+                        <h2>图文管理<small>备注：山是一张图片一段文字的形式，人和仙是一段文字多张图的形式</small></h2>
+                    </div>
+                    <div class="pull-right">
+                        <a href="photo_show?type=0" class="btn btn-dark btn-sm">山</a>
+                        <a href="photo_show?type=1" class="btn btn-primary btn-sm">人</a>
+                        <a href="photo_show?type=2" class="btn btn-info btn-sm">仙</a>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
 
@@ -50,7 +57,9 @@
                         <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
                             <i class="fa fa-trash-o"></i> 批量删除
                         </a>
-                        <a href="{:url('index/adminlte/weibo_add')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加微博 </a>
+                        {if condition="(($type == 1)or($type == 2)) and ($photo != '')"} <a href="{:url('index/adminlte/photo_add?type='.$type)}" class="btn disabled btn-primary btn-sm"><i class="fa fa-plus"></i> 添加图文 </a>
+                        {else /} <a href="{:url('index/adminlte/photo_add?type='.$type)}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加图文 </a>
+                        {/if}
                     </div>
 
                     <div class="table-responsive">
@@ -60,10 +69,9 @@
                                 <th>
                                     <input type="checkbox" id="check-all" class="flat">
                                 </th>
-                                <th class="column-title" style="width: 20px;">id </th>
-                                <th class="column-title" style="width: 150px;">标题 </th>
+                                <th class="column-title" >id </th>
                                 <th class="column-title">内容 </th>
-                                <th class="column-title" style="width: 130px;">链接 </th>
+                                <th class="column-title" style="width: 130px;">分类 </th>
                                 <th class="column-title" style="width: 130px;">操作 </th>
                                 <th class="bulk-actions" colspan="7">
                                     <a class="antoo" style="color:#fff; font-weight:500;">批量操作 ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -72,17 +80,16 @@
                             </thead>
 
                             <tbody>
-                            {volist name="$weibo" id="vo"}
+                            {volist name="$photo" id="vo"}
                             <tr class="even pointer">
                                 <td class="a-center ">
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
                                 <td >{$vo.id}</td>
-                                <td >{$vo.name}</td>
                                 <td >{$vo.content}</td>
-                                <td >{$vo.link}</td>
+                                <td >{$vo.type}</td>
                                 <td >
-                                    <a href="{:url('index/adminlte/weibo_info?id='.$vo.id)}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
+                                    <a href="{:url('index/adminlte/photo_edit?id='.$vo.id.'&type='.$vo.type)}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 编辑 </a>
                                     <a onclick="set_id(this, '{$vo.id}')" href="#" class="btn btn-danger btn-xs"
                                        data-toggle="modal" data-target=".modal-weibo-del">
                                         <i class="fa fa-trash-o"></i> 删除
@@ -93,7 +100,6 @@
                             </tbody>
                         </table>
                     </div>
-                    {$weibo->render()}
                 </div>
             </div>
         </div>
@@ -151,9 +157,9 @@
         $(".close").click();
         $.ajax({
             type: 'POST',
-            url: "{:url('index/adminlte/weibo_del')}",
+            url: "{:url('index/adminlte/photo_del')}",
             dataType: 'json',
-            data: {wid: id},
+            data: {pid: id},
             success: function(data){
                 $(obj).parents("tr").remove();
                 ShowNotice("提示", "删除成功", "success", 1000, false);
