@@ -550,7 +550,8 @@ class Adminlte extends Controller
                 Db::name('images')->insertGetId($data_img);
             }
         }
-        echo "<script>parent.window.location.reload();</script>";
+        $url = url('index/adminlte/images_show');
+        echo "<script>window.location.href='$url';</script>";
     }
 
     /**
