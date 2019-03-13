@@ -54,14 +54,32 @@ class Adminlte extends Controller
         // 获取相册数量
         $i_num = Db::name('images')->count("*");
 
-        $url='https://xjkg1rh3.api.lncld.net/1.1/scan/classes/Comment?where=%7B%22is_read%22%3A0%7D&limit=1000&&order=-updatedAt';
-        $html = file_get_contents($url);
-        echo $html;
+        $headers = array(
+            'X-LC-Id:XJKG1rh3bYXGPHnGggtibpne-gzGzoHsz',
+            'X-LC-Key:ACRHNj5gMj4JrmdWP222MKUt,master',
+        );
+        $url = 'https://xjkg1rh3.api.lncld.net/1.1/scan/classes/Comment?where=%7B%22is_read%22%3A0%7D&limit=1000&&order=-updatedAt';
+        //初始化
+        $curl = curl_init();
+        //设置抓取的url
+        curl_setopt($curl, CURLOPT_URL, $url);
+        //设置头文件的信息作为数据流输出
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        //设置获取的信息以文件流的形式返回，而不是直接输出。
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 0);
 
-        $this->assign('w_num', $w_num);
-        $this->assign('a_num', $a_num);
-        $this->assign('i_num', $i_num);
-        return $this->fetch();
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+        //执行命令
+        $data = curl_exec($curl);
+        //关闭URL请求
+        curl_close($curl);
+        //显示获得的数据
+        print_r($data);
+
+//        $this->assign('w_num', $w_num);
+//        $this->assign('a_num', $a_num);
+//        $this->assign('i_num', $i_num);
+//        return $this->fetch();
     }
 
     /**
@@ -524,33 +542,36 @@ class Adminlte extends Controller
     /**
      * 显示图片列表
      */
-    public function images_show(){
-        $img = Db::name('images')->where('target',1)->select();
+    public function images_show()
+    {
+        $img = Db::name('images')->where('target', 1)->select();
 
-        $this->assign('img',$img);
+        $this->assign('img', $img);
         return $this->fetch();
     }
 
     /**
      * 添加图片显示
      */
-    public function images_add(){
+    public function images_add()
+    {
         return $this->fetch();
     }
 
     /**
      * 添加图片操作
      */
-    public function images_save(){
+    public function images_save()
+    {
         $files = request()->file('Photo');
-        foreach($files as $file){
+        foreach ($files as $file) {
             $Upload = new Upload();
             $addr = $Upload->one($file);
 
-            if($addr) {
-                $data_img['pic_url']   = $addr;
+            if ($addr) {
+                $data_img['pic_url'] = $addr;
                 $data_img['target_id'] = 0;
-                $data_img['target']    = 1;
+                $data_img['target'] = 1;
                 Db::name('images')->insertGetId($data_img);
             }
         }
@@ -561,15 +582,16 @@ class Adminlte extends Controller
     /**
      * 删除图片
      */
-    public function images_del(){
+    public function images_del()
+    {
         $imgId = input('post.delImg/a');
-        foreach($imgId as $value){
-            $img = Db::name('images')->where('id',$value)->find();
+        foreach ($imgId as $value) {
+            $img = Db::name('images')->where('id', $value)->find();
 
             $Upload = new Upload();
             $Upload->delete($img['pic_url']);
 
-            Db::name('images')->where('id',$value)->delete();
+            Db::name('images')->where('id', $value)->delete();
         }
         echo "<script>self.location=document.referrer;</script>";
     }
