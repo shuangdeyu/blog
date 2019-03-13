@@ -54,6 +54,10 @@ class Adminlte extends Controller
         // 获取相册数量
         $i_num = Db::name('images')->count("*");
 
+        $url='https://xjkg1rh3.api.lncld.net/1.1/scan/classes/Comment?where=%7B%22is_read%22%3A0%7D&limit=1000&&order=-updatedAt';
+        $html = file_get_contents($url);
+        echo $html;
+
         $this->assign('w_num', $w_num);
         $this->assign('a_num', $a_num);
         $this->assign('i_num', $i_num);
