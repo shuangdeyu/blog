@@ -54,6 +54,7 @@ class Adminlte extends Controller
         // 获取相册数量
         $i_num = Db::name('images')->count("*");
 
+        // 获取最新评论
         $headers = array(
             'X-LC-Id:XJKG1rh3bYXGPHnGggtibpne-gzGzoHsz',
             'X-LC-Key:ACRHNj5gMj4JrmdWP222MKUt,master',
@@ -67,14 +68,19 @@ class Adminlte extends Controller
         curl_setopt($curl, CURLOPT_HEADER, 0);
         //设置获取的信息以文件流的形式返回，而不是直接输出。
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 0);
-
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
         //执行命令
         $data = curl_exec($curl);
         //关闭URL请求
         curl_close($curl);
         //显示获得的数据
-        print_r($data);
+        $data = decodeUnicode($data);
+        $arr = json_decode($data, true);
+        $comment = array();
+        if (isset($arr['results']) && count($arr['results']) > 0) {
+            $comment = $arr['results'];
+        }
+        print_r($comment);
 
 //        $this->assign('w_num', $w_num);
 //        $this->assign('a_num', $a_num);
