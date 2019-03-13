@@ -74,6 +74,7 @@ class Adminlte extends Controller
         curl_close($curl);
         //显示获得的数据
         $data = decodeUnicode($data);
+        $data = substr($data, 0, -1);
         echo $data;
         $arr = json_decode($data, true);
         $comment = array();
