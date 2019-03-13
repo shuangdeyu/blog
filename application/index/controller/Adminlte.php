@@ -73,9 +73,15 @@ class Adminlte extends Controller
         //关闭URL请求
         curl_close($curl);
         //显示获得的数据
-        $data = decodeUnicode($data);
         $data = substr($data, 0, -1);
-        echo $data;
+        $data = trim($data); //清除字符串两边的空格
+        $data = preg_replace("/\t/","",$data); //使用正则表达式替换内容，如：空格，换行，并将替换为空。
+        $data = preg_replace("/\r\n/","",$data);
+        $data = preg_replace("/\r/","",$data);
+        $data = preg_replace("/\n/","",$data);
+        $data = preg_replace("/ /","",$data);
+        $data = preg_replace("/  /","",$data);  //匹配html中的空格
+        $data = decodeUnicode($data);
         $arr = json_decode($data, true);
         $comment = array();
         if (isset($arr['results']) && count($arr['results']) > 0) {
