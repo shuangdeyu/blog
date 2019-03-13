@@ -29,10 +29,18 @@
             padding: 5px;
             border: 0;
             display: flex;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             box-shadow: none !important;
         }
+        .thumbnail .img-cover{ float: left;overflow: hidden;width: 200px;height: 100%; }
         .thumbnail img { float: left; width: 200px !important; height: 100%;object-fit: cover; }
+        .thumbnail img{
+            cursor: pointer;
+            transition: all 0.6s;
+        }
+        .thumbnail:hover .img-cover img{
+            transform: scale(1.4);
+        }
         .thumbnail .caption { float: left; height: 100%; width: calc(100% - 210px); padding-left: 10px; }
         .thumbnail .caption span { display: block; }
         .thumbnail .caption .title {
@@ -89,11 +97,13 @@
                 <div class="col-md-4 col-movie">
                     <div class="thumbnail">
                         <a href="{:url('movie/content','mid='.$vo.id)}">
+                            <div class="img-cover">
                             {if ($vo.cover)}
                                 <img class="lazy" data-original="{$vo.cover}" alt="...">
                             {else /}
                                 <img class="lazy" data-original="http://qiniucdn.shuangdeyu.com/default_article.jpg" alt="...">
                             {/if}
+                            </div>
                             <div class="caption">
                                 <span class="title">{$vo.title}</span>
                                 <span class="content"><?php echo strip_tags($vo['content']); ?></span>
