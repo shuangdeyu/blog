@@ -80,18 +80,31 @@
 <script>
     // 设置评论已读
     function read_comment(obj, id) {
-        var storage = window.localStorage;
-        var local_comment = storage.getItem("comment_list");
-        var arr_comment = JSON.parse(local_comment);
-        var tmp = new Array();
-        for (var i = 0, j = 0; i < arr_comment.length; i++) {
-            if (arr_comment[i]['id'] != id) {
-               tmp[j] = arr_comment[i];
+        $.ajax({
+            type: "POST",
+            url: "{:url('index/adminlte/readComment')}",
+            dataType: "json",
+            data: {id: id},
+            success: function (res) {
+                console.log(res);
+            },
+            error: function (res) {
+                console.log(res);
             }
-        }
-        storage.setItem("comment_list", JSON.stringify(tmp));
+        });
 
-        $(obj).parent().parent().remove()
+        // var storage = window.localStorage;
+        // var local_comment = storage.getItem("comment_list");
+        // var arr_comment = JSON.parse(local_comment);
+        // var tmp = new Array();
+        // for (var i = 0, j = 0; i < arr_comment.length; i++) {
+        //     if (arr_comment[i]['id'] != id) {
+        //        tmp[j] = arr_comment[i];
+        //     }
+        // }
+        // storage.setItem("comment_list", JSON.stringify(tmp));
+        //
+        // $(obj).parent().parent().remove()
     }
 
     // 获取评论数据
