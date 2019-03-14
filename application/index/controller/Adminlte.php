@@ -102,45 +102,45 @@ class Adminlte extends Controller
         );
         $url = urlencode(config('LeancloudGetClassUrl') . 'Comment?where={"is_read":0}&limit=100&&order=-updatedAt');
         $data = curlGet($url, $headers);
-        $data = '{
-    "results":[
-        {
-            "nick":"Anonymous",
-            "updatedAt":"2019-03-13T15:55:19.807Z",
-            "objectId":"5c8927e7fe88c20065efb729",
-            "mail":"",
-            "ua":"Mozilla\/5.0(WindowsNT10.0;Win64;x64)AppleWebKit\/537.36(KHTML,
-            likeGecko)Chrome\/70.0.3534.4Safari\/537.36",
-            "insertedAt":{
-                "__type":"Date",
-                "iso":"2019-03-13T15:55:17.282Z"
-            },
-            "createdAt":"2019-03-13T15:55:19.807Z",
-            "link":"",
-            "is_read":0,
-            "comment":"学习了，很好的教程",
-            "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
-        },
-        {
-            "nick":"Anonymous",
-            "updatedAt":"2019-03-13T16:26:12.521Z",
-            "objectId":"5c892f24fe88c20065f02ca9",
-            "mail":"",
-            "ua":"Mozilla\/5.0(WindowsNT10.0;Win64;x64)AppleWebKit\/537.36(KHTML,
-            likeGecko)Chrome\/70.0.3534.4Safari\/537.36",
-            "insertedAt":{
-                "__type":"Date",
-                "iso":"2019-03-13T16:26:09.905Z"
-            },
-            "createdAt":"2019-03-13T16:26:12.521Z",
-            "link":"",
-            "is_read":0,
-            "comment":"\u270a<\/p>\n很棒，膜拜大佬dasfdsgfdsgdgdfgdfgdfgdfgdfgdrfgrgr",
-            "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
-        }
-    ],
-    "cursor":null
-}1';
+//        $data = '{
+//    "results":[
+//        {
+//            "nick":"Anonymous",
+//            "updatedAt":"2019-03-13T15:55:19.807Z",
+//            "objectId":"5c8927e7fe88c20065efb729",
+//            "mail":"",
+//            "ua":"Mozilla\/5.0(WindowsNT10.0;Win64;x64)AppleWebKit\/537.36(KHTML,
+//            likeGecko)Chrome\/70.0.3534.4Safari\/537.36",
+//            "insertedAt":{
+//                "__type":"Date",
+//                "iso":"2019-03-13T15:55:17.282Z"
+//            },
+//            "createdAt":"2019-03-13T15:55:19.807Z",
+//            "link":"",
+//            "is_read":0,
+//            "comment":"学习了，很好的教程",
+//            "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
+//        },
+//        {
+//            "nick":"Anonymous",
+//            "updatedAt":"2019-03-13T16:26:12.521Z",
+//            "objectId":"5c892f24fe88c20065f02ca9",
+//            "mail":"",
+//            "ua":"Mozilla\/5.0(WindowsNT10.0;Win64;x64)AppleWebKit\/537.36(KHTML,
+//            likeGecko)Chrome\/70.0.3534.4Safari\/537.36",
+//            "insertedAt":{
+//                "__type":"Date",
+//                "iso":"2019-03-13T16:26:09.905Z"
+//            },
+//            "createdAt":"2019-03-13T16:26:12.521Z",
+//            "link":"",
+//            "is_read":0,
+//            "comment":"\u270a<\/p>\n很棒，膜拜大佬dasfdsgfdsgdgdfgdfgdfgdfgdfgdrfgrgr",
+//            "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
+//        }
+//    ],
+//    "cursor":null
+//}1';
         $data = substr($data, 0, -1);
         $data = trim($data); //清除字符串两边的空格
         $data = preg_replace("/\t/", "", $data); // 使用正则表达式替换内容，如：空格，换行，并将替换为空。
