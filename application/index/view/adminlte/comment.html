@@ -159,6 +159,7 @@
                 for (var i = 0, j = 0; i < arr_comment.length; i++) {
                     if (arr_comment[i]['id'] != id) {
                         tmp[j] = arr_comment[i];
+                        j++;
                     }
                 }
                 storage.setItem("comment_list", JSON.stringify(tmp));
