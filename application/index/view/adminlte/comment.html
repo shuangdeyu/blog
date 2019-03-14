@@ -11,8 +11,8 @@
                         <h2>评论管理</h2>
                     </div>
                     <div class="pull-right">
-                        <a href="comment?type=1" class="btn btn-success btn-sm">已读</a>
                         <a href="comment?type=0" class="btn btn-dark btn-sm">未读</a>
+                        <a href="comment?type=1" class="btn btn-success btn-sm">已读</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -88,10 +88,9 @@
     // 获取评论数据
     $(function () {
         var type = $("#readType").val();
-        if (type == 1) {
+        var commentList = $("#commentList");
+        if (type == 0) {
             var storage = window.localStorage;
-            var commentList = $("#commentList");
-
             var local_comment = storage.getItem("comment_list");
             if (local_comment) {
                 var arr_comment = JSON.parse(local_comment);
@@ -118,8 +117,9 @@
                 type: "POST",
                 url: "{:url('index/adminlte/getCommentList')}",
                 dataType: "json",
-                data: {type: 0},
+                data: {type: 1},
                 success: function (res) {
+                    console.log(res);
                     if (res.data.length > 0) {
                         for (var i = 0; i < res.data.length; i++) {
                             commentList.append('<tr class="even pointer">' +

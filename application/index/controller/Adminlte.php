@@ -96,7 +96,7 @@ class Adminlte extends Controller
      */
     public function comment()
     {
-        $type = input('get.type', 1);
+        $type = input('get.type', 0);
         $this->assign('type', $type);
         return $this->fetch();
     }
@@ -106,7 +106,7 @@ class Adminlte extends Controller
      */
     public function getCommentList()
     {
-        $type = input('post.type', 1);
+        $type = input('post.type', 0);
         $headers = array(
             'X-LC-Id:' . config('LeancloudAppId'),
             'X-LC-Key:' . config('LeancloudMasterKey') . ',master',
