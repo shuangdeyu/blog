@@ -236,7 +236,7 @@
                 type: "POST",
                 url: "{:url('index/adminlte/getCommentList')}",
                 dataType: "json",
-                data: {type: 1},
+                data: {type: 0},
                 success: function (res) {
                     storage.setItem("old_time", timestamp.toString());
                     storage.setItem("comment_list", JSON.stringify(res.data));

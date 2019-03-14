@@ -119,7 +119,6 @@
                 dataType: "json",
                 data: {type: 1},
                 success: function (res) {
-                    console.log(res);
                     if (res.data.length > 0) {
                         for (var i = 0; i < res.data.length; i++) {
                             commentList.append('<tr class="even pointer">' +
@@ -168,6 +167,32 @@
             },
             error: function (res) {
                 console.log(res);
+            }
+        });
+    }
+
+    // 设置id
+    function set_id(obj, id) {
+        $("#WeiBoId").val(id);
+        $("#WeiBoObj").val(obj);
+    }
+
+    // 删除记录
+    function delete_row() {
+        var id = $("#WeiBoId").val();
+        var obj = $("#WeiBoObj").val();
+        $(".close").click();
+        $.ajax({
+            type: 'POST',
+            url: "{:url('index/adminlte/deleteComment')}",
+            dataType: 'json',
+            data: {id: id},
+            success: function(data){
+                $(obj).parents("tr").remove();
+                ShowNotice("提示", "删除成功", "success", 1000, false);
+            },
+            error:function(data) {
+                console.log(data.msg);
             }
         });
     }

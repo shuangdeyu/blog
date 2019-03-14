@@ -156,6 +156,22 @@ class Adminlte extends Controller
         return showRes(0, 'success', 'json', $data);
     }
 
+    /**
+     * 删除评论
+     */
+    public function deleteComment()
+    {
+        $id = input('post.id');
+        $headers = array(
+            'X-LC-Id:' . config('LeancloudAppId'),
+            'X-LC-Key:' . config('LeancloudAppKey'),
+        );
+        $url = config('LeancloudUpdateClassUrl') . 'Comment/' . $id;
+        $data = putUrl($url, '', $headers);
+
+        return showRes(0, 'success', 'json', $data);
+    }
+
     /*---------------------------------------------------------------*
      *--------------------------微博相关-----------------------------*
      *---------------------------------------------------------------*/
