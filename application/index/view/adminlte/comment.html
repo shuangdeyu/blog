@@ -123,12 +123,12 @@
                     if (res.data.length > 0) {
                         for (var i = 0; i < res.data.length; i++) {
                             commentList.append('<tr class="even pointer">' +
-                                '                   <td >' + arr_comment[i]['nick'] + '</td>' +
-                                '                   <td >' + arr_comment[i]['comment'] + '</td>' +
-                                '                   <td >' + arr_comment[i]['url'] + '</td>' +
-                                '                   <td >' + arr_comment[i]['link'] + '</td>' +
+                                '                   <td >' + res.data[i]['nick'] + '</td>' +
+                                '                   <td >' + res.data[i]['comment'] + '</td>' +
+                                '                   <td >' + res.data[i]['url'] + '</td>' +
+                                '                   <td >' + res.data[i]['link'] + '</td>' +
                                 '                   <td >' +
-                                '                       <a onclick="set_id(this, ' + arr_comment[i]['id'] + ')" href="#" class="btn btn-danger btn-xs"' +
+                                '                       <a onclick="set_id(this, ' + res.data[i]['id'] + ')" href="#" class="btn btn-danger btn-xs"' +
                                 '                               data-toggle="modal" data-target=".modal-weibo-del">' +
                                 '                               <i class="fa fa-trash-o"></i> 删除' +
                                 '                       </a>' +
