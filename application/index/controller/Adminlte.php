@@ -53,10 +53,42 @@ class Adminlte extends Controller
         // 获取相册数量
         $i_num = Db::name('images')->count("*");
 
-        $this->assign('w_num', $w_num);
-        $this->assign('a_num', $a_num);
-        $this->assign('i_num', $i_num);
-        return $this->fetch();
+        $headers = array(
+            'X-LC-Id:' . config('LeancloudAppId'),
+            'X-LC-Key:' . config('LeancloudMasterKey') . ',master',
+        );
+        $url = urlencode(config('LeancloudGetClassUrl') . 'Comment?where={"is_read":0}&limit=100&&order=-updatedAt');
+        $data = curlGet($url, $headers);
+        echo $data;
+        $data = substr($data, 0, -1);
+        $data = trim($data); //清除字符串两边的空格
+        $data = preg_replace("/\t/", "", $data); // 使用正则表达式替换内容，如：空格，换行，并将替换为空。
+        $data = preg_replace("/\r\n/", "", $data);
+        $data = preg_replace("/\r/", "", $data);
+        $data = preg_replace("/\n/", "", $data);
+        $data = preg_replace("/ /", "", $data);
+        $data = preg_replace("/  /", "", $data);  // 匹配html中的空格
+        echo $data;
+        $arr = json_decode(utf8_encode($data), true); // 带有Unicode，注意编码成utf8
+        $comment = array();
+        if (isset($arr['results']) && count($arr['results']) > 0) {
+            foreach ($arr['results'] as $k => $v) {
+                $comment[$k] = array(
+                    'id' => $v['objectId'],
+                    'nick' => $v['nick'],
+                    'link' => $v['link'],
+                    'createdAt' => date("Y-m-d H:i:s", strtotime($v['createdAt'])),
+                    'url' => $v['url'],
+                    'comment' => $v['comment'],
+                );
+            }
+        }
+        print_r($comment);
+
+//        $this->assign('w_num', $w_num);
+//        $this->assign('a_num', $a_num);
+//        $this->assign('i_num', $i_num);
+//        return $this->fetch();
     }
 
     /**
