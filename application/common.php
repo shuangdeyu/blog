@@ -104,7 +104,6 @@ function curlGet($url, $headers = array())
  */
 function putUrl($url, $data, $headers = array())
 {
-    $data = json_encode($data);
     $ch = curl_init(); //初始化CURL句柄
     curl_setopt($ch, CURLOPT_URL, $url); //设置请求的URL
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
