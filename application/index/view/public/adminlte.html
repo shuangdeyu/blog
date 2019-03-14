@@ -24,6 +24,11 @@
     <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
     <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
 
+    <style>
+        .message {
+            overflow: hidden;
+        }
+    </style>
     {block name="css"}{/block}
 </head>
 
@@ -111,28 +116,29 @@
                         </li>
 
                         <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
+                               aria-expanded="false">
                                 <i class="fa fa-envelope-o"></i>
                                 <span class="badge bg-green">6</span>
                             </a>
                             <ul id="Menu" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <div id="commentMenu">
                                     <!--<li>-->
-                                        <!--<a>-->
-                                            <!--<span class="image"><img src="__IMG__/head.jpg" alt="Profile Image"/></span>-->
-                                            <!--<span>-->
-                                            <!--<span>John Smith</span>-->
-                                            <!--<span class="time">3 mins ago</span>-->
-                                        <!--</span>-->
-                                            <!--<span class="message">-->
-                                            <!--Film festivals used to be do-or-die moments for movie makers. They were where...-->
-                                        <!--</span>-->
-                                        <!--</a>-->
+                                    <!--<a>-->
+                                    <!--<span class="image"><img src="__IMG__/head.jpg" alt="Profile Image"/></span>-->
+                                    <!--<span>-->
+                                    <!--<span>John Smith</span>-->
+                                    <!--<span class="time">3 mins ago</span>-->
+                                    <!--</span>-->
+                                    <!--<span class="message">-->
+                                    <!--Film festivals used to be do-or-die moments for movie makers. They were where...-->
+                                    <!--</span>-->
+                                    <!--</a>-->
                                     <!--</li>-->
                                 </div>
                                 <li>
                                     <div class="text-center">
-                                        <a>
+                                        <a href="{:url('index/adminlte/comment')}">
                                             <strong>查看所有</strong>
                                             <i class="fa fa-angle-right"></i>
                                         </a>
@@ -219,7 +225,7 @@
         var commentMenu = $("#commentMenu");
 
         var old_time = storage.getItem("old_time");
-        var diff = (timestamp-old_time)/1000/3600;
+        var diff = (timestamp - old_time) / 1000 / 3600;
         var num = 5;
         if (diff >= 0.01) {
             storage.removeItem("old_time");
@@ -229,7 +235,7 @@
                 type: "POST",
                 url: "{:url('index/adminlte/getCommentList')}",
                 dataType: "json",
-                data: {id:1},
+                data: {id: 1},
                 success: function (res) {
                     console.log(res);
                     storage.setItem("old_time", timestamp.toString());
@@ -239,15 +245,15 @@
                             num = res.data.length;
                         }
                         commentMenu.empty();
-                        for (var i=0;i<num;i++) {
+                        for (var i = 0; i < num; i++) {
                             commentMenu.append('<li>' +
                                 '               <a>' +
                                 '                 <span class="image"><img src="__IMG__/head.jpg" alt="Profile Image"/></span>' +
                                 '                 <span>' +
-                                '                   <span>'+res.data[i]['nick']+'</span>' +
-                                '                   <span class="time">'+res.data[i]['createdAt']+'</span>' +
+                                '                   <span>' + res.data[i]['nick'] + '</span>' +
+                                '                   <span class="time">' + res.data[i]['createdAt'] + '</span>' +
                                 '                 </span>' +
-                                '                 <span class="message">'+res.data[i]['comment']+'</span>' +
+                                '                 <span class="message">' + res.data[i]['comment'] + '</span>' +
                                 '                </a>' +
                                 '              </li>');
                         }
@@ -265,15 +271,15 @@
                     num = arr_comment.length;
                 }
                 commentMenu.empty();
-                for (var i=0;i<num;i++) {
+                for (var i = 0; i < num; i++) {
                     commentMenu.append('<li>' +
                         '               <a>' +
                         '                 <span class="image"><img src="__IMG__/head.jpg" alt="Profile Image"/></span>' +
                         '                 <span>' +
-                        '                   <span>'+arr_comment[i]['nick']+'</span>' +
-                        '                   <span class="time">'+arr_comment[i]['createdAt']+'</span>' +
+                        '                   <span>' + arr_comment[i]['nick'] + '</span>' +
+                        '                   <span class="time">' + arr_comment[i]['createdAt'] + '</span>' +
                         '                 </span>' +
-                        '                 <span class="message">'+arr_comment[i]['comment']+'</span>' +
+                        '                 <span class="message">' + arr_comment[i]['comment'] + '</span>' +
                         '                </a>' +
                         '              </li>');
                 }

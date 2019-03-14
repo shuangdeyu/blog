@@ -1,0 +1,55 @@
+{extend name="public/adminlte" /}
+
+{block name="content"}
+<div class="right_col" role="main">
+    <div class="">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>微博管理</h2>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+
+                    <div style="margin-bottom: 5px;">
+                        <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
+                            <i class="fa fa-trash-o"></i> 批量删除
+                        </a>
+                        <a href="{:url('index/adminlte/weibo_add')}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加微博 </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="modal fade bs-example-modal-sm modal-weibo-del" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2">操作</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>确认删除此条记录？</b></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" onclick="delete_row()">确认</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <span id="WeiBoId" type="hidden"></span>
+        <span id="WeiBoObj" type="hidden"></span>
+        <!-- /modal -->
+
+    </div>
+</div>
+{/block}

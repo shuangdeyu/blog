@@ -60,6 +60,38 @@ class Adminlte extends Controller
     }
 
     /**
+     * 登录验证
+     */
+    public function login()
+    {
+        $user = $_POST['user'];
+        $password = md5($_POST['password']);
+
+        $Admin = Db::name('admin');
+        $where = array();
+        $where['user'] = $user;
+        $where['password'] = $password;
+        $con = $Admin->where($where)->find();
+
+        if ($con) {
+            Session::set('user', $user);
+            Session::set('userId', $con['id']);
+            $this->success('登陆成功', url('index/adminlte/main'));
+        } else {
+            echo "<script>alert('用户名或密码错误');history.go(-1);</script>";
+        }
+    }
+
+    /**
+     * 退出登录
+     */
+    public function loginout()
+    {
+        Session::clear();
+        $this->redirect(url('index/adminlte/index'));
+    }
+
+    /**
      * 获取最新评论
      */
     public function getCommentList()
@@ -86,7 +118,7 @@ class Adminlte extends Controller
             "createdAt":"2019-03-13T15:55:19.807Z",
             "link":"",
             "is_read":0,
-            "comment":"",
+            "comment":"学习了，很好的教程",
             "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
         },
         {
@@ -103,7 +135,7 @@ class Adminlte extends Controller
             "createdAt":"2019-03-13T16:26:12.521Z",
             "link":"",
             "is_read":0,
-            "comment":"\u270a<\/p>\n",
+            "comment":"\u270a<\/p>\n很棒，膜拜大佬dasfdsgfdsgdgdfgdfgdfgdfgdfgdrfgrgr",
             "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
         }
     ],
@@ -134,35 +166,10 @@ class Adminlte extends Controller
     }
 
     /**
-     * 登录验证
+     * 评论页
      */
-    public function login()
-    {
-        $user = $_POST['user'];
-        $password = md5($_POST['password']);
-
-        $Admin = Db::name('admin');
-        $where = array();
-        $where['user'] = $user;
-        $where['password'] = $password;
-        $con = $Admin->where($where)->find();
-
-        if ($con) {
-            Session::set('user', $user);
-            Session::set('userId', $con['id']);
-            $this->success('登陆成功', url('index/adminlte/main'));
-        } else {
-            echo "<script>alert('用户名或密码错误');history.go(-1);</script>";
-        }
-    }
-
-    /**
-     * 退出登录
-     */
-    public function loginout()
-    {
-        Session::clear();
-        $this->redirect(url('index/adminlte/index'));
+    public function comment() {
+        return $this->fetch();
     }
 
     /*---------------------------------------------------------------*
