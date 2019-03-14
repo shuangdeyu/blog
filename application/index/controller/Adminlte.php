@@ -154,6 +154,7 @@ class Adminlte extends Controller
         if (isset($arr['results']) && count($arr['results']) > 0) {
             foreach ($arr['results'] as $k => $v) {
                 $comment[$k] = array(
+                    'id' => $v['objectId'],
                     'nick' => $v['nick'],
                     'link' => $v['link'],
                     'createdAt' => date("Y-m-d H:i:s", strtotime($v['createdAt'])),

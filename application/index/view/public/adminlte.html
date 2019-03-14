@@ -119,7 +119,7 @@
                             <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
                                aria-expanded="false">
                                 <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">6</span>
+                                <span class="badge bg-green" id="commentNum"></span>
                             </a>
                             <ul id="Menu" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <div id="commentMenu">
@@ -223,6 +223,7 @@
         var timestamp = Date.parse(new Date());
         var storage = window.localStorage;
         var commentMenu = $("#commentMenu");
+        var commentNum = $("#commentNum");
 
         var old_time = storage.getItem("old_time");
         var diff = (timestamp - old_time) / 1000 / 3600;
@@ -237,13 +238,13 @@
                 dataType: "json",
                 data: {id: 1},
                 success: function (res) {
-                    console.log(res);
                     storage.setItem("old_time", timestamp.toString());
                     storage.setItem("comment_list", JSON.stringify(res.data));
                     if (res.data.length > 0) {
                         if (res.data.length < num) {
                             num = res.data.length;
                         }
+                        commentNum.text(res.data.length);
                         commentMenu.empty();
                         for (var i = 0; i < num; i++) {
                             commentMenu.append('<li>' +
@@ -270,6 +271,7 @@
                 if (arr_comment.length < num) {
                     num = arr_comment.length;
                 }
+                commentNum.text(arr_comment.length);
                 commentMenu.empty();
                 for (var i = 0; i < num; i++) {
                     commentMenu.append('<li>' +
