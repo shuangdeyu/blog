@@ -53,46 +53,84 @@ class Adminlte extends Controller
         // 获取相册数量
         $i_num = Db::name('images')->count("*");
 
-        // 获取最新评论
+        $this->assign('w_num', $w_num);
+        $this->assign('a_num', $a_num);
+        $this->assign('i_num', $i_num);
+        return $this->fetch();
+    }
+
+    /**
+     * 获取最新评论
+     */
+    public function getCommentList()
+    {
         $headers = array(
-            'X-LC-Id:XJKG1rh3bYXGPHnGggtibpne-gzGzoHsz',
-            'X-LC-Key:ACRHNj5gMj4JrmdWP222MKUt,master',
+            'X-LC-Id:' . config('LeancloudAppId'),
+            'X-LC-Key:' . config('LeancloudMasterKey') . ',master',
         );
-        $url = 'https://xjkg1rh3.api.lncld.net/1.1/scan/classes/Comment?where=%7B%22is_read%22%3A0%7D&limit=1000&&order=-updatedAt';
-        //初始化
-        $curl = curl_init();
-        //设置抓取的url
-        curl_setopt($curl, CURLOPT_URL, $url);
-        //设置头文件的信息作为数据流输出
-        curl_setopt($curl, CURLOPT_HEADER, 0);
-        //设置获取的信息以文件流的形式返回，而不是直接输出。
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 0);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-        //执行命令
-        $data = curl_exec($curl);
-        //关闭URL请求
-        curl_close($curl);
-        //显示获得的数据
+        $url = urlencode(config('LeancloudGetClassUrl') . 'Comment?where={"is_read":0}&limit=100&&order=-updatedAt');
+        $data = curlGet($url, $headers);
+        $data = '{
+    "results":[
+        {
+            "nick":"Anonymous",
+            "updatedAt":"2019-03-13T15:55:19.807Z",
+            "objectId":"5c8927e7fe88c20065efb729",
+            "mail":"",
+            "ua":"Mozilla\/5.0(WindowsNT10.0;Win64;x64)AppleWebKit\/537.36(KHTML,
+            likeGecko)Chrome\/70.0.3534.4Safari\/537.36",
+            "insertedAt":{
+                "__type":"Date",
+                "iso":"2019-03-13T15:55:17.282Z"
+            },
+            "createdAt":"2019-03-13T15:55:19.807Z",
+            "link":"",
+            "is_read":0,
+            "comment":"",
+            "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
+        },
+        {
+            "nick":"Anonymous",
+            "updatedAt":"2019-03-13T16:26:12.521Z",
+            "objectId":"5c892f24fe88c20065f02ca9",
+            "mail":"",
+            "ua":"Mozilla\/5.0(WindowsNT10.0;Win64;x64)AppleWebKit\/537.36(KHTML,
+            likeGecko)Chrome\/70.0.3534.4Safari\/537.36",
+            "insertedAt":{
+                "__type":"Date",
+                "iso":"2019-03-13T16:26:09.905Z"
+            },
+            "createdAt":"2019-03-13T16:26:12.521Z",
+            "link":"",
+            "is_read":0,
+            "comment":"\u270a<\/p>\n",
+            "url":"http:\/\/xf.shuangdeyu.com\/movie\/content.html?mid=29"
+        }
+    ],
+    "cursor":null
+}1';
         $data = substr($data, 0, -1);
         $data = trim($data); //清除字符串两边的空格
-        $data = preg_replace("/\t/","",$data); //使用正则表达式替换内容，如：空格，换行，并将替换为空。
-        $data = preg_replace("/\r\n/","",$data);
-        $data = preg_replace("/\r/","",$data);
-        $data = preg_replace("/\n/","",$data);
-        $data = preg_replace("/ /","",$data);
-        $data = preg_replace("/  /","",$data);  //匹配html中的空格
-        $data = decodeUnicode($data);
-        $arr = json_decode($data, true);
+        $data = preg_replace("/\t/", "", $data); // 使用正则表达式替换内容，如：空格，换行，并将替换为空。
+        $data = preg_replace("/\r\n/", "", $data);
+        $data = preg_replace("/\r/", "", $data);
+        $data = preg_replace("/\n/", "", $data);
+        $data = preg_replace("/ /", "", $data);
+        $data = preg_replace("/  /", "", $data);  // 匹配html中的空格
+        $arr = json_decode(utf8_encode($data), true); // 带有Unicode，注意编码成utf8
         $comment = array();
         if (isset($arr['results']) && count($arr['results']) > 0) {
-            $comment = $arr['results'];
+            foreach ($arr['results'] as $k => $v) {
+                $comment[$k] = array(
+                    'nick' => $v['nick'],
+                    'link' => $v['link'],
+                    'createdAt' => date("Y-m-d H:i:s", strtotime($v['createdAt'])),
+                    'url' => $v['url'],
+                    'comment' => $v['comment'],
+                );
+            }
         }
-        print_r($comment);
-
-//        $this->assign('w_num', $w_num);
-//        $this->assign('a_num', $a_num);
-//        $this->assign('i_num', $i_num);
-//        return $this->fetch();
+        return showRes(0, 'success', 'json', $comment);
     }
 
     /**
