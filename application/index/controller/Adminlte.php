@@ -96,6 +96,8 @@ class Adminlte extends Controller
      */
     public function comment()
     {
+        $type = input('get.type', 1);
+        $this->assign('type', $type);
         return $this->fetch();
     }
 
@@ -104,11 +106,12 @@ class Adminlte extends Controller
      */
     public function getCommentList()
     {
+        $type = input('post.type', 1);
         $headers = array(
             'X-LC-Id:' . config('LeancloudAppId'),
             'X-LC-Key:' . config('LeancloudMasterKey') . ',master',
         );
-        $url = config('LeancloudGetClassUrl') . 'Comment?where=' . urlencode('{"is_read":0}') . '&limit=100&&order=-updatedAt';
+        $url = config('LeancloudGetClassUrl') . 'Comment?where=' . urlencode('{"is_read":' . $type . '}') . '&limit=100&&order=-updatedAt';
         $data = curlGet($url, $headers);
 
         $data = trim($data); //清除字符串两边的空格
