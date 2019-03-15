@@ -228,7 +228,7 @@
         var old_time = storage.getItem("old_time");
         var diff = (timestamp - old_time) / 1000 / 3600;
         var num = 5;
-        if (diff >= 0.01) {
+        if (diff >= 2) {
             storage.removeItem("old_time");
             storage.removeItem("comment_list");
 
