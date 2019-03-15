@@ -189,7 +189,18 @@
             dataType: 'json',
             data: {id: id},
             success: function(res){
-                console.log(res);
+                var storage = window.localStorage;
+                var local_comment = storage.getItem("comment_list");
+                var arr_comment = JSON.parse(local_comment);
+                var tmp = new Array();
+                for (var i = 0, j = 0; i < arr_comment.length; i++) {
+                    if (arr_comment[i]['id'] != id) {
+                        tmp[j] = arr_comment[i];
+                        j++;
+                    }
+                }
+                storage.setItem("comment_list", JSON.stringify(tmp));
+
                 $(obj).parents("tr").remove();
                 ShowNotice("提示", "删除成功", "success", 1000, false);
             },
