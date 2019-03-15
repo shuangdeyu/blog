@@ -167,7 +167,7 @@ class Adminlte extends Controller
             'X-LC-Key:' . config('LeancloudAppKey'),
         );
         $url = config('LeancloudUpdateClassUrl') . 'Comment/' . $id;
-        $data = putUrl($url, '', $headers);
+        $data = deleteUrl($url, '', $headers);
 
         return showRes(0, 'success', 'json', $data);
     }
