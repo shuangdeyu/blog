@@ -188,12 +188,13 @@
             url: "{:url('index/adminlte/deleteComment')}",
             dataType: 'json',
             data: {id: id},
-            success: function(data){
+            success: function(res){
+                console.log(res);
                 $(obj).parents("tr").remove();
                 ShowNotice("提示", "删除成功", "success", 1000, false);
             },
-            error:function(data) {
-                console.log(data.msg);
+            error:function(res) {
+                console.log(res.msg);
             }
         });
     }
