@@ -19,13 +19,23 @@ class Movie extends Controller
 {
     public function index(){
         $search = trim(input('get.search', ''));
-        $tag_id = trim(input('get.tag_id', ''));
-        $data = Db::name('movie')
-            ->where('title', 'like', '%' . $search . '%')
-            ->order('id desc')
-            ->paginate(10, false, [
-                'query' => ['search'=>$search],
-            ]);
+        $tag_id = trim(input('get.tag', ''));
+        if ($tag_id != '') {
+            $data = Db::name('movie')
+                ->where('title', 'like', '%' . $search . '%')
+                ->where('tags', 'like', '%,' . $tag_id . ',%')
+                ->order('id desc')
+                ->paginate(10, false, [
+                    'query' => ['search'=>$search, 'tag'=>$tag_id],
+                ]);
+        } else {
+            $data = Db::name('movie')
+                ->where('title', 'like', '%' . $search . '%')
+                ->order('id desc')
+                ->paginate(10, false, [
+                    'query' => ['search'=>$search, 'tag'=>$tag_id],
+                ]);
+        }
 
         // 获取tag列表
         $tags = Db::name('tag')->select();
@@ -49,7 +59,7 @@ class Movie extends Controller
      * 获取tags名称
      */
     public function tags_name($tags) {
-        $list = explode($tags, ',');
+        $list = explode(',', $tags);
         if (is_array($list) && count($list) > 0) {
             $tmp = '';
             foreach ($list as $v) {
