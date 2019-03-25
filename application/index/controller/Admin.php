@@ -24,6 +24,7 @@ class Admin extends Controller
      * 登录首页
      */
     public function index(){
+        return view('public/404');
         return $this->fetch();
     }
 
@@ -33,7 +34,8 @@ class Admin extends Controller
     public function main(){
         /*$user_name = Session::get('user');
         $this->assign('user',$user_name);*/
-        return $this->fetch();
+//        return $this->fetch();
+        return view('public/404');
     }
 
     /**

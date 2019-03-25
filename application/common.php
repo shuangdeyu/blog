@@ -10,6 +10,7 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+use app\index\controller\Movie as MovieController;
 
 /**
  * 设置ajax跨域头文件，允许跨域
@@ -132,4 +133,15 @@ function deleteUrl($url, $data, $headers = array())
     $output = curl_exec($ch);
     curl_close($ch);
     return json_decode($output, true);
+}
+
+/**
+ * 获取tags名称
+ * @param string $tags
+ * @return string
+ */
+function getTagsName($tags = '') {
+    $movie = new MovieController();
+    $data = $movie->tags_name($tags);
+    return $data;
 }

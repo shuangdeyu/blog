@@ -251,6 +251,37 @@ ol, ul, li {
 }
 
 
+.label {
+    display: inline;
+    padding: .2em .5em .2em;
+    font-size: 85.71428571%;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: grey;
+    border-radius: .25em;
+}
+.label-primary {
+    background-color: #0798c7;
+}
+.label-success {
+    background-color: #4ba946;
+}
+.label-info {
+    background-color: #79bce7;
+}
+.label-warning {
+    background-color: #fddf55;
+}
+.label-danger {
+    background-color: #be3223;
+}
+.label:hover {
+    color: #fff;
+}
+
 
 
 

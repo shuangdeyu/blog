@@ -42,7 +42,7 @@
             transform: scale(1.4);
         }
         .thumbnail .caption { float: left; height: 100%; width: calc(100% - 210px); padding-left: 10px; }
-        .thumbnail .caption span { display: block; }
+        /*.thumbnail .caption span { display: block; }*/
         .thumbnail .caption .title {
             height: 30px;
             font-size: 16px;
@@ -50,6 +50,7 @@
             color: #475164;
             font-weight: 600;
         }
+        .thumbnail .label { font-size: 10px;font-weight: 400; }
         .thumbnail .caption .content {
             max-height: calc(100% - 30px);
             overflow: hidden;
@@ -76,6 +77,7 @@
             font-size: 1em;
             height: 35px;
             padding: 0 10px;
+            margin-bottom: 5px;
             transition: background 0.3s ease-in-out;
         }
         .movie-search input:focus {
@@ -83,7 +85,7 @@
             border-color: #9ecaed;
             box-shadow: 0 0 10px #9ecaed;
         }
-        .movie-card { margin-top: 35px; }
+        .movie-card { margin-top: 50px; }
     </style>
 {/block}
 
@@ -91,6 +93,7 @@
     <div class="con-right">
         <div class="movie-search">
             <input id="goSearch" value="{$search_str}" placeholder="搜索" />
+            <a class="label" href="#">技术</a>
         </div>
         <div class="movie-card row">
             {volist name="list" id="vo"}
@@ -105,8 +108,11 @@
                             {/if}
                             </div>
                             <div class="caption">
-                                <span class="title">{$vo.title}</span>
-                                <span class="content"><?php echo strip_tags($vo['content']); ?></span>
+                                <p class="title">
+                                    <span>{$vo.title}</span>
+                                    {$vo.tags | getTagsName}
+                                </p>
+                                <p class="content"><?php echo strip_tags($vo['content']); ?></p>
                             </div>
                         </a>
                     </div>
