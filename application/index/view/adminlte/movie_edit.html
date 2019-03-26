@@ -3,6 +3,15 @@
 {block name="css"}
 <link type="text/css" rel="stylesheet" href="__STATIC__/editor.md/editormd.css">
 <link type="text/css" rel="stylesheet" href="__HUI__/fileinput/fileinput.css" >
+
+<link href="__STATIC__/quill/dracula.min.css" rel="stylesheet">
+<link href="__STATIC__/quill/quill.snow.css" rel="stylesheet">
+
+<style>
+    #editor {
+        height: 500px;
+    }
+</style>
 {/block}
 
 {block name="sidebar"}
@@ -50,7 +59,8 @@
                     </div>
                     <div class="x_content">
                         <br />
-                        <form action="{:url('index/adminlte/movie_update')}" method="post" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left" >
+                        <form action="{:url('index/adminlte/movie_update')}" method="post" enctype="multipart/form-data"
+                              data-parsley-validate class="form-horizontal form-label-left" id="submitForm">
 
                             <input type="hidden" value="{$movie.id}" name="mid">
                             <div class="form-group">
@@ -67,7 +77,54 @@
                                     </div>
                                 {else /}
                                     <div class="col-md-8 col-sm-8 col-xs-12">
-                                        <textarea id="articleContent" name="content" style="width:740px;height:500px;">{$movie.content}</textarea>
+                                        <!--<textarea id="articleContent" name="content" style="width:740px;height:500px;">{$movie.content}</textarea>-->
+                                        <div id="toolbar-container">
+                                        <span class="ql-formats">
+                                          <select class="ql-font"></select>
+                                          <select class="ql-size"></select>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-bold"></button>
+                                          <button class="ql-italic"></button>
+                                          <button class="ql-underline"></button>
+                                          <button class="ql-strike"></button>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <select class="ql-color"></select>
+                                          <select class="ql-background"></select>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-script" value="sub"></button>
+                                          <button class="ql-script" value="super"></button>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-header" value="1"></button>
+                                          <button class="ql-header" value="2"></button>
+                                          <button class="ql-blockquote"></button>
+                                          <button class="ql-code-block"></button>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-list" value="ordered"></button>
+                                          <button class="ql-list" value="bullet"></button>
+                                          <button class="ql-indent" value="-1"></button>
+                                          <button class="ql-indent" value="+1"></button>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-direction" value="rtl"></button>
+                                          <select class="ql-align"></select>
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-link"></button>
+                                          <button class="ql-image"></button>
+                                          <button class="ql-video"></button>
+                                                <!--<button class="ql-formula"></button>-->
+                                        </span>
+                                            <span class="ql-formats">
+                                          <button class="ql-clean"></button>
+                                        </span>
+                                        </div>
+                                        <div id="editor">{$movie.content}</div>
+                                        <input name="content" type="hidden" >
                                     </div>
                                 {/if}
                             </div>
@@ -90,7 +147,11 @@
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                                     <button class="btn btn-primary" type="reset">取消</button>
+                                    {if ($is_m eq 1)}
                                     <button type="submit" class="btn btn-success">保存</button>
+                                    {else /}
+                                    <button type="button" class="btn btn-success" onclick="sub_post()">保存</button>
+                                    {/if}
                                 </div>
                             </div>
 
@@ -123,12 +184,34 @@
     });
 </script>
 {else /}
-<script src="__KED__/kindeditor.js"></script>
-<script src="__KED__/lang/zh_CN.js"></script>
+<!--<script src="__KED__/kindeditor.js"></script>-->
+<!--<script src="__KED__/lang/zh_CN.js"></script>-->
+
+<script src="__STATIC__/quill/highlight.min.js"></script>
+<script src="__STATIC__/quill/quill.min.js"></script>
+
 <script>
-    KindEditor.ready(function(K) {
-        window.editor = K.create('#articleContent');
+    // KindEditor.ready(function(K) {
+    //     window.editor = K.create('#articleContent');
+    // });
+
+    // quill编辑器
+    var editor = new Quill('#editor', {
+        modules: {
+            syntax: true,
+            toolbar: '#toolbar-container'
+        },
+        theme: 'snow'
     });
+
+    // 提交表单
+    function sub_post() {
+        var html = document.querySelector('#editor').children[0].innerHTML;
+        html = '<div class="ql-container ql-snow"><div class="ql-editor">'+html+"</div></div>";
+        $('[name=content]').val(html);
+
+        $("#submitForm").submit();
+    }
 </script>
 {/if}
 

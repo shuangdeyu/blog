@@ -1,29 +1,33 @@
 {extend name="public/base" /}
 
-{block name="style-bootstrap-css"}
-    <style type="text/css">
-        #back-to-top {
-            position: fixed;
-            bottom: 50px;
-            right: 0px;
-        }
-        #back-to-top a span {
-            background: #9c9c9c;
-            border-radius: 6px;
-            display: block;
-            height: 30px;
-            width: 30px;
-            background: #9c9c9c url(__IMG__/arrow-up.png) no-repeat center center;
-            background-size: 14px;
-            margin-bottom: 5px;
-            -moz-transition: background 0.3s;
-            -webkit-transition: background 0.3s;
-            -o-transition: background 0.3s;
-            transition: background 0.3s;
-        }
-    </style>
+{block name="css"}
+<link type="text/css" rel="stylesheet" href="__STATIC__/editor.md/css/editormd.preview.css">
+<link href="__STATIC__/quill/dracula.min.css" rel="stylesheet">
+<link href="__STATIC__/quill/quill.snow.css" rel="stylesheet">
 
-    <link type="text/css" rel="stylesheet" href="__STATIC__/editor.md/css/editormd.preview.css">
+<style type="text/css">
+    #back-to-top {
+        position: fixed;
+        bottom: 50px;
+        right: 0px;
+    }
+    #back-to-top a span {
+        background: #9c9c9c;
+        border-radius: 6px;
+        display: block;
+        height: 30px;
+        width: 30px;
+        background: #9c9c9c url(__IMG__/arrow-up.png) no-repeat center center;
+        background-size: 14px;
+        margin-bottom: 5px;
+        -moz-transition: background 0.3s;
+        -webkit-transition: background 0.3s;
+        -o-transition: background 0.3s;
+        transition: background 0.3s;
+    }
+
+    .ql-container.ql-snow { border: none; }
+</style>
 {/block}
 
 {block name="content"}

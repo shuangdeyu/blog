@@ -1,8 +1,12 @@
 {extend name="public/base" /}
 
-{block name="style-bootstrap-css"}
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
-<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+{block name="css"}
+<link href="__STATIC__/quill/dracula.min.css" rel="stylesheet">
+<link href="__STATIC__/quill/quill.snow.css" rel="stylesheet">
+
+<style>
+    .ql-container.ql-snow { border: none; }
+</style>
 {/block}
 
 {block name="content"}
@@ -23,7 +27,3 @@
     </div>
 {/block}
 
-{block name="js-code"}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.quilljs.com/1.0.0/quill.min.js"></script>
-{/block}

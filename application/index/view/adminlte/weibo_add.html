@@ -1,8 +1,8 @@
 {extend name="public/adminlte" /}
 
 {block name="css"}
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
-<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+<link href="__STATIC__/quill/dracula.min.css" rel="stylesheet">
+<link href="__STATIC__/quill/quill.snow.css" rel="stylesheet">
 
 <style>
     #editor {
@@ -74,6 +74,7 @@
                             <div class="form-group">
                                 <label class="control-label col-md-2 col-sm-2 col-xs-12">内容</label>
                                 <div class="col-md-86 col-sm-8 col-xs-12">
+
                                     <!--<textarea id="articleContent" name="content" style="width:740px;height:500px;"></textarea>-->
                                     <div id="toolbar-container">
                                         <span class="ql-formats">
@@ -122,6 +123,7 @@
                                     </div>
                                     <div id="editor"></div>
                                     <input name="content" type="hidden" >
+
                                 </div>
                             </div>
 
@@ -147,8 +149,8 @@
 <!--<script src="__KED__/kindeditor.js"></script>-->
 <!--<script src="__KED__/lang/zh_CN.js"></script>-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.quilljs.com/1.0.0/quill.min.js"></script>
+<script src="__STATIC__/quill/highlight.min.js"></script>
+<script src="__STATIC__/quill/quill.min.js"></script>
 
 <script>
     // 百度编辑器
@@ -168,10 +170,10 @@
     // 提交表单
     function sub_post() {
         var html = document.querySelector('#editor').children[0].innerHTML;
-        console.log(html);
+        html = '<div class="ql-container ql-snow"><div class="ql-editor">'+html+"</div></div>";
         $('[name=content]').val(html);
 
-        // $("#submitForm").submit();
+        $("#submitForm").submit();
     }
 </script>
 {/block}
