@@ -97,6 +97,7 @@
         <div class="movie-card row">
             {if ($search_str == '')}
             <div style="padding-left: 5px;margin-bottom: 10px;">
+                <a class="label label-default" href="{:url('movie/index')}">全部</a>
                 {volist name="tags" id="vo"}
                 <a class="label {$vo.css}" href="{:url('movie/index').'?tag='.$vo.id}">{$vo.name}</a>
                 {/volist}
