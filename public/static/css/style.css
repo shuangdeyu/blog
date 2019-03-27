@@ -114,7 +114,7 @@ ol, ul, li {
     margin-left: 280px;
     padding-top: 25px;
     width: 900px;
-    font: 13px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+    /*font: 13px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;*/
     overflow: hidden;
 }
 .con-right img{
