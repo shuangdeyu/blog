@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>douban_film 实验站</title>
+    <link rel="Bookmark" href="__IMG__/favicon.ico">
+    <link rel="Shortcut Icon" href="__IMG__/favicon.ico"/>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/Gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="__STATIC__/Gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="__STATIC__/Gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <!--<link href="__STATIC__/Gentelella/build/css/custom.min.css" rel="stylesheet">-->
+    <!-- PNotify -->
+    <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("__IMG__/back.png");
+        }
+
+        @-webkit-keyframes shake {
+            0% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.8;
+            }
+        }
+        @keyframes shake {
+            0% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.8;
+            }
+        }
+        .shake {
+            margin-left: 15px;
+            color: #4ba946;
+            -webkit-animation: shake 1.5s infinite;
+            animation: shake 1.5s infinite;
+        }
+
+        .film_container {
+            margin: 15px 5px;
+            padding: 15px 10px;
+            background-color: #ffffff;
+            border: 1px solid #E3E3E3;
+            border-radius: 5px;
+            box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+        }
+        .statement {
+            border-bottom: 1px solid #E3E3E3;
+            padding-bottom: 10px;
+            color: #8d8c91;
+            height: 30px;
+        }
+        .tags { margin-top: 10px; }
+        .tags .label { margin-bottom: 5px;display:inline-block;font-weight: normal;padding: .5em 1.2em;letter-spacing: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="douban_container">
+    <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
+
+        <div class="film_container">
+            <div class="statement">
+                <div class="pull-left">
+                    <strong id="SelectTag" style="font-size: 18px;color: #0b1013;">{$tag}</strong>
+                </div>
+                <div class="pull-right">
+                    <span>项目地址: </span>
+                    <a href="https://github.com/shuangdeyu/goquery_douban.git">https://github.com/shuangdeyu/goquery_douban.git</a>
+                    <span class="shake">仅供学习</span>
+                </div>
+            </div>
+
+            <div class="tags">
+                <a class="label" style="background-color: #69686d" href="{:url('photo/douban_film').'?order='.$order}">全部</a>
+                {volist name="tags" id="vo"}
+                <a class="label" style="background-color: {$vo.color}" href="{:url('photo/douban_film').'?order='.$order.'&tag='.$vo.name}">{$vo.name}</a>
+                {/volist}
+            </div>
+
+            <div class="film-list">
+                <div class="order-tab">
+
+                </div>
+            </div>
+        </div>
+
+        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large-->
+        <!--modal-->
+        <!--</button>-->
+        <!--<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">-->
+        <!--<div class="modal-dialog modal-lg">-->
+        <!--<div class="modal-content">-->
+
+        <!--<div class="modal-header">-->
+        <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>-->
+        <!--</button>-->
+        <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+        <!--<h4>Text in a modal</h4>-->
+        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis-->
+        <!--lacus-->
+        <!--vel augue laoreet rutrum faucibus dolor auctor.</p>-->
+        <!--<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel-->
+        <!--scelerisque-->
+        <!--nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor-->
+        <!--fringilla.</p>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="__STATIC__/Gentelella/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="__STATIC__/Gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="__STATIC__/Gentelella/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="__STATIC__/Gentelella/vendors/nprogress/nprogress.js"></script>
+<!-- Custom Theme Scripts -->
+<script src="__STATIC__/Gentelella/build/js/custom.min.js"></script>
+<!-- PNotify -->
+<script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.js"></script>
+<script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.buttons.js"></script>
+<script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>
