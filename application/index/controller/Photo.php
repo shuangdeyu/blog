@@ -83,7 +83,7 @@ class Photo extends Controller
 //            );
 //        }
         // 获取电影列表
-        $tag == '全部' ? '' : $tag;
+        $tag == '全部' ? $tag = '' : $tag;
         if ($order != 'rank' && $order != 'recommend' && $order != 'release') {
             $order = 'release';
         }
@@ -100,7 +100,7 @@ class Photo extends Controller
                 'query' => ['tag' => $tag, 'order' => $order],
             ]);
 
-        $tag == '' ? '全部' : $tag;
+        $tag == '' ? $tag = '全部' : $tag;
         $this->assign('tags', $tags);
 //        $this->assign('tags', $new_tags);
         $this->assign('list', $list);
