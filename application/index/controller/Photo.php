@@ -104,7 +104,7 @@ class Photo extends Controller
 
         $url = 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2541901817.jpg';
         $img = "http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg";
-        $path = config::get('view_replace_str')['__IMG__'].'/testsst/';
+        $path = ROOT_PATH ."public".DS."static".DS."images".DS."testsst".DS;
 //        echo $path;
         if (!is_dir($path)) {
             mkdir($path, 0777, true);
