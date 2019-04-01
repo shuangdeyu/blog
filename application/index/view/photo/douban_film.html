@@ -56,6 +56,7 @@
         }
 
         .film_container {
+            height: auto;
             margin: 15px 5px;
             padding: 15px 10px;
             background-color: #ffffff;
@@ -71,6 +72,23 @@
         }
         .tags { margin-top: 10px; }
         .tags .label { margin-bottom: 5px;display:inline-block;font-weight: normal;padding: .5em 1.2em;letter-spacing: 5px; }
+
+        .film-list {
+            clear: both;
+            margin-top: 15px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .film-card {
+            border: 1px solid #9ecaed;
+            border-radius: 5px;
+            height: 250px;
+            width: 23%;
+            margin-right: 17px;
+            float: left;
+        }
+        .film-card .film-img { width: 100%;height: 70%;overflow: hidden;text-align: center;vertical-align: middle; }
+        .film-card .film-img img { height: 100%; }
     </style>
 </head>
 <body>
@@ -98,8 +116,41 @@
             </div>
 
             <div class="film-list">
-                <div class="order-tab">
-
+                <div class="film-card">
+                    <div class="film-img">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1127695736.jpg" >
+                    </div>
+                    <div>
+                        <span>名称</span>
+                        <span>名称</span>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-img">
+                        <img src="http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg" >
+                    </div>
+                    <div>
+                        <span>名称</span>
+                        <span>名称</span>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-img">
+                        <img src="http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg" >
+                    </div>
+                    <div>
+                        <span>名称</span>
+                        <span>名称</span>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-img">
+                        <img src="http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg" >
+                    </div>
+                    <div>
+                        <span>名称</span>
+                        <span>名称</span>
+                    </div>
                 </div>
             </div>
         </div>
