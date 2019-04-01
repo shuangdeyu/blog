@@ -100,12 +100,54 @@ class Photo extends Controller
                 'query' => ['tag' => $tag, 'order' => $order],
             ]);
 
+
+
+        $url = 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2541901817.jpg';
+        $img = "http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg";
+        $path = config::get('view_replace_str')['__IMG__'].'/testsst/';
+//        echo $path;
+        if (!is_dir($path)) {
+            mkdir($path, 0777, true);
+        }
+
+        if(empty($img)){
+            return false;
+        }
+        //获取图片信息大小
+        $imgSize = getImageSize($img);
+        if(!in_array($imgSize['mime'],array('image/jpg', 'image/gif', 'image/png', 'image/jpeg'),true)){
+            return false;
+        }
+        //获取后缀名
+        $_mime = explode('/', $imgSize['mime']);
+        $_ext = '.'.end($_mime);
+        if(empty($fileName)){  //生成唯一的文件名
+            $fileName = uniqid(time(),true).$_ext;
+        }
+        //开始攫取
+        ob_start();
+        readfile($img);
+        $imgInfo = ob_get_contents();
+        ob_end_clean();
+
+        $fp = fopen($path.$fileName, 'a');
+        $imgLen = strlen($imgInfo);    //计算图片源码大小
+        $_inx = 1024;   //每次写入1k
+        $_time = ceil($imgLen/$_inx);
+        for($i=0; $i<$_time; $i++){
+            fwrite($fp,substr($imgInfo, $i*$_inx, $_inx));
+        }
+        fclose($fp);
+        echo $path.$fileName;
+
+        
+
         $tag == '' ? $tag = '全部' : $tag;
         $this->assign('tags', $tags);
 //        $this->assign('tags', $new_tags);
         $this->assign('list', $list);
         $this->assign('tag', $tag);
         $this->assign('order', $order);
-        return $this->fetch();
+//        return $this->fetch();
     }
 }
