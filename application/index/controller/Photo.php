@@ -96,7 +96,7 @@ class Photo extends Controller
         $list = Db::connect($conf)->table('q_movie')
             ->where('tags', 'like', '%' . $tag . '%')
             ->order($w_order)
-            ->paginate(20, false, [
+            ->paginate(35, false, [
                 'query' => ['tag' => $tag, 'order' => $order],
             ]);
 

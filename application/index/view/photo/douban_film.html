@@ -55,6 +55,8 @@
             animation: shake 1.5s infinite;
         }
 
+        /*.douban_container { margin: 0 auto; }*/
+        .douban_body { width: 950px;margin: 0 auto; }
         .film_container {
             height: auto;
             margin: 15px 5px;
@@ -99,12 +101,17 @@
         .film-card .film-info { font-size: 12px;padding: 5px; }
         .red { color: #ef342a; }
         .f-val { display: none; }
+
+        .film-info { display:inline-block; }
+        .film-info .pic { float: left;width: 150px; }
+        .film-info .pic img{ height: 210px;width: 150px; }
+        .film-info .info { float: left;width: 350px; }
     </style>
 </head>
 <body>
 
 <div class="douban_container">
-    <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
+    <div class="douban_body">
 
         <div class="film_container">
             <div class="statement">
@@ -169,10 +176,23 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h3 class="modal-title">Modal title</h3>
+                        <h3 class="modal-title"></h3>
                     </div>
                     <div class="modal-body">
+                        <div class="film-info">
+                            <div class="pic">
+                                <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2551352209.webp">
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>导演:</span>
+                                    <span>刘备</span>
+                                </p>
+                            </div>
+                            <div class="star">
 
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -221,7 +241,7 @@
         var modal_title = $(".modal-title");
         var modal_body = $(".modal-body");
         modal_title.empty();
-        modal_body.empty();
+        // modal_body.empty();
         modal_title.text(name+year);
 
         // 拼接详情代码
