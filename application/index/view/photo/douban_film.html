@@ -80,15 +80,25 @@
             overflow: hidden;
         }
         .film-card {
-            border: 1px solid #9ecaed;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
             border-radius: 5px;
-            height: 250px;
-            width: 23%;
-            margin-right: 17px;
+            height: 205px;
+            width: 115px;
+            margin-right: 16px;
+            margin-bottom: 13px;
             float: left;
+            text-align: center;
+            cursor: pointer;
         }
-        .film-card .film-img { width: 100%;height: 70%;overflow: hidden;text-align: center;vertical-align: middle; }
-        .film-card .film-img img { height: 100%; }
+        .film-card:hover {
+            box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        }
+        .film-card .film-img { width: 100%;height: 161px;overflow: hidden;text-align: center;vertical-align: middle; }
+        .film-card .film-img img { width: 115px;height: 161px; }
+        .film-card .film-info { font-size: 12px;padding: 5px; }
+        .red { color: #ef342a; }
+        .f-val { display: none; }
     </style>
 </head>
 <body>
@@ -116,71 +126,58 @@
             </div>
 
             <div class="film-list">
-                <div class="film-card">
+                {volist name="list" id="vo"}
+                <div class="film-card" onclick="detail(this)">
+                    <span class="f-val f-name">{$vo.name}</span>
+                    <span class="f-val f-tags">{$vo.tags}</span>
+                    <span class="f-val f-img">{$vo.img}</span>
+                    <span class="f-val f-year">{$vo.year}</span>
+                    <span class="f-val f-rating_num">{$vo.rating_num}</span>
+                    <span class="f-val f-rating_people">{$vo.rating_people}</span>
+                    <span class="f-val f-bigstar">{$vo.bigstar}</span>
+                    <span class="f-val f-stars_five">{$vo.stars_five}</span>
+                    <span class="f-val f-stars_four">{$vo.stars_four}</span>
+                    <span class="f-val f-stars_three">{$vo.stars_three}</span>
+                    <span class="f-val f-stars_two">{$vo.stars_two}</span>
+                    <span class="f-val f-stars_one">{$vo.stars_one}</span>
+                    <span class="f-val f-summary">{$vo.summary}</span>
+                    <span class="f-val f-director">{$vo.director}</span>
+                    <span class="f-val f-actor">{$vo.actor}</span>
+                    <span class="f-val f-country">{$vo.country}</span>
+                    <span class="f-val f-release_date">{$vo.release_date}</span>
+                    <span class="f-val f-film_length">{$vo.film_length}</span>
                     <div class="film-img">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1127695736.jpg" >
+                        <img src="{$vo.img}" >
                     </div>
-                    <div>
-                        <span>名称</span>
-                        <span>名称</span>
+                    <div class="film-info">
+                        <span>{$vo.name}</span>&nbsp;
+                        <span class="red"><b>{$vo.rating_num}</b></span>
                     </div>
                 </div>
-                <div class="film-card">
-                    <div class="film-img">
-                        <img src="http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg" >
-                    </div>
-                    <div>
-                        <span>名称</span>
-                        <span>名称</span>
-                    </div>
-                </div>
-                <div class="film-card">
-                    <div class="film-img">
-                        <img src="http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg" >
-                    </div>
-                    <div>
-                        <span>名称</span>
-                        <span>名称</span>
-                    </div>
-                </div>
-                <div class="film-card">
-                    <div class="film-img">
-                        <img src="http://qiniucdn.shuangdeyu.com/blog9f6ac201903181512463831.jpg" >
-                    </div>
-                    <div>
-                        <span>名称</span>
-                        <span>名称</span>
-                    </div>
-                </div>
+                {/volist}
+            </div>
+            <div style="text-align: center;">
+                {$list->render()}
             </div>
         </div>
 
-        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large-->
-        <!--modal-->
-        <!--</button>-->
-        <!--<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">-->
-        <!--<div class="modal-dialog modal-lg">-->
-        <!--<div class="modal-content">-->
+        <button type="button" id="clickDetail" data-toggle="modal" data-target="#filmDetail" style="display: none;">detail</button>
+        <div class="modal fade" id="filmDetail" tabindex="-1" role="dialog" aria-hidden="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
 
-        <!--<div class="modal-header">-->
-        <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>-->
-        <!--</button>-->
-        <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
-        <!--</div>-->
-        <!--<div class="modal-body">-->
-        <!--<h4>Text in a modal</h4>-->
-        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis-->
-        <!--lacus-->
-        <!--vel augue laoreet rutrum faucibus dolor auctor.</p>-->
-        <!--<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel-->
-        <!--scelerisque-->
-        <!--nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor-->
-        <!--fringilla.</p>-->
-        <!--</div>-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title">Modal title</h3>
+                    </div>
+                    <div class="modal-body">
 
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
@@ -201,7 +198,37 @@
 <script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.nonblock.js"></script>
 
 <script>
+    function detail(obj) {
+        var name = $(obj).find(".f-name").text();
+        var tags = $(obj).find(".f-tags").text();
+        var img = $(obj).find(".f-img").text();
+        var year = $(obj).find(".f-year").text();
+        var rating_num = $(obj).find(".f-rating_num").text();
+        var rating_people = $(obj).find(".f-rating_people").text();
+        var bigstar = $(obj).find(".f-bigstar").text();
+        var stars_five = $(obj).find(".f-stars_five").text();
+        var stars_four = $(obj).find(".f-stars_four").text();
+        var stars_three = $(obj).find(".f-stars_three").text();
+        var stars_two = $(obj).find(".f-stars_two").text();
+        var stars_one = $(obj).find(".f-stars_one").text();
+        var summary = $(obj).find(".f-summary").text();
+        var director = $(obj).find(".f-director").text();
+        var actor = $(obj).find(".f-actor").text();
+        var country = $(obj).find(".f-country").text();
+        var release_date = $(obj).find(".f-release_date").text();
+        var film_length = $(obj).find(".f-film_length").text();
 
+        var modal_title = $(".modal-title");
+        var modal_body = $(".modal-body");
+        modal_title.empty();
+        modal_body.empty();
+        modal_title.text(name+year);
+
+        // 拼接详情代码
+
+
+        $("#clickDetail").click();
+    }
 </script>
 </body>
 </html>
