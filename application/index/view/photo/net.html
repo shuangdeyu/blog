@@ -25,6 +25,15 @@
 
 {block name="content"}
     <div class="con-right">
+        <div class="net" id="net6">
+            <a href="{:url('index/photo/douban_film')}" target="_blank">
+                <img src="__IMG__/net/douban_film.jpg">
+                <div class="abs" id="douban_film">
+                    <h2>goquery爬虫实践</h2>
+                    <p>使用goquery爬取豆瓣电影的实践案例</p>
+                </div>
+            </a>
+        </div>
         <div class="net" id="net5">
             <a href="https://github.com/shuangdeyu/blog-go" target="_blank">
                 <img src="__IMG__/net/blog-go.png">
@@ -114,6 +123,12 @@
         });
         $("#net5").mouseleave(function(){
             $("#blog-go").fadeOut(300);
+        });
+        $("#net6").mouseenter(function(){
+            $("#douban_film").fadeIn(300);
+        });
+        $("#net6").mouseleave(function(){
+            $("#douban_film").fadeOut(300);
         });
     </script>
 {/block}

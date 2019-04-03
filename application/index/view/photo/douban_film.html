@@ -139,7 +139,7 @@
         <div class="film_container">
             <div class="statement">
                 <div class="pull-left">
-                    <strong id="SelectTag" style="font-size: 18px;color: #0b1013;">{$tag}</strong>
+                    <strong id="SelectTag" style="font-size: 18px;color: #0b1013;">{$tag} — {$order_name}</strong>
                 </div>
                 <div class="pull-right">
                     <span>项目地址: </span>
@@ -156,6 +156,11 @@
             </div>
 
             <div class="film-list">
+                <div style="margin-bottom: 10px;">
+                    <a class="btn btn-default btn-xs" href="{:url('photo/douban_film').'?order=rank'.'&tag='.$tag}">按评分</a>
+                    <a class="btn btn-default btn-xs" href="{:url('photo/douban_film').'?order=recommend'.'&tag='.$tag}">按热度</a>
+                    <a class="btn btn-default btn-xs" href="{:url('photo/douban_film').'?order=release'.'&tag='.$tag}">按上映时间</a>
+                </div>
                 {volist name="list" id="vo"}
                 <div class="film-card" onclick="detail(this)">
                     <span class="f-val f-name">{$vo.name}</span>

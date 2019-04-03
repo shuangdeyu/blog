@@ -88,15 +88,15 @@ class Photo extends Controller
             $order = 'release';
         }
         switch ($order) {
-            case 'rank':        $w_order = "rating_num desc"; break;
-            case 'recommend':   $w_order = "rating_people desc"; break;
-            case 'release':     $w_order = "release_date desc"; break;
-            default:            $w_order = "release_date desc"; break;
+            case 'rank':        $w_order = "rating_num desc";$order_name = "按评分"; break;
+            case 'recommend':   $w_order = "rating_people desc";$order_name = "按热度"; break;
+            case 'release':     $w_order = "release_date desc";$order_name = "按上映时间"; break;
+            default:            $w_order = "release_date desc";$order_name = "按上映时间"; break;
         }
         $list = Db::connect($conf)->table('q_movie')
             ->where('tags', 'like', '%' . $tag . '%')
             ->order($w_order)
-            ->paginate(35, false, [
+            ->paginate(28, false, [
                 'query' => ['tag' => $tag, 'order' => $order],
             ]);
 
@@ -105,6 +105,7 @@ class Photo extends Controller
         $this->assign('list', $list);
         $this->assign('tag', $tag);
         $this->assign('order', $order);
+        $this->assign('order_name', $order_name);
         return $this->fetch();
     }
 
