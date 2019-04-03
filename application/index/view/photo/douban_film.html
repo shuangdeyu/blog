@@ -102,10 +102,33 @@
         .red { color: #ef342a; }
         .f-val { display: none; }
 
-        .film-info { display:inline-block; }
+        .film-info { display:inline-block;min-height: 210px;width: 100%; }
         .film-info .pic { float: left;width: 150px; }
         .film-info .pic img{ height: 210px;width: 150px; }
-        .film-info .info { float: left;width: 350px; }
+        .film-info .info { float: left;width: 450px;padding: 0 15px 10px; }
+        .film-info .info p { margin-bottom: 5px; }
+        .if-n { color: #69686d; }
+        .if-c { color: #9f9ea3; }
+        .film-info .star {
+            float: left;
+            width: calc(100% - 600px);
+            min-height: 210px;
+            border-left: 1px solid #dfe3e6;
+            padding: 0 10px;
+        }
+        .film-info .star .rating-num { float: left;width: 22%;font-size: 28px; }
+        .film-info .star .rating-star { float: left;width: 78%; }
+        .film-info .star .rating-star p { margin-bottom: 1px;font-size: 11px;color: #0798c7; }
+        .film-info .star .rating-star i { font-size: 13px;color: #fbaf37; }
+        .star-list { clear: both;display:inline-block;width: 100%;margin-top: 20px; }
+        .star-list .star-list-row { display:inline-block;width: 100%;color: #9f9ea3; }
+        .star-list .star-list-row .sr1 { float: left;width: 12%; }
+        .star-list .star-list-row .sr2 { float: left;width: 60%; }
+        .star-list .star-list-row .sr3 { float: left;width: 20%;padding-left: 10px; }
+        .summary { padding: 15px 10px 10px;color: #9f9ea3; }
+
+        .progress { height: 17px;margin-bottom: 5px; }
+        .progress-bar-warning { background-color: #ffe285; }
     </style>
 </head>
 <body>
@@ -179,20 +202,97 @@
                         <h3 class="modal-title"></h3>
                     </div>
                     <div class="modal-body">
+
                         <div class="film-info">
                             <div class="pic">
-                                <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2551352209.webp">
+                                <img src="http://qiniucdn.shuangdeyu.com/blogf9fd9201707061514087923.jpg">
                             </div>
                             <div class="info">
                                 <p>
-                                    <span>导演:</span>
-                                    <span>刘备</span>
+                                    <span class="if-n">导演:</span>
+                                    <span class="if-c">刘备</span>
+                                </p>
+                                <p>
+                                    <span class="if-n">主演:</span>
+                                    <span class="if-c">赵云</span>
+                                </p>
+                                <p>
+                                    <span class="if-n">类型:</span>
+                                    <span class="if-c">科幻/古装</span>
+                                </p>
+                                <p>
+                                    <span class="if-n">类型:</span>
+                                    <span class="if-c">科幻/古装</span>
+                                </p>
+                                <p>
+                                    <span class="if-n">国家/地区:</span>
+                                    <span class="if-c">中国</span>
+                                </p>
+                                <p>
+                                    <span class="if-n">上映日期:</span>
+                                    <span class="if-c">2019-03-01(中国大陆)2018-09-11(多伦多电影节)2018-11-16(美国)</span>
+                                </p>
+                                <p>
+                                    <span class="if-n">片长:</span>
+                                    <span class="if-c">130分钟</span>
                                 </p>
                             </div>
                             <div class="star">
-
+                                <p style="color: #b0b4b7;">豆瓣评分</p>
+                                <div>
+                                    <div class="rating-num">
+                                        <span>7.8</span>
+                                    </div>
+                                    <div class="rating-star">
+                                        <p><i class="fa fa-star"></i></p>
+                                        <p>1233人评论</p>
+                                    </div>
+                                </div>
+                                <div class="star-list">
+                                    <div class="star-list-row">
+                                        <div class="sr1">5星</div>
+                                        <div class="sr2 progress">
+                                            <div class="progress-bar progress-bar-warning" data-transitiongoal="22.6" aria-valuenow="22.6" style="width: 22.6%;"></div>
+                                        </div>
+                                        <div class="sr3">20%</div>
+                                    </div>
+                                    <div class="star-list-row">
+                                        <div class="sr1">4星</div>
+                                        <div class="sr2 progress">
+                                            <div class="progress-bar progress-bar-warning" data-transitiongoal="22.6" aria-valuenow="22.6" style="width: 22.6%;"></div>
+                                        </div>
+                                        <div class="sr3">20%</div>
+                                    </div>
+                                    <div class="star-list-row">
+                                        <div class="sr1">3星</div>
+                                        <div class="sr2 progress">
+                                            <div class="progress-bar progress-bar-warning" data-transitiongoal="22.6" aria-valuenow="22.6" style="width: 22.6%;"></div>
+                                        </div>
+                                        <div class="sr3">20%</div>
+                                    </div>
+                                    <div class="star-list-row">
+                                        <div class="sr1">2星</div>
+                                        <div class="sr2 progress">
+                                            <div class="progress-bar progress-bar-warning" data-transitiongoal="22.6" aria-valuenow="22.6" style="width: 22.6%;"></div>
+                                        </div>
+                                        <div class="sr3">20%</div>
+                                    </div>
+                                    <div class="star-list-row">
+                                        <div class="sr1">1星</div>
+                                        <div class="sr2 progress">
+                                            <div class="progress-bar progress-bar-warning" data-transitiongoal="22.6" aria-valuenow="22.6" style="width: 22.6%;"></div>
+                                        </div>
+                                        <div class="sr3">20%</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="summary">
+                            　　小说家丹尼尔（奥斯卡·马丁内兹 Oscar Martínez 饰）从刚出道起事业就顺风顺水，如今更是获得了诺贝尔文学奖的殊荣，攀登上了职业的顶峰，然而这荣誉却并未带给他满足，恰恰相反，丹尼尔担心名声和财富会夺走他文学创作上的灵感与锋芒。
+                            <br/>
+                            　　一晃眼五年过去，丹尼尔热度不减，邀约和奖项不断，可冷淡而又避世的他只教助手一一回绝。一封来自小镇萨拉斯的信吸引了丹尼尔的注意，萨拉斯是他阔别已久的故乡，如今邀请他踏上故土，接受“杰出公民”的奖项，在未告知媒体和朋友们的情况下，丹尼尔独自踏上了返乡的旅途，在那里，他再度见到了曾经的恋人艾琳（安德丽娅·弗里杰里奥 Andrea Frigerio 饰），如今的艾琳早已经嫁为人妻，而她的丈夫正是丹尼尔的旧友安东尼奥（达迪·布列瓦 Dady Brieva 饰）。
+                        </div>
+
                     </div>
 
                 </div>
@@ -211,7 +311,7 @@
 <!-- NProgress -->
 <script src="__STATIC__/Gentelella/vendors/nprogress/nprogress.js"></script>
 <!-- Custom Theme Scripts -->
-<script src="__STATIC__/Gentelella/build/js/custom.min.js"></script>
+<!--<script src="__STATIC__/Gentelella/build/js/custom.min.js"></script>-->
 <!-- PNotify -->
 <script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.js"></script>
 <script src="__STATIC__/Gentelella/vendors/pnotify/dist/pnotify.buttons.js"></script>
@@ -231,7 +331,7 @@
         var stars_three = $(obj).find(".f-stars_three").text();
         var stars_two = $(obj).find(".f-stars_two").text();
         var stars_one = $(obj).find(".f-stars_one").text();
-        var summary = $(obj).find(".f-summary").text();
+        var summary = $(obj).find(".f-summary").html();
         var director = $(obj).find(".f-director").text();
         var actor = $(obj).find(".f-actor").text();
         var country = $(obj).find(".f-country").text();
@@ -241,11 +341,101 @@
         var modal_title = $(".modal-title");
         var modal_body = $(".modal-body");
         modal_title.empty();
-        // modal_body.empty();
+        modal_body.empty();
         modal_title.text(name+year);
 
         // 拼接详情代码
-
+        var star_html = "";
+        var star1 = parseInt(bigstar) / 10;
+        var star2 = parseInt(bigstar) % 10;
+        for (i = 0;i< star1;i++) {
+            star_html += "<i class=\"fa fa-star\"></i>";
+        }
+        if (star2 > 0) {
+            star_html += "<i class=\"fa fa-star-half-o\"></i>";
+        }
+        var html = "<div class=\"film-info\">" +
+            "                            <div class=\"pic\">" +
+            "                                <img src=\""+img+"\">" +
+            "                            </div>" +
+            "                            <div class=\"info\">" +
+            "                                <p>" +
+            "                                    <span class=\"if-n\">导演:</span>" +
+            "                                    <span class=\"if-c\">"+director+"</span>" +
+            "                                </p>" +
+            "                                <p>" +
+            "                                    <span class=\"if-n\">主演:</span>" +
+            "                                    <span class=\"if-c\">"+actor+"</span>" +
+            "                                </p>" +
+            "                                <p>" +
+            "                                    <span class=\"if-n\">类型:</span>" +
+            "                                    <span class=\"if-c\">"+tags+"</span>" +
+            "                                </p>" +
+            "                                <p>" +
+            "                                    <span class=\"if-n\">国家/地区:</span>" +
+            "                                    <span class=\"if-c\">"+country+"</span>" +
+            "                                </p>" +
+            "                                <p>" +
+            "                                    <span class=\"if-n\">上映日期:</span>" +
+            "                                    <span class=\"if-c\">"+release_date+"</span>" +
+            "                                </p>" +
+            "                                <p>" +
+            "                                    <span class=\"if-n\">片长:</span>" +
+            "                                    <span class=\"if-c\">"+film_length+"分钟</span>" +
+            "                                </p>" +
+            "                            </div>" +
+            "                            <div class=\"star\">" +
+            "                                <p style=\"color: #b0b4b7;\">豆瓣评分</p>" +
+            "                                <div>" +
+            "                                    <div class=\"rating-num\">" +
+            "                                        <span>"+rating_num+"</span>" +
+            "                                    </div>" +
+            "                                    <div class=\"rating-star\">" +
+            "                                        <p>"+star_html+"</p>" +
+            "                                        <p>"+rating_people+"人评论</p>" +
+            "                                    </div>" +
+            "                                </div>" +
+            "                                <div class=\"star-list\">" +
+            "                                    <div class=\"star-list-row\">" +
+            "                                        <div class=\"sr1\">5星</div>" +
+            "                                        <div class=\"sr2 progress\">" +
+            "                                            <div class=\"progress-bar progress-bar-warning\" data-transitiongoal=\""+stars_five+"\" aria-valuenow=\""+stars_five+"\" style=\"width: "+stars_five+"%;\"></div>" +
+            "                                        </div>" +
+            "                                        <div class=\"sr3\">"+stars_five+"%</div>" +
+            "                                    </div>" +
+            "                                    <div class=\"star-list-row\">" +
+            "                                        <div class=\"sr1\">4星</div>" +
+            "                                        <div class=\"sr2 progress\">" +
+            "                                            <div class=\"progress-bar progress-bar-warning\" data-transitiongoal=\""+stars_four+"\" aria-valuenow=\""+stars_four+"\" style=\"width: "+stars_four+"%;\"></div>" +
+            "                                        </div>" +
+            "                                        <div class=\"sr3\">"+stars_four+"%</div>" +
+            "                                    </div>" +
+            "                                    <div class=\"star-list-row\">" +
+            "                                        <div class=\"sr1\">3星</div>" +
+            "                                        <div class=\"sr2 progress\">" +
+            "                                            <div class=\"progress-bar progress-bar-warning\" data-transitiongoal=\""+stars_three+"\" aria-valuenow=\""+stars_three+"\" style=\"width: "+stars_three+"%;\"></div>" +
+            "                                        </div>" +
+            "                                        <div class=\"sr3\">"+stars_three+"%</div>" +
+            "                                    </div>" +
+            "                                    <div class=\"star-list-row\">" +
+            "                                        <div class=\"sr1\">2星</div>" +
+            "                                        <div class=\"sr2 progress\">" +
+            "                                            <div class=\"progress-bar progress-bar-warning\" data-transitiongoal=\""+stars_two+"\" aria-valuenow=\""+stars_two+"\" style=\"width: "+stars_two+"%;\"></div>" +
+            "                                        </div>" +
+            "                                        <div class=\"sr3\">"+stars_two+"%</div>" +
+            "                                    </div>" +
+            "                                    <div class=\"star-list-row\">" +
+            "                                        <div class=\"sr1\">1星</div>" +
+            "                                        <div class=\"sr2 progress\">" +
+            "                                            <div class=\"progress-bar progress-bar-warning\" data-transitiongoal=\""+stars_one+"\" aria-valuenow=\""+stars_one+"\" style=\"width: "+stars_one+"%;\"></div>" +
+            "                                        </div>" +
+            "                                        <div class=\"sr3\">"+stars_one+"%</div>" +
+            "                                    </div>" +
+            "                                </div>" +
+            "                            </div>" +
+            "                        </div>" +
+            "                        <div class=\"summary\">"+summary+"</div>";
+        modal_body.html(html);
 
         $("#clickDetail").click();
     }
