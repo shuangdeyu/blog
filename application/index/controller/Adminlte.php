@@ -22,6 +22,14 @@ class Adminlte extends Controller
     public function __construct(Request $request = null)
     {
         parent::__construct($request);
+        $request = Request::instance();
+        $action = $request->action();
+        if ($action != "index" && $action != "login" && $action != "loginout") {
+            $user_id = Session::get('userId');
+            if ($user_id == "") {
+                $this->redirect('index');
+            }
+        }
     }
 
     /*---------------------------------------------------------------*
@@ -308,9 +316,12 @@ class Adminlte extends Controller
         //当前时间，年月日
         $time = date('Y-m-d');
 
-        /*上传到七牛*/
+        /*上传到本地*/
         $Upload = new Upload();
-        $pic_url = $Upload->one(request()->file('Photo'));
+        $pic_url = $Upload->one_local($_FILES['Photo'], self::moviePhotoAddr1, self::moviePhotoAddr2);
+        /*上传到七牛*/
+//        $Upload = new Upload();
+//        $pic_url = $Upload->one(request()->file('Photo'));
 
         if ($pic_url) {
             //先添加进数据库
@@ -342,9 +353,12 @@ class Adminlte extends Controller
         $data = Db::name('movie')->where($where)->field('cover')->find();
 
         if ($data['cover']) {
-            /*删除七牛图片*/
+            /*删除本地图片*/
             $Upload = new Upload();
-            $delete = $Upload->delete($data['cover']);
+            $Upload->delete_local($data['cover'], self::moviePhotoAddr1);
+            /*删除七牛图片*/
+//            $Upload = new Upload();
+//            $delete = $Upload->delete($data['cover']);
         }
 
         $del = Db::name('movie')->where($where)->delete();
@@ -381,12 +395,18 @@ class Adminlte extends Controller
 
         //判断是否有更新封面图片
         if (isset($_FILES['Photo']) && $_FILES['Photo']['name'] != '') {
+            /*删除本地图片*/
             $Upload = new Upload();
-            $delete = $Upload->delete($cover);
+            $Upload->delete_local($cover, self::moviePhotoAddr1);
+//            $Upload = new Upload();
+//            $delete = $Upload->delete($cover);
 
-            /*上传到七牛*/
+            /*上传到本地*/
             $Upload = new Upload();
-            $pic_url = $Upload->one(request()->file('Photo'));
+            $pic_url = $Upload->one_local($_FILES['Photo'], self::moviePhotoAddr1, self::moviePhotoAddr2);
+            /*上传到七牛*/
+//            $Upload = new Upload();
+//            $pic_url = $Upload->one(request()->file('Photo'));
 
             if ($pic_url) {
                 //先更新数据库
@@ -460,9 +480,12 @@ class Adminlte extends Controller
         }
 
         if ($type == 0) {
-            /*上传到七牛*/
+            /*上传到本地*/
             $Upload = new Upload();
-            $addr = $Upload->one(request()->file('Photo'));
+            $addr = $Upload->one_local($_FILES['Photo'], self::syPhotoAddr1, self::syPhotoAddr2);
+            /*上传到七牛*/
+//            $Upload = new Upload();
+//            $addr = $Upload->one(request()->file('Photo'));
 
             if ($addr) {
                 $data_photo['content'] = $content;
@@ -481,9 +504,12 @@ class Adminlte extends Controller
 
             $files = request()->file('Photo');
             foreach ($files as $file) {
-                /*上传到七牛*/
+                /*上传到本地*/
                 $Upload = new Upload();
-                $addr = $Upload->one($file);
+                $addr = $Upload->one_local($file, self::syPhotoAddr1, self::syPhotoAddr2);
+                /*上传到七牛*/
+//                $Upload = new Upload();
+//                $addr = $Upload->one($file);
 
                 if ($addr) {
                     $data_img['pic_url'] = $addr;
@@ -508,8 +534,11 @@ class Adminlte extends Controller
 
         $img = Db::name('images')->where('target_id', $pid)->where('target', 0)->select();
         foreach ($img as $value) {
+            /*删除本地图片*/
             $Upload = new Upload();
-            $Upload->delete($value['pic_url']);
+            $Upload->delete_local($value['pic_url'], self::syPhotoAddr1);
+//            $Upload = new Upload();
+//            $Upload->delete($value['pic_url']);
         }
         Db::name('images')->where('target_id', $pid)->where('target', 0)->delete();
 
@@ -556,16 +585,23 @@ class Adminlte extends Controller
             //先删除原来的图片
             $img = Db::name('images')->where('target_id', $id)->where('target', 0)->select();
             foreach ($img as $value) {
+                /*删除本地图片*/
                 $Upload = new Upload();
-                $Upload->delete($value['pic_url']);
+                $Upload->delete_local($value['pic_url'], self::syPhotoAddr1);
+//                $Upload = new Upload();
+//                $Upload->delete($value['pic_url']);
             }
             Db::name('images')->where('target_id', $id)->where('target', 0)->delete();
 
             //添加更新图片
             if ($type == 0) {
                 $file = request()->file('Photo');
+                /*上传到本地*/
                 $Upload = new Upload();
-                $addr = $Upload->one($file);
+                $addr = $Upload->one_local($_FILES['Photo'], self::syPhotoAddr1, self::syPhotoAddr2);
+                /*上传到七牛*/
+//                $Upload = new Upload();
+//                $addr = $Upload->one($file);
 
                 if ($addr) {
                     $data_img['pic_url'] = $addr;
@@ -576,8 +612,12 @@ class Adminlte extends Controller
             } else {
                 $files = request()->file('Photo');
                 foreach ($files as $file) {
+                    /*上传到本地*/
                     $Upload = new Upload();
-                    $addr = $Upload->one($file);
+                    $addr = $Upload->one_local($file, self::syPhotoAddr1, self::syPhotoAddr2);
+                    /*上传到七牛*/
+//                    $Upload = new Upload();
+//                    $addr = $Upload->one($file);
 
                     if ($addr) {
                         $data_img['pic_url'] = $addr;
@@ -623,8 +663,12 @@ class Adminlte extends Controller
     {
         $files = request()->file('Photo');
         foreach ($files as $file) {
+            /*上传到本地*/
             $Upload = new Upload();
-            $addr = $Upload->one($file);
+            $addr = $Upload->one_local($file, self::xcPhotoAddr1, self::xcPhotoAddr2);
+            /*上传到七牛*/
+//            $Upload = new Upload();
+//            $addr = $Upload->one($file);
 
             if ($addr) {
                 $data_img['pic_url'] = $addr;
@@ -646,8 +690,11 @@ class Adminlte extends Controller
         foreach ($imgId as $value) {
             $img = Db::name('images')->where('id', $value)->find();
 
+            /*删除本地图片*/
             $Upload = new Upload();
-            $Upload->delete($img['pic_url']);
+            $Upload->delete_local($img['pic_url'], self::xcPhotoAddr1);
+//            $Upload = new Upload();
+//            $Upload->delete($img['pic_url']);
 
             Db::name('images')->where('id', $value)->delete();
         }

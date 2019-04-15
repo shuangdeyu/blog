@@ -57,7 +57,7 @@
                         <a href="#" class="btn btn-danger btn-sm" onclick="ShowNotice('提示', '暂不可用', 'warning', 1000, false)">
                             <i class="fa fa-trash-o"></i> 批量删除
                         </a>
-                        {if condition="(($type == 1)or($type == 2)) and ($photo != '')"} <a href="{:url('index/adminlte/photo_add?type='.$type)}" class="btn disabled btn-primary btn-sm"><i class="fa fa-plus"></i> 添加图文 </a>
+                        {if condition="(($type == 1)or($type == 2)) and (!empty($photo))"} <a href="{:url('index/adminlte/photo_add?type='.$type)}" class="btn disabled btn-primary btn-sm"><i class="fa fa-plus"></i> 添加图文 </a>
                         {else /} <a href="{:url('index/adminlte/photo_add?type='.$type)}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 添加图文 </a>
                         {/if}
                     </div>
